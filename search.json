@@ -305,6 +305,139 @@
     "text": "Footnotes\n\n\nThe googlesheets4 package, which reads spreadsheet data into R was authored by Jenny Bryan, a developer at Posit: :https://googlesheets4.tidyverse.org/.↩︎\nThe statistics office of the province of British Columbia maintains a public R package with all of their data: https://bcgov.github.io/bcdata/↩︎\nDr. Christopher Paciorek in the Department of Statistics at UC Berkeley maintains a package to fit a very broad class of statistical models called Bayesian Models: https://r-nimble.org/.↩︎\nSimon Couch wrote the stacks package for model ensembling while an undergraduate https://stacks.tidymodels.org/index.html.↩︎\nR is an unusual language in that the data frame has been for decades a core structure of the language. The analogous structure in Python is the data frame found in the Pandas library.↩︎\nR monster artwork by @allison_horst.↩︎"
   },
   {
+    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#agenda",
+    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#agenda",
+    "title": "Taxonomy of Data",
+    "section": "Agenda",
+    "text": "Agenda\n\nReading Questions: Taxonomy of Data\nBreak\nWorksheet: Taxonomy of Data\nBreak\nR Workshop\nAppendix"
+  },
+  {
+    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#not-counting-the-course_num-how-many-variables-are-being-recorded-here",
+    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#not-counting-the-course_num-how-many-variables-are-being-recorded-here",
+    "title": "Taxonomy of Data",
+    "section": "Not counting the course_num, how many variables are being recorded here?",
+    "text": "Not counting the course_num, how many variables are being recorded here?\n\n\nA. 3\nB. 4\nC. 5\nD. 6\nE. 7\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#what-type-of-variable-is-the-number-of-students",
+    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#what-type-of-variable-is-the-number-of-students",
+    "title": "Taxonomy of Data",
+    "section": "What type of variable is the number of students?",
+    "text": "What type of variable is the number of students?\n\n\nA. categorical, ordinal\nB. categorical, nominal\nC. numerical, discrete\nD. numerical, continuous\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#what-is-the-most-specific-term-that-can-be-given-to-this-data-structure",
+    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#what-is-the-most-specific-term-that-can-be-given-to-this-data-structure",
+    "title": "Taxonomy of Data",
+    "section": "What is the most specific term that can be given to this data structure?",
+    "text": "What is the most specific term that can be given to this data structure?\n\n\nA. spreadsheet\nB. table\nC. contingency table\nD. data frame\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#what-is-the-statistics-term-used-for-a-property-of-an-object-that-can-be-measured-and-recorded",
+    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#what-is-the-statistics-term-used-for-a-property-of-an-object-that-can-be-measured-and-recorded",
+    "title": "Taxonomy of Data",
+    "section": "What is the statistics term used for a property of an object that can be measured and recorded?",
+    "text": "What is the statistics term used for a property of an object that can be measured and recorded?\n\nA. data\nB. variable\nC. constant\nD. observational unit\n\n\n  \n    −\n    +\n \n 00:20"
+  },
+  {
+    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#which-of-the-following-best-describes-the-distinction-between-r-and-rstudio",
+    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#which-of-the-following-best-describes-the-distinction-between-r-and-rstudio",
+    "title": "Taxonomy of Data",
+    "section": "Which of the following best describes the distinction between R and RStudio?",
+    "text": "Which of the following best describes the distinction between R and RStudio?\n\nA. They are synonyms for the same thing.\nB. R is the language; RStudio is the tool we’ll use to run and write code.\nC. RStudio is the newer edition of the R language.\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#how-do-you-save-the-output-of-an-r-command-into-your-environment",
+    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#how-do-you-save-the-output-of-an-r-command-into-your-environment",
+    "title": "Taxonomy of Data",
+    "section": "How do you save the output of an R command into your Environment?",
+    "text": "How do you save the output of an R command into your Environment?\n\nA. Wrap the command in parentheses ().\nB. Wrap the commend in curly braces {}.\nC. Use the assignment arrow and provide a name for your output to the environment.\nD. Drag and drop the command into your environment.\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#the-atomic-building-block-of-the-r-language-is-the",
+    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#the-atomic-building-block-of-the-r-language-is-the",
+    "title": "Taxonomy of Data",
+    "section": "The atomic building block of the R language is the …",
+    "text": "The atomic building block of the R language is the …\n\nA. vector\nB. variable\nC. numeric\nD. factor\nE. data frame\n\n\n  \n    −\n    +\n \n 00:20"
+  },
+  {
+    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#a-note-on-variables",
+    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#a-note-on-variables",
+    "title": "Taxonomy of Data",
+    "section": "A note on variables",
+    "text": "A note on variables\n\nDepending on how a variable is recorded, it can take different types!"
+  },
+  {
+    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#what-type-of-variable-is-age-part-1",
+    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#what-type-of-variable-is-age-part-1",
+    "title": "Taxonomy of Data",
+    "section": "What type of variable is age? (Part 1)",
+    "text": "What type of variable is age? (Part 1)\n\n\nAge groups of television audiences/demographics\n\n\n\n\nAnswer at pollev.com.\n\n\n  \n    −\n    +\n \n 00:15\n \n\nThis one is categorical ordinal (25-34 etc)"
+  },
+  {
+    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#what-type-of-variable-is-age-part-2",
+    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#what-type-of-variable-is-age-part-2",
+    "title": "Taxonomy of Data",
+    "section": "What type of variable is age? (Part 2)",
+    "text": "What type of variable is age? (Part 2)\n\n\nAges of patients at a doctor’s office, as they might fill out on an intake form\n\n\n\n\nAnswer at pollev.com.\n\n\n  \n    −\n    +\n \n 00:15\n \n\nThis one is numerical discrete"
+  },
+  {
+    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#working-in-a-qmd-file",
+    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#working-in-a-qmd-file",
+    "title": "Taxonomy of Data",
+    "section": "Working in a qmd file",
+    "text": "Working in a qmd file\nWorking in a new .qmd file allows you to save your code for later."
+  },
+  {
+    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#demo",
+    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#demo",
+    "title": "Taxonomy of Data",
+    "section": "Demo",
+    "text": "Demo\n\nCreate a new qmd file from the RStudio menu, name it, and save it.\nInsert a new code cell.\nWrite your code into the cell.\nRender the document."
+  },
+  {
+    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#coding-tutorial-taxonomy-of-data",
+    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#coding-tutorial-taxonomy-of-data",
+    "title": "Taxonomy of Data",
+    "section": "Coding tutorial: Taxonomy of Data",
+    "text": "Coding tutorial: Taxonomy of Data\n\nDownload the taxonomy-tutorial.qmd file in the Taxonomy of Data Ed Thread.\nClick the “Upload” button in the bottom right corner of RStudio and upload the file.\n\n\n  \n    −\n    +\n \n 25:00"
+  },
+  {
+    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#educated-guess-1",
+    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#educated-guess-1",
+    "title": "Taxonomy of Data",
+    "section": "Educated Guess 1",
+    "text": "Educated Guess 1\n\nWhat will happen here?\n\n\nAnswer at pollev.com/&lt;name&gt;\n\n\n\n\n1 + \"one\"\n\n\n  \n    −\n    +\n \n 00:30\n \n\n\n“one” is a string with no link at all to the number 1\nwithout that link, without two objects that are recognized for their numerical value, + doesn’t work."
+  },
+  {
+    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#educated-guess-2",
+    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#educated-guess-2",
+    "title": "Taxonomy of Data",
+    "section": "Educated Guess 2",
+    "text": "Educated Guess 2\n\nWhat will happen here?\n\n\nAnswer at pollev.com/&lt;name&gt;\n\n\n\n\na &lt;- c(1, 2, 3, 4)\nsqrt(log(a))\n\n\n  \n    −\n    +\n \n 01:00\n \n\nTalking points - a is a vector of length four - log and sqrt are functions that will return vectors of length four - they’re nested and will be evaluated from the inside out"
+  },
+  {
+    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#educated-guess-3",
+    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#educated-guess-3",
+    "title": "Taxonomy of Data",
+    "section": "Educated Guess 3",
+    "text": "Educated Guess 3\n\nWhat will happen here?\n\n\nAnswer at pollev.com/&lt;name&gt;\n\n\n\n\na &lt;- 1 + 2\na + 1\n\n\n  \n    −\n    +\n \n 01:00\n \n\n\na is a not a string, it’s the name of an object that’s a number\nto overwrite a with a + 1 requires re-assigning it to a: a &lt;- a + 1 (in some languages, a + 1 would change the value of a)\na &lt;- a + 1 is a good time to mention that while a = a + 1 works in R and they might see it online, its convention to use &lt;- for many reasons including that mathematically the statement with = is confusing."
+  },
+  {
+    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#educated-guess-4",
+    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#educated-guess-4",
+    "title": "Taxonomy of Data",
+    "section": "Educated Guess 4",
+    "text": "Educated Guess 4\n\nWhat will happen here?\n\n\nAnswer at pollev.com/&lt;name&gt;\n\n\n\n\na &lt;- c(1, 3.14, \"seven\")\nclass(a)\n\n\n  \n    −\n    +\n \n 01:00\n \n\n\nthe definition of a vector requires every element to be of the same type\nbased on their reading, there are three classes that they’re familiar with: numeric, factor, and character\nthere’s no way to translate “seven” into 7, so instead 1 and 3.14 must be translated into strings\nthey will likely encounter this when looking at a data set in R (or other languages) and finding that vectors with what looked like numbers are stored as strings. This usually happens because there’s a single errant character that the language doesn’t know how to parse as a number."
+  },
+  {
+    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#theres-no-escape-from-the-shoebill..",
+    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#theres-no-escape-from-the-shoebill..",
+    "title": "Taxonomy of Data",
+    "section": "There’s no escape from the shoebill..",
+    "text": "There’s no escape from the shoebill.."
+  },
+  {
     "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#images-as-data",
     "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#images-as-data",
     "title": "Taxonomy of Data",
@@ -337,70 +470,7 @@
     "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#images-in-a-data-frame-1",
     "title": "Taxonomy of Data",
     "section": "Images in a Data Frame",
-    "text": "Images in a Data Frame\n\n\n\n\n\n\n\n\n\nIf you were to put the data from these (8 x 8 grayscale) images into a data frame, what would the dimensions of that data frame be in rows x columns? Answer at pollev.com.\n\n\nHere, the 3 images are our observations, and each pixel value is a variable, so the data frame will be 3 x 64.\n\n\n\n  \n    −\n    +\n \n 01:00"
-  },
-  {
-    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#a-note-on-variables",
-    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#a-note-on-variables",
-    "title": "Taxonomy of Data",
-    "section": "A note on variables",
-    "text": "A note on variables\nThere are three things that “variable” could be referring to:\n\n\na phenomenon\nhow the phenomenon is being recorded or measured into data\n\nwhat values can it take? (this is often an intent- or value-laden exercise!)\nfor numerical units, what unit should we express it in?\n\nHow the recorded data is being analyzed\n\nmight you bin/discretizing income data? what are the consequences of this?\n\n\n\n\n\nFor the following question, you may work under the second definition."
-  },
-  {
-    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#what-type-of-variable-is-age",
-    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#what-type-of-variable-is-age",
-    "title": "Taxonomy of Data",
-    "section": "What type of variable is age?",
-    "text": "What type of variable is age?\nMatch each of the scenarios where age could be a variable, on the next three slides, to the most appropriate taxonomy according to the Taxonomy of Data."
-  },
-  {
-    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#what-type-of-variable-is-age-part-1",
-    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#what-type-of-variable-is-age-part-1",
-    "title": "Taxonomy of Data",
-    "section": "What type of variable is age? (Part 1)",
-    "text": "What type of variable is age? (Part 1)\n\n\nAges of television audiences/demographics\n\n\n\n\nAnswer at pollev.com.\n\n\n  \n    −\n    +\n \n 00:30\n \n\nThis one is categorical ordinal (25-34 etc)"
-  },
-  {
-    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#what-type-of-variable-is-age-part-2",
-    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#what-type-of-variable-is-age-part-2",
-    "title": "Taxonomy of Data",
-    "section": "What type of variable is age? (Part 2)",
-    "text": "What type of variable is age? (Part 2)\n\n\nAges of UC Berkeley students\n\n\n\n\nAnswer at pollev.com.\n\n\n  \n    −\n    +\n \n 00:30\n \n\nThis one is numerical discrete"
-  },
-  {
-    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#what-type-of-variable-is-age-part-3",
-    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#what-type-of-variable-is-age-part-3",
-    "title": "Taxonomy of Data",
-    "section": "What type of variable is age? (Part 3)",
-    "text": "What type of variable is age? (Part 3)\n\n\nThe age of a rock\n\n\n\n\nAnswer at pollev.com.\n\n\n  \n    −\n    +\n \n 00:30\n \n\nThis one is numerical continuous since geologists probably measure continuously. The important point in these three slides is that the type depends on how we engage with the data. Age is numerical discrete for college students because that is how we use it, etc."
-  },
-  {
-    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#educated-guess-1",
-    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#educated-guess-1",
-    "title": "Taxonomy of Data",
-    "section": "Educated Guess 1",
-    "text": "Educated Guess 1\n\nWhat will happen here?\n\n\nAnswer at pollev.com/&lt;name&gt;\n\n\n\n\n1 + \"one\"\n\n\n  \n    −\n    +\n \n 01:00\n \n\n\n“one” is a string with no link at all to the number 1\nwithout that link, without two objects that are recognized for their numerical value, + doesn’t work."
-  },
-  {
-    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#educated-guess-2",
-    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#educated-guess-2",
-    "title": "Taxonomy of Data",
-    "section": "Educated Guess 2",
-    "text": "Educated Guess 2\n\nWhat will happen here?\n\n\nAnswer at pollev.com/&lt;name&gt;\n\n\n\n\na &lt;- c(1, 2, 3, 4)\nsqrt(log(a))\n\n\n  \n    −\n    +\n \n 01:00\n \n\nTalking points - a is a vector of length four - log and sqrt are functions that will return vectors of length four - they’re nested and will be evaluated from the inside out"
-  },
-  {
-    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#educated-guess-3",
-    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#educated-guess-3",
-    "title": "Taxonomy of Data",
-    "section": "Educated Guess 3",
-    "text": "Educated Guess 3\n\nWhat will happen here?\n\n\nAnswer at pollev.com/&lt;name&gt;\n\n\n\n\na &lt;- 1 + 2\na + 1\n\n\n  \n    −\n    +\n \n 01:00\n \n\n\na is a not a string, it’s the name of an object that’s a number\nto overwrite a with a + 1 requires re-assigning it to a: a &lt;- a + 1 (in some languages, a + 1 would change the value of a)\na &lt;- a + 1 is a good time to mention that while a = a + 1 works in R and they might see it online, its convention to use &lt;- for many reasons including that mathematically the statement with = is confusing."
-  },
-  {
-    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#educated-guess-4",
-    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#educated-guess-4",
-    "title": "Taxonomy of Data",
-    "section": "Educated Guess 4",
-    "text": "Educated Guess 4\n\nWhat will happen here?\n\n\nAnswer at pollev.com/&lt;name&gt;\n\n\n\n\na &lt;- c(1, 3.14, \"seven\")\nclass(a)\n\n\n  \n    −\n    +\n \n 01:00\n \n\n\nthe definition of a vector requires every element to be of the same type\nbased on their reading, there are three classes that they’re familiar with: numeric, factor, and character\nthere’s no way to translate “seven” into 7, so instead 1 and 3.14 must be translated into strings\nthey will likely encounter this when looking at a data set in R (or other languages) and finding that vectors with what looked like numbers are stored as strings. This usually happens because there’s a single errant character that the language doesn’t know how to parse as a number."
+    "text": "Images in a Data Frame\n\n\n\n\n\n\n\n\n\nIf you were to put the data from these (8 x 8 grayscale) images into a data frame, what would the dimensions of that data frame be in rows x columns?\n\n\nHere, the 3 images are our observations, and each pixel value is a variable, so the data frame will be 3 x 64."
   },
   {
     "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#functions-on-vectors",
@@ -414,28 +484,21 @@
     "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#your-turn",
     "title": "Taxonomy of Data",
     "section": "Your Turn",
-    "text": "Your Turn\n\n\nCreate a vector named vec with the even integers between 1 and 10 as well as the number 99 (six elements total).\nFind the sum of that vector.\nFind the max of that vector.\nTake the mean of that vector and round it to the nearest integer.\n\n\nThese should all be solved with R code. If you don’t know the name of a function to use, you could hazard a guess by looking for a help file (e.g. ?sum) or google it.\n\n  \n    −\n    +\n \n 05:00\n \n\nvec &lt;- c(2, 4, 6, 8, 10, 99) sum(vec) max(vec) ?round round(mean(vec))"
-  },
-  {
-    "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#working-in-a-qmd-file",
-    "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#working-in-a-qmd-file",
-    "title": "Taxonomy of Data",
-    "section": "Working in a qmd file",
-    "text": "Working in a qmd file\nWorking in a new .qmd file allows you to save your code for later.\n\nDemo\n\nCreate a new qmd file from the RStudio menu, name it, and save it.\nInsert a new code cell.\nWrite your code into the cell.\nRender the document."
+    "text": "Your Turn\n\n\nCreate a vector named vec with the even integers between 1 and 10 as well as the number 99 (six elements total).\nFind the sum of that vector.\nFind the max of that vector.\nTake the mean of that vector and round it to the nearest integer.\n\n\nThese should all be solved with R code. If you don’t know the name of a function to use, you could hazard a guess by looking for a help file (e.g. ?sum) or google it.\n\nvec &lt;- c(2, 4, 6, 8, 10, 99) sum(vec) max(vec) ?round round(mean(vec))"
   },
   {
     "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#building-a-data-frame",
     "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#building-a-data-frame",
     "title": "Taxonomy of Data",
     "section": "Building a data frame",
-    "text": "Building a data frame\nYou can combine vectors into a data frame using data.frame()1\n\nbill_depth_mm &lt;- c(15.0, 17.1, 18.7, 18.9)\nbill_length_mm &lt;- c(47.5, 40.2, 39.0, 35.3)\nspecies &lt;- c(\"Gentoo\", \"Adelie\", \"Adelie\", \"Adelie\")\n\n\n\n\n\npenguins_df &lt;- data.frame(bill_depth_mm, bill_length_mm, species)\npenguins_df\n\n  bill_depth_mm bill_length_mm species\n1          15.0           47.5  Gentoo\n2          17.1           40.2  Adelie\n3          18.7           39.0  Adelie\n4          18.9           35.3  Adelie\n\n\n\nYou can also use the tibble() function from the tidyverse package."
+    "text": "Building a data frame\nYou can combine vectors into a data frame using data.frame()1\n\nbill_depth_mm &lt;- c(15.0, 17.1, 18.7, 18.9)\nbill_length_mm &lt;- c(47.5, 40.2, 39.0, 35.3)\nspecies &lt;- c(\"Gentoo\", \"Adelie\", \"Adelie\", \"Adelie\")\n\n\n\n\n\npenguins_df &lt;- data.frame(bill_depth_mm, bill_length_mm, species)\npenguins_df\n\n  bill_depth_mm bill_length_mm species\n1          15.0           47.5  Gentoo\n2          17.1           40.2  Adelie\n3          18.7           39.0  Adelie\n4          18.9           35.3  Adelie\n\n\n\nYou can also use the tibble() function from the tidyverse package. Make sure you load the library first with library(tidyverse)!"
   },
   {
     "objectID": "1-questions-and-data/02-taxonomy-of-data/slides.html#your-turn-1",
     "href": "1-questions-and-data/02-taxonomy-of-data/slides.html#your-turn-1",
     "title": "Taxonomy of Data",
     "section": "Your Turn",
-    "text": "Your Turn\n\n\nCreate a new .qmd file, name it, and save it.\nInsert a new code cell.\nCreate three vectors, name, hometown, and sibs_and_pets that contain observations on those variables from 6 people in this class.\nCombine them into a data frame called my_classmates.\n\n\n\n  \n    −\n    +\n \n 06:00"
+    "text": "Your Turn\n\n\nCreate a new .qmd file, name it, and save it.\nInsert a new code cell.\nCreate three vectors, name, hometown, and sibs_and_pets that contain observations on those variables from 6 people in this class.\nCombine them into a data frame called my_classmates."
   },
   {
     "objectID": "1-questions-and-data/labs/unvotes/part-2.html",
@@ -532,6 +595,78 @@
     "text": "The goal of the “Think before you compute” design of these labs is that the students should be able to do their thinking without the distractions of technology. If you project this data frame, that should be sufficient for them to answer all of the questions in Part I.\n\n\n  \n    −\n    +\n \n 25:00"
   },
   {
+    "objectID": "2-summarizing-data/02-summarizing-numerical-data/notes.html",
+    "href": "2-summarizing-data/02-summarizing-numerical-data/notes.html",
+    "title": "Summarizing Numerical Data",
+    "section": "",
+    "text": "Man feigns madness, contemplates life and death, and seeks revenge.\nSon avenges his father, and it only takes four hours.\nA tragedy written by the English playwright around 1600.\n29,551 words on a page.\nYou may recognize each of these as summaries of the play, “Hamlet”. None of these are wrong, per se, but they do focus on very different aspects of the work. Summarizing something as rich and complex as Hamlet invariably involves a large degree of omission; we’re reducing a document of 29,551 words down to a single sentence or phrase, after all. But summarization also involves important choices around what to include.\nThe same considerations of omission and inclusion come into play when developing a numerical or graphical summary of a data set. Some guidance to bear in mind:\nWhat should I include?\nWhat should I omit?\nIn these notes we’ll keep this guidance in mind as we discuss how to summarize numerical data with graphics, in words, and with statistics. Specifically, we will learn how to:\nSummarizing two numerical variables is a task which deserves its own set of notes; that set of notes will come later on!",
+    "crumbs": [
+      "Notes",
+      "Summarization",
+      "Summarizing Numerical Data"
+    ]
+  },
+  {
+    "objectID": "2-summarizing-data/02-summarizing-numerical-data/notes.html#constructing-graphical-summaries",
+    "href": "2-summarizing-data/02-summarizing-numerical-data/notes.html#constructing-graphical-summaries",
+    "title": "Summarizing Numerical Data",
+    "section": "Constructing Graphical Summaries",
+    "text": "Constructing Graphical Summaries\nLet’s turn to an example admittedly less complex than Hamlet: the Palmer penguins. One of the numerical variables Dr. Gorman recorded was the length of the bill in millimeters. The values of the first 16 penguins are:\n\n\n\n\n\n\n\n\nbill_length_mm\n\n\n\n\n39.1\n\n\n39.5\n\n\n40.3\n\n\n36.7\n\n\n39.3\n\n\n38.9\n\n\n39.2\n\n\n41.1\n\n\n38.6\n\n\n34.6\n\n\n36.6\n\n\n38.7\n\n\n42.5\n\n\n34.4\n\n\n46.0\n\n\n37.8\n\n\n\n\n\nWe have many options for different plot types that we could use to summarize this data graphically. To understand the differences, it’s helpful to lay out the criterion that we hold for a summary to be a success. Let’s call those criteria the desiderata, a word meaning “that which is desired or needed”.\nFor our first graphic, let’s set a high bar.\n\n\n\n\n\n\nDesiderata\n\n\n\n\nAll information must be preserved.\n\n\n\nThe most commonly used graphic that fulfills this criterion is the dot plot.\n\n\n\n\n\n\n\n\n\nThe dot plot is, in effect, a one-dimensional scatter plot. Each observation shows up as a dot and its value corresponds to its location along the x-axis. Importantly, it fulfills our desiderata: given this graphic, one can recreate the original data perfectly. There was no information loss.\nAs the number of observations grow, however, this sort of graphical summary becomes unwieldy. Instead of focusing on the value of each observation, it becomes more practical to focus on the general shape of the distribution. Let’s consider a broader goal for our graphic.\n\n\n\n\n\n\nDesiderata\n\n\n\n\nBalance depiction of the general characteristics of the distribution with a fidelity to the individual observations.\n\n\n\nThere are several types of graphics that meet this criterion: the histogram, the density plot, and the violin plot.\n\nHistograms\n\n\n\n\n\n\n\n\n\nAt first glance, a histogram looks like deceptively like a bar chart. There are bars arranged along the x-axis according to their values with heights that correspond to the count of each value found in the data set. So how is this not a bar chart?\nA histogram involves aggregation. The first step in creating a histogram is to divide the range of the variable into bins of equal size. The second step is to count up the number of observations that occur in each bin. In this way, some observations will have their own bar (every bar with a count of one) but other observations will be aggregated into the same bar: the tallest bar, with a count of 3, corresponds to all observations from 39.09 to 39.30: 39.1, 39.2, and 39.3.\nThe degree of aggregation performed by the histogram is determined by the binwidth. Most software will automatically select the binwidth1, but it can be useful to tinker with different values to see the distribution at different levels of aggregation. Here are four histograms of the same data that use four different binwidths.\n\n\n\n\n\n\n\n\n\nIf you are interested in only the coarsest structure in the distribution, best to use the larger binwidths. If you want to see more detailed structure, a smaller binwidth is better.\nThere is a saying that warns about times when you, “can’t see the forest for the trees”, being overwhelmed by small details (the trees) and unable to see the bigger picture (the forest). The histogram, as a graphical tool for summarizing the distribution of a numerical variable, offers a way out. Through your choice of binwidth, you can determine how much to focus on the forest (large bindwidth) or the trees (small binwidth).\n\n\nDensity plots\nImagine that you build a histogram and place a cooked piece of spaghetti over the top of it. The curve created by the pasta is a form of a density plot.\n\n\n\n\n\n\n\n\n\nBesides the shift from bars to a smooth line, the density plot also changes the y-axis to feature a quantity called “density”. We will return to define this term later in the course, but it’s sufficient to know that the values on the y-axis of a density plot are rarely useful. The important information is relative: an area of the curve with twice the density as another area has roughly twice the number of observations.\nThe density plot, like the histogram, offers the ability to balance fidelity to the individual observations against a more general shape of the distribution. You can tip the balance to feature what you find most interesting by adjusting the bandwidth of the density plot.\n\n\n\n\n\n\n\n\n\nA density curve tends to convey the overall shape of a distribution more quickly than does a histogram, but be sure to experiment with different bandwidths. Strange but important features of a distribution can be hidden behind a density curve that is too smooth.\n\n\nViolin plots\nOften we’re interested not in the distribution of a single variable, but in the way the distribution of that variable changes from one group of observational units to another. Let’s add this item to our list of criteria for a statistical graphic.\n\n\n\n\n\n\nDesiderata\n\n\n\n\nBalance depiction of the general characteristics of the distribution with a fidelity to the individual observations.\nAllow for easy comparisons between groups.\n\n\n\nThere are several different ways to compare the distribution of a variable across two or more groups, but one of the most useful is the violin plot. Here is a violin plot of the distribution of bill length across the three species of penguins.\n\n\n\n\n\n\n\n\n\nThe distribution of bill length in each species is represented by a shape that often looks like a violin but is in fact a simple density curve reflected about its x-axis. This means that you can tinker with a violin plot the same as a density plot, but changing the bandwidth.\nIf this plot type looks familiar, you may have seen its cousin, the box plot.\n\n\n\n\n\n\n\n\n\nThe box plot conveys a similar story to the violin plot: Adelies have shorter bills than Chinstraps and Gentoos. Box plots have the advantage of requiring very little computation to construct2, but in a world of powerful computers, that is no longer remarkable. What they lack is a “smootness-knob” that you can turn to perform more or less smoothing. For this reason, violin plots are a more flexible alternative to box plots.",
+    "crumbs": [
+      "Notes",
+      "Summarization",
+      "Summarizing Numerical Data"
+    ]
+  },
+  {
+    "objectID": "2-summarizing-data/02-summarizing-numerical-data/notes.html#describing-distributions",
+    "href": "2-summarizing-data/02-summarizing-numerical-data/notes.html#describing-distributions",
+    "title": "Summarizing Numerical Data",
+    "section": "Describing Distributions",
+    "text": "Describing Distributions\nThe desideratum that we used to construct the histogram and the violin plot include the ability to “depict general characteristics of the distribution”. The most important characteristics of a distribution are its shape, center, and spread.\nWhen describing the shape of a distribution in words, pay attention to its modality and skew. The modality of a distribution captures the number of distinct peaks (or modes) that are present.\n\n\n\n\n\nA good example of a distribution that would be described as unimodal is the original density plot of bill lengths of 16 Adelie penguins (below left). There is one distinct peak around 39. Although there is another peak around 34, it is not prominent enough to be considered a distinct mode. The distribution of the bill lengths of all 344 penguins (below right), however, can be described as bimodal.\n\n\n\n\n\n\n\n\n\nMultiple modes are often a hint that there is something more going on. In the plot to the right above, Chinstraps and Gentoo penguins, which are larger, are clumped under the right mode while the smaller Adelie penguins are dominant in the left mode.\nThe other important characteristic of the shape of a distribution is its skew.\n\n\n\n\n\nThe skew of a distribution describes the behavior of its tails: whether the right tail stretches out (right skew), the left tail stretches out (left skew), or if both tails are of similar length (symmetric). An example of a persistently right skewed distribution is household income in the United States:\n\n\n\n\n\nIn the US, the richest households have much much higher incomes than most, while the poorest households have incomes that are only a bit lower than most.\nWhen translating a graphical summary of a distribution into words, some degree of judgement must be used. When is a second peak a mode and when is it just a bump in the distribution? When is one of the tails of a distribution long enough to tip the description from being symmetric to being right skewed? You’ll hone your judgement in part through repeated practice: looking at lots of distributions and readings lots of descriptions. You can also let the questions of inclusion and omission be your guide. Is the feature a characteristic relevant to the question you’re answering and the phenomenon you’re studying? Or is it just a distraction from the bigger picture?\nModality and skew capture the shape of the distribution, but how do we describe its center and spread? “Eyeballing it” by looking at a graphic is an option. A more precise option, though, is to calculate a statistic.",
+    "crumbs": [
+      "Notes",
+      "Summarization",
+      "Summarizing Numerical Data"
+    ]
+  },
+  {
+    "objectID": "2-summarizing-data/02-summarizing-numerical-data/notes.html#constructing-numerical-summaries",
+    "href": "2-summarizing-data/02-summarizing-numerical-data/notes.html#constructing-numerical-summaries",
+    "title": "Summarizing Numerical Data",
+    "section": "Constructing Numerical Summaries",
+    "text": "Constructing Numerical Summaries\nStatistics is both an area of academic study and the object of that study. Any numerical summary of a data set - a mean or median, a count or proportion - is a statistic. A statistic is, fundamentally, a mathematical function where the data is the input and the output is the observed statistic.\n\n\n\nStatisticians don’t just study statistics, though, they construct them. A statistician gets to decide the form of \\(f\\) and, as with graphics, they construct it to fulfill particular needs: the desiderata.\nTo examine the properties of common statistics, let’s move to an even simpler data set: a vector called x that holds 11 integers.\n\\[8, 11, 7, 7, 8, 11,  9,  6,  10,  7,  9\\]\n\n\n\nMeasures of Center\nThe mean, the median, and the mode are the three standard statistics used to measure the center of a distribution. Despite their ubiquity, these three are not carved somewhere on a stone tablet. They’re common because they’re useful and they’re useful because they were constructed very thoughtfully.\nLet’s start by laying out some possible criteria for a measure of center.\n\n\n\n\n\n\nDesiderata\n\n\n\n\nSynthesizes the magnitudes of all \\(n\\) observations.\nAs close as possible to all of the observations.\n\n\n\nThe (arithmetic) mean fulfills all of these needs.\n\n\nThe function in R: mean()\n\\[\n\\frac{8 + 11 + 7 + 7 + 8 + 11 + 9 + 6 + 10 + 7 + 9}{11} = \\frac{93}{11} = 8.45\n\\]\nThe mean synthesizes the magnitudes by taking their sum, then keeps that sum from getting larger than any of the observations by dividing by \\(n\\). In order to express this function more generally, we use the following notation\n\\[\n\\bar{x} = \\frac{x_1 + x_2 + \\ldots + x_n}{n}\n\\]\nwhere \\(x_1\\) is the first observation, \\(x_2\\) is the second observation, and so on till the \\(n^{th}\\) observation, \\(x_n\\); and \\(\\bar{x}\\) is said “x bar”.\nThe mean is the most commonly used measure of center, but has one notable drawback. What if one of our observations is an outlier, that is, has a value far more extreme than the rest of the data? Let’s change the \\(6\\) to \\(-200\\) and see what happens.\n\\[\n\\frac{8 + 11 + 7 + 7 + 8 + 11 + 9 - 200 + 10 + 7 + 9}{11} = \\frac{-113}{11} = -10.27\n\\]\nThe mean has plummeted to -10.27, dragged down by this very low outlier. While it is doing it’s best to stay “as close as possible to all of the observations”, it isn’t doing a very good job of representing 10 of the 11 values.\nWith this in mind, let’s alter the first criterion to inspire a different statistic.\n\n\n\n\n\n\nDesiderata\n\n\n\n\nSynthesize the order of all \\(n\\) observations.\nAs close as possible to all of the observations.\n\n\n\nIf we put the numbers in order from smallest to largest, then the number that is as close as possible to all observations will be the middle number, the median.\n\n\nThe function in R: median()\n\\[ 6 \\quad 7 \\quad 7 \\quad  7 \\quad 8 \\quad {\\Large 8} \\quad 9 \\quad 9 \\quad 10 \\quad 11  \\quad 11\\]\nAs measured by the median, the center of this distribution is 8 (recall the mean measured 8.45). If there were an even number of observations, the convention is to take the mean of the middle two values.\nThe median has the desirable property of being resistant (or “robust”) to the presence of outliers. See how it responds to the inclusion of -200.\n\\[ -200 \\quad 7 \\quad 7 \\quad  7 \\quad 8 \\quad {\\Large 8} \\quad 9 \\quad 9 \\quad 10 \\quad 11  \\quad 11\\]\nWith this outlier, the median remains at 8 while the mean had dropped to -10.27. This property makes the median the favored statistic for capturing the center of a skewed distribution.\nWhat if we took a stricter notion of “closeness”?\n\n\n\n\n\n\nDesiderata\n\n\n\n\nIs identical to as many observations as possible.\n\n\n\nThat leads us to the measure of the mode, or the most common observation. For our example data set, the mode is \\(7\\).\n\\[ 6 \\quad {\\Large 7 \\quad 7 \\quad  7} \\quad 8 \\quad 8 \\quad 9 \\quad 9 \\quad 10 \\quad 11  \\quad 11\\]\nWhile using the mode for this data set is sensible, it is common in numerical data for each value to be unique3. In that case, there are no repeated values, and no identifiable mode. For that reason, it is unusual to calculate the mode to describe the center of a numerical variable.\nFor categorical data, however, the mode is very useful. The mode of the species variable among the Palmer penguins is “Adelie”. Trying to compute the mean or the median species will leave you empty-handed. This is one of the lingering lessons of the Taxonomy of Data: the type of variable guides how it is analyzed.\n\n\nMeasures of Spread\nThere are many different ways to capture spread or dispersion of data. Here are some basic desiderata we might hope to achieve with a measure of spread.\n\n\n\n\n\n\nDesiderata\n\n\n\n\nThe statistic should be low when the numbers are the same or very similar to one another.\nThe statistic should be high when the numbers are very different.\nThe statistic should not grow or shrink with the sample size ( n ).\n\n\n\nThese desiderata are not met by every measure of spread. Here is one such measure of spread which does not meet all three!\n\nRange\nThe range of a set of numbers is simply the maximum number in the dataset minus its minimum.\n\\[ range = max - min\\]\nFor our set of numbers, the range will be \\(5\\).\n\\[ {\\Large 6} \\quad {\\ 7 \\quad 7 \\quad  7} \\quad 8 \\quad 8 \\quad 9 \\quad 9 \\quad 10 \\quad 11  \\quad {\\Large 11}\\]\nAlthough the first two criterion above are met by the range, the third one is not. The reason is that if we add a number to our set which is greater than the maximum value, or smaller than the minimum value, the value of range will change. Therefore, increasing our sample size \\(n\\) could cause our statistic to grow or shrink.\nHere are some measures of spread which do meet all three criterion. They do this by using incorporating some of the measures of center that we have already talked about, such as the mean and the median.\n\n\nThe Sample Variance\nThe sample variance:\n\nTakes the differences from each observation, \\(x_i\\), to the sample mean \\(\\bar{x}\\);\nsquares them;\nadds them all up;\nthen divides by \\(n - 1\\).\n\n\n\nThe function in R: var()\n\\[ s^2 = \\frac{1}{n - 1} \\sum_{i=1}^{n} \\left( x_i - \\bar{x}\\right)^2 \\] This formula is rather dense; don’t worry! We won’t ask you to memorize it. The key is that is fits the three criterion we were hoping for.\nThe distance \\((x_i - \\bar{x})^2\\) will be small when \\(x_i\\) is close to the mean, and large when it’s not. This means the first two criterion are met. Additionally, because we are dividing by a number close to \\(n\\), (\\(n-1\\)), the statistic does not grow or shrink with \\(n\\). This means the last criterion is met!\nOne other question you might have: why the square?\nThe reason is that spread/distance is a positive quantity. Recall that the mean of our list was \\(8.45\\). Two numbers in our list, \\(7\\) and \\(9\\), are both \\(1.45\\) units away from the mean. However, \\(7-8.45 = -1.45\\) and \\(9-8.45 = 1.45\\). As part of the sum, we will have to add up \\(-1.45\\) and \\(1.45\\), which comes out to \\(0\\).\nThis means that the information from the two data points \\(7\\) and \\(9\\) have been canceled out! We don’t want this to happen, so we need to make all of the terms in the sum positive. The square takes care of that.\nFor our list:\n\\[ s^2 =  2.87 \\]\n\n\nThe Sample Standard Deviation\n\\[ s = \\sqrt{\\frac{1}{n - 1} \\sum_{i=1}^{n} \\left( x_i - \\bar{x}\\right)^2} \\]\n\n\nThe function in R: sd()\nThe sample standard deviation \\(s\\) is the same as the sample variance \\(s^2\\): we’ve just taken the square root. One reason for using the sample standard deviation is that it at times is more interpret-able than the sample variance, since it’s measured in units rather than units squared.\nFor our list:\n\\[ s =  1.69 \\] We can say, therefore, that each data point is about 1.7 units apart from each other.\n\nWhile the sample variance and sample standard deviation are great for measuring symmetric data (which appear enough in statistics) and also show up a lot in the theory of some topics that we will later discover, they do have their faults.\nNamely, when data is not symmetric, the square around \\(x_i - \\bar{x}\\) can cause some issues. Asymmetrical data will have many values \\(x_i\\) (large or small) which are far from the mean \\(\\bar{x}\\).\nIf \\(x_i - \\bar{x}\\) is large, then \\((x_i - \\bar{x})^2\\) will be very large. Therefore, \\(s^2\\) and \\(s\\) can produce values that are overestimates of the spread of most of the data. Here are two measures of spread which counter-act this.\n\n\nIQR (Interquartile Range)\nThe IQR is the difference between the median of the larger half of the sorted data set, \\(Q3\\), and the median of the smaller half, \\(Q1\\).\n\n\nThe function in R: IQR()\n \n\\[ IQR = Q_3 - Q_1 \\]  \nLet’s calculate the IQR for the list of eleven numbers we’ve been working with. First, we find the median of our dataset. That’s \\(8\\). Then, we split the data into two halves of five. Then we find the medians of these halves. and take the difference. These steps are visualized below.\n \n\\[ 6 \\quad 7 \\quad {\\Large 7 \\quad  7} \\quad 8 \\quad  {\\large 8} \\quad 9 \\quad {\\Large 9 \\quad 10} \\quad 11  \\quad 11\\]  \nWe have that \\(Q_3 = 9.5\\) and \\(Q_1 = 7\\). Then:\n \n\\[IQR =  9.5−7 = 2.5\\]\nThe reason the IQR works well for asymmetric data is because the measure of center it’s based on is the median, not the mean. The median, being just the middle point of the data and not a value obtained by calculation of all the numbers in a list, is not impacted when extreme values are tacked onto the end of the list.\n\n\n\n\n\n\nAdditional Desiderata\n\n\n\n\nIs robust to extreme values (outliers).\n\n\n\nOur final measure of spread is another option which is resillent against outliers, but is based off of the mean instead of the median.\n\n\nMean Absolute Deviation (MAD)\nThe \\(MAD\\) is very similar to the sample variance \\(s^2\\), except that:\n\nwe divide by \\(n\\) rather than \\(n-1\\);\nwe take the absolute value of \\(x_i - \\bar{x}\\) instead of squaring it.\n\n\\[\nMAD: \\quad \\frac{1}{n}\\sum_{i = 1}^n |x_i - \\bar{x}|\n\\]\nThe key difference is the second one. The MAD is great for summarizing skewed distributions because it isn’t bothered too much by the presence of extreme values in a set of numbers. That’s because the absolute value bar just ensures a number is positive; it doesn’t further amplify that number by squaring it.\n\n\n\n\n\n\nAdditional Desiderata\n\n\n\n\nIs robust to extreme values (outliers).",
+    "crumbs": [
+      "Notes",
+      "Summarization",
+      "Summarizing Numerical Data"
+    ]
+  },
+  {
+    "objectID": "2-summarizing-data/02-summarizing-numerical-data/notes.html#summary",
+    "href": "2-summarizing-data/02-summarizing-numerical-data/notes.html#summary",
+    "title": "Summarizing Numerical Data",
+    "section": "Summary",
+    "text": "Summary\nA summary of a summaries…this better be brief! Summaries of numerical data - graphical and numerical - often involve choices of what information to include and what information to omit. These choices involve a degree of judgement and knowledge of the criteria that were used to construct the commonly used statistics and graphics.\nContinue on to the tutorial portion of the notes",
+    "crumbs": [
+      "Notes",
+      "Summarization",
+      "Summarizing Numerical Data"
+    ]
+  },
+  {
+    "objectID": "2-summarizing-data/02-summarizing-numerical-data/notes.html#footnotes",
+    "href": "2-summarizing-data/02-summarizing-numerical-data/notes.html#footnotes",
+    "title": "Summarizing Numerical Data",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThe ggplot2 package in R defaults to 30 bins across the range of the data. That’s a very rough rule-of-thumb, so tinkering is always a good idea.↩︎\nTo read more about one common way to construct a box plot, see the ggplot2 documentation.↩︎\nThat is, unless you aggregate! The aggregation performed by a histogram or a density plot is what allows us to describe numerical data as unimodel or bimodal.↩︎",
+    "crumbs": [
+      "Notes",
+      "Summarization",
+      "Summarizing Numerical Data"
+    ]
+  },
+  {
     "objectID": "2-summarizing-data/01-summarizing-categorical-data/tutorial.html",
     "href": "2-summarizing-data/01-summarizing-categorical-data/tutorial.html",
     "title": "Summarizing Categorical Data",
@@ -560,6 +695,62 @@
     "text": "Footnotes\n\n\nThis argument is generally not important for the other plots we create in this course, which is why in the initial piece of code featuring geom_bar(), it was not specified at all.↩︎"
   },
   {
+    "objectID": "2-summarizing-data/01-summarizing-categorical-data/slides.html#cq-1",
+    "href": "2-summarizing-data/01-summarizing-categorical-data/slides.html#cq-1",
+    "title": "Summarizing Categorical Data",
+    "section": "CQ 1",
+    "text": "CQ 1\n\nThe next four subquestions are based on the same table."
+  },
+  {
+    "objectID": "2-summarizing-data/01-summarizing-categorical-data/slides.html#section",
+    "href": "2-summarizing-data/01-summarizing-categorical-data/slides.html#section",
+    "title": "Summarizing Categorical Data",
+    "section": "",
+    "text": "The table below displays data from a survey on a class of students.\n\n\nWhat proportion of the class was in the marching band?\n\n\n  \n    −\n    +\n \n 00:30\n \n\nAn example of a marginal proportion."
+  },
+  {
+    "objectID": "2-summarizing-data/01-summarizing-categorical-data/slides.html#section-1",
+    "href": "2-summarizing-data/01-summarizing-categorical-data/slides.html#section-1",
+    "title": "Summarizing Categorical Data",
+    "section": "",
+    "text": "What proportion of those in the marching band where juniors?\n\n\n  \n    −\n    +\n \n 00:30\n \n\nAn example of a conditional proportion."
+  },
+  {
+    "objectID": "2-summarizing-data/01-summarizing-categorical-data/slides.html#section-2",
+    "href": "2-summarizing-data/01-summarizing-categorical-data/slides.html#section-2",
+    "title": "Summarizing Categorical Data",
+    "section": "",
+    "text": "What proportion were sophomores not in the marching band?\n\n\n  \n    −\n    +\n \n 00:30\n \n\nAn example of a joint proportion."
+  },
+  {
+    "objectID": "2-summarizing-data/01-summarizing-categorical-data/slides.html#section-3",
+    "href": "2-summarizing-data/01-summarizing-categorical-data/slides.html#section-3",
+    "title": "Summarizing Categorical Data",
+    "section": "",
+    "text": "What were the dimensions of the raw data from which this table was constructed?\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "2-summarizing-data/01-summarizing-categorical-data/slides.html#section-4",
+    "href": "2-summarizing-data/01-summarizing-categorical-data/slides.html#section-4",
+    "title": "Summarizing Categorical Data",
+    "section": "",
+    "text": "How would you characterize the association between these two variables?\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "2-summarizing-data/01-summarizing-categorical-data/slides.html#cq-2",
+    "href": "2-summarizing-data/01-summarizing-categorical-data/slides.html#cq-2",
+    "title": "Summarizing Categorical Data",
+    "section": "CQ 2",
+    "text": "CQ 2\nPolitical affiliation and college degree status of 500 survey participants.\n\n\nWhich group is the largest?\n\n\nThe General Social Survey is a widely used sources of data on the attitudes, behaviors, and attributes of Americans. This plot shows the relationship between the political affiliation and college degree status of 500 participants.\nCannot tell which group is the largest since this plot as been normalized so that the proportions within each party sum to 1. The unnormalized plot on the following slide is one that allows us to answer this questions.\nThe unnormalized bar chart of counts preserves original counts and thus is good at comparing joint proportions. The normalized bar count shows condition proportions and thus is good for showing associations between variables.\n\n\n  \n    −\n    +\n \n 01:00"
+  },
+  {
+    "objectID": "2-summarizing-data/01-summarizing-categorical-data/slides.html#section-5",
+    "href": "2-summarizing-data/01-summarizing-categorical-data/slides.html#section-5",
+    "title": "Summarizing Categorical Data",
+    "section": "",
+    "text": "What does this plot show?\n\n\nImportant note: it looks like a leading “1” was cropped from the numbers along the y axis.\nThis is a confusing stacked bar chart! (unfortunately I wasn’t able to track down the source.)\nThe height of each total bar appears to be the energy supply from renewables worldwide in each of these years. The proportion on top, however, appears to be that number divided by the global total energy supply, which changes every year. The fact that those proportions are decreasing left to right as the bar heights are increasing suggests that renewables are increasing every year (the numerator) but the total energy supply (the denominator) is increasing at a faster rate.\n\n\n  \n    −\n    +\n \n 01:00"
+  },
+  {
     "objectID": "2-summarizing-data/01-summarizing-categorical-data/notes.html",
     "href": "2-summarizing-data/01-summarizing-categorical-data/notes.html",
     "title": "Summarizing Categorical Data",
@@ -582,6 +773,20 @@
       "Summarization",
       "Summarizing Categorical Data"
     ]
+  },
+  {
+    "objectID": "2-summarizing-data/02-summarizing-numerical-data/tutorial.html",
+    "href": "2-summarizing-data/02-summarizing-numerical-data/tutorial.html",
+    "title": "Summarizing Numerical Data",
+    "section": "",
+    "text": "Once you have your data in front of you, you’ve seen how we can form visual summaries with ggplot2. But how can we calculate numerical summaries? Furthermore, what if we are concerned about summarizing a portion of our data, like just one species of penguin at a time? We will answer these questions below, and introduce some new functions from the dplyr package (within the tidyverse library) along the way. We’ll also look at how factor() can come in handy while plotting.\nIf you are playing along in RStudio while reading these notes (which we strongly recommend!), be sure to start off by loading the two packages that are necessary for the tutorial by running the following code."
+  },
+  {
+    "objectID": "2-summarizing-data/02-summarizing-numerical-data/tutorial.html#summary",
+    "href": "2-summarizing-data/02-summarizing-numerical-data/tutorial.html#summary",
+    "title": "Summarizing Numerical Data",
+    "section": "Summary",
+    "text": "Summary\nA summary of a summaries…this better be brief! Summaries of numerical data - graphical and numerical - often involve choices of what information to include and what information to omit. These choices involve a degree of judgement and knowledge of the criteria that were used to construct the commonly used statistics and graphics."
   },
   {
     "objectID": "2-summarizing-data/labs/class-survey/part-2.html",
@@ -984,7 +1189,7 @@
     "href": "assignments.html#worksheets",
     "title": "Assignments",
     "section": "Worksheets",
-    "text": "Worksheets\nWorksheets are pen-and-paper practice problems that we work on in class. The goal of the worksheets is simply practice: they help you drill the techniques needed to complete the labs.\n\n\n\nWS: Taxonomy of Data\n\n\n\nNo matching items"
+    "text": "Worksheets\nWorksheets are pen-and-paper practice problems that we work on in class. The goal of the worksheets is simply practice: they help you drill the techniques needed to complete the labs.\n\n\n\nWS: Taxonomy of Data\n\n\nWS: Summarizing Categorical Data\n\n\n\nNo matching items"
   },
   {
     "objectID": "assets/quiz-slides.html#individual-quiz",
