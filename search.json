@@ -775,6 +775,69 @@
     ]
   },
   {
+    "objectID": "2-summarizing-data/02-summarizing-numerical-data/slides.html#describing-shape",
+    "href": "2-summarizing-data/02-summarizing-numerical-data/slides.html#describing-shape",
+    "title": "Summarizing Numerical Data",
+    "section": "Describing Shape",
+    "text": "Describing Shape\n\nWhich of these variables do you expect to be uniformly distributed?\n\nbill length of Gentoo penguins\nsalaries of a random sample of people from California\nhouse sale prices in San Francisco\nbirthdays of classmates (day of the month)\n\nPlease vote at pollev.com.\n\n\n  \n    −\n    +\n \n 01:00\n \n\nCorrect answer: 4.T\nThis lends itself very well to boardwork: you can ask a student to tell you how to draw the distribution birthdays. Topics to bring up:\n\nBarchart shows more information than a histgram (which would aggregate)\nFor discrete numerical, barchart is fine as long as the number of categories isn’t too great.\nBirthdays isn’t quite uniform: you would expect 29, 30, 31 to have fewer since not all months have those dayes.\n\nYou can continue the same approach to drawing the remaining three distribution: 1) bimodal (separated out by species) and symmetric (as demonstrated on the next slide) 2) unimodal and heavily right skewed 3) unimodal and right skewed."
+  },
+  {
+    "objectID": "2-summarizing-data/02-summarizing-numerical-data/slides.html#mean-median-mode-which-is-best",
+    "href": "2-summarizing-data/02-summarizing-numerical-data/slides.html#mean-median-mode-which-is-best",
+    "title": "Summarizing Numerical Data",
+    "section": "Mean, median, mode: which is best?",
+    "text": "Mean, median, mode: which is best?\n\n\nIt depends on your desiderata: the nature of your data and what you seek to capture in your summary.\n\n\n\n\nGet out a piece of paper. You’ll be watching a 3 minute video that discusses characteristics of a typical human. Note which numerical summaries are used and what for."
+  },
+  {
+    "objectID": "2-summarizing-data/02-summarizing-numerical-data/slides.html#section-1",
+    "href": "2-summarizing-data/02-summarizing-numerical-data/slides.html#section-1",
+    "title": "Summarizing Numerical Data",
+    "section": "",
+    "text": "After the video, you can write on the board each of mean, median, mode and have students list measures that were reported. There are many modes because lots of the data that they collect is categorical."
+  },
+  {
+    "objectID": "2-summarizing-data/02-summarizing-numerical-data/slides.html#general-advice",
+    "href": "2-summarizing-data/02-summarizing-numerical-data/slides.html#general-advice",
+    "title": "Summarizing Numerical Data",
+    "section": "General Advice",
+    "text": "General Advice\n\n\nMeans are often a good default for symmetric data.\n\n\n\n\nMeans are sensitive to very large and small values, so can be deceptive on skewed data. &gt; Use a median\n\n\n\n\nModes are often the only option for categorical data.\n\n\n\nBut there are other notions of typical… what about a maximum?"
+  },
+  {
+    "objectID": "2-summarizing-data/02-summarizing-numerical-data/slides.html#section-2",
+    "href": "2-summarizing-data/02-summarizing-numerical-data/slides.html#section-2",
+    "title": "Summarizing Numerical Data",
+    "section": "",
+    "text": "This is an interesting example of when we don’t use a measure of central tendency to characterize the distribution. The answer to, “What will the temperature be tomorrow?” is generally answered not with an average but with a max. This is a good question to put to students: why do we characterize daily temperatures by their max?"
+  },
+  {
+    "objectID": "2-summarizing-data/02-summarizing-numerical-data/slides.html#section-4",
+    "href": "2-summarizing-data/02-summarizing-numerical-data/slides.html#section-4",
+    "title": "Summarizing Numerical Data",
+    "section": "",
+    "text": "This is a nice but not necessary example of an excellent visualization of summary statistics. Every dot is a max temp on a day of the year over a 40 year span. The annotations of the PWN heat dome are very effective in showing by how much they are the max of a distribution of maxes."
+  },
+  {
+    "objectID": "2-summarizing-data/02-summarizing-numerical-data/slides.html#section-5",
+    "href": "2-summarizing-data/02-summarizing-numerical-data/slides.html#section-5",
+    "title": "Summarizing Numerical Data",
+    "section": "",
+    "text": "Why are measures of spread so important? Consider the following question.\n\n\n\nThere are two new food delivery services that open in Berkeley: Oski Eats and Cal Cravings. A friend of yours that took Stat 20 collected data on each and noted that Oski Eats has a mean delivery time of 29 minutes and Cal Cravings a mean delivery time of 27 minutes. Which would would you rather order from?\n\n\nThis starts off as a softball, so you probably don’t want to give too much time or bother with a poll. Simply ask students why they voted for Cal Cravings and then give them a bit more information…"
+  },
+  {
+    "objectID": "2-summarizing-data/02-summarizing-numerical-data/slides.html#one-possible-reality",
+    "href": "2-summarizing-data/02-summarizing-numerical-data/slides.html#one-possible-reality",
+    "title": "Summarizing Numerical Data",
+    "section": "One possible reality",
+    "text": "One possible reality"
+  },
+  {
+    "objectID": "2-summarizing-data/02-summarizing-numerical-data/slides.html#section-6",
+    "href": "2-summarizing-data/02-summarizing-numerical-data/slides.html#section-6",
+    "title": "Summarizing Numerical Data",
+    "section": "",
+    "text": "Which would would you rather order from?\n\n\n  \n    −\n    +\n \n 01:00\n \n\nNow you can ask students to make a good argument for both options. Cal Cravings is shorter on average but is very variable; its good for the gamblers. For students who value predictability, Oski Eats is better because of its smaller spread."
+  },
+  {
     "objectID": "2-summarizing-data/02-summarizing-numerical-data/tutorial.html",
     "href": "2-summarizing-data/02-summarizing-numerical-data/tutorial.html",
     "title": "Summarizing Numerical Data",
@@ -1189,7 +1252,7 @@
     "href": "assignments.html#worksheets",
     "title": "Assignments",
     "section": "Worksheets",
-    "text": "Worksheets\nWorksheets are pen-and-paper practice problems that we work on in class. The goal of the worksheets is simply practice: they help you drill the techniques needed to complete the labs.\n\n\n\nWS: Taxonomy of Data\n\n\nWS: Summarizing Categorical Data\n\n\n\nNo matching items"
+    "text": "Worksheets\nWorksheets are pen-and-paper practice problems that we work on in class. The goal of the worksheets is simply practice: they help you drill the techniques needed to complete the labs.\n\n\n\nWS: Taxonomy of Data\n\n\nWS: Summarizing Categorical Data\n\n\nWS: Summarizing Numerical Data\n\n\n\nNo matching items"
   },
   {
     "objectID": "assets/quiz-slides.html#individual-quiz",
