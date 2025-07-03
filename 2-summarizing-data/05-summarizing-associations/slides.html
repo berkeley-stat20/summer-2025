@@ -419,9 +419,166 @@ STAT 20: Introduction to Probability and Statistics
 </div>
 
 </section>
+<section id="agenda" class="slide level2">
+<h2>Agenda</h2>
+<ul>
+<li>Announcements</li>
+<li>Reading Questions</li>
+<li><em>Break</em></li>
+<li>Worksheet: <em>Summarizing Numerical Associations</em></li>
+<li>If time permits: the correlation coefficient <span class="math inline">\(r\)</span></li>
+</ul>
+</section>
+<section id="announcements" class="slide level2">
+<h2>Announcements</h2>
+<ul>
+<li>Lab 2, part 2 <strong>shortened</strong>: see Ed Announcement</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Quiz 2 tomorrow (make sure you arrive on time)</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Portfolio 2 due tomorrow at 5pm</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Sorry about the bCourses announcement; that was meant for my other class. Group tutoring is tomorrow from 5-7pm in Evans 340</li>
+</ul>
+</div>
+</section>
 <section>
-<section id="concept-questions" class="title-slide slide level1 center">
-<h1>Concept Questions</h1>
+<section id="reading-questions" class="title-slide slide level1 center">
+<h1>Reading Questions</h1>
+<ul>
+<li>Please put your laptops under your desk and your phones away.</li>
+<li>Write your name, ID, and bubble in Version “A” on your answer sheet.</li>
+<li>You may work only with those at your table!</li>
+</ul>
+</section>
+<section id="describe-the-meaning-of-an-association-between-two-variables." class="slide level2">
+<h2>Describe the meaning of an <em>association</em> between two variables.</h2>
+<ul>
+<li><p>A: A change in the values of the first variable directly causes a change in the values of the second variable.</p></li>
+<li><p>B: The values of the second variable vary depending on the values of the first variable.</p></li>
+<li><p>C: The values of the second variable do not vary depending on the values of the first variable.</p></li>
+</ul>
+<div id="timer_f73b2689f703fe43a33b323acd45039f67569aa4" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
+ </div>
+</section>
+<section id="the-correlation-coefficient-rbetween-two-numerical-variables-is--.3.-what-does-that-tell-you-about-the-slope-of-the-corresponding-least-squares-line-hint-think-carefully-about-what-kinds-of-values-standard-deviation-can-take." class="slide level2">
+<h2>The correlation coefficient, <span class="math inline">\(r\)</span>,between two numerical variables is -.3. What does that tell you about the slope of the corresponding least squares line? <em>Hint</em>: think carefully about what kinds of values standard deviation can take.</h2>
+<ul>
+<li><p>A: It will be negative</p></li>
+<li><p>B: It will be positive</p></li>
+<li><p>C: It may either be negative or positive.</p></li>
+</ul>
+<div id="timer_f73b2689f703fe43a33b323acd45039f67569aa4" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section>
+<section id="given-two-numerical-variables-x-and-y-and-a-linear-model-which-relates-them-what-is-the-correct-way-to-calculate-a-residual-hint-what-does-a-positive-value-for-a-residual-mean-visually" class="slide level2">
+<h2>Given two numerical variables <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> and a linear model which relates them, what is the correct way to calculate a residual? <em>Hint</em>: What does a positive value for a residual mean visually?</h2>
+<ul>
+<li>A: <span class="math inline">\(\hat{y}_i - y_i\)</span></li>
+<li>B: <span class="math inline">\(\hat{y}_i - x_i\)</span></li>
+<li>C: <span class="math inline">\(y_i - \hat{y}_i\)</span></li>
+<li>D: <span class="math inline">\(\hat{x}_i - x_i\)</span></li>
+<li>E: The correct answer is not here.</li>
+</ul>
+<div id="timer_f73b2689f703fe43a33b323acd45039f67569aa4" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">40</span></code>
+ </div>
+</section>
+<section id="i-have-a-data-frame-called-df-with-two-numerical-columns-x-and-y.-which-of-the-following-lines-of-code-creates-a-linear-model-model-which-explains-y-as-a-function-of-x" class="slide level2">
+<h2>I have a data frame called <code>df</code> with two numerical columns, <code>x</code> and <code>y</code>. Which of the following lines of code creates a linear model <code>model</code> which explains <code>y</code> as a function of <code>x</code>?</h2>
+<ul>
+<li>A: <code>model &lt;- lm(x ~ y, data = df)</code></li>
+<li>B: <code>model &lt;- lm(y, x, data = df)</code></li>
+<li>C: <code>model &lt;- lm(x, y, data = df)</code></li>
+<li>D: <code>model &lt;- lm(y ~ x, data = df)</code></li>
+<li>E: <code>model &lt;- lm(y |&gt; x, data = df)</code></li>
+</ul>
+<div id="timer_f73b2689f703fe43a33b323acd45039f67569aa4" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">40</span></code>
+ </div>
+</section>
+<section id="which-piece-of-code-creates-a-two-column-dataframe-with-the-fitted-values-and-residuals-of-the-model-as-columns" class="slide level2">
+<h2>Which piece of code creates a two-column dataframe with the fitted values and residuals of the <code>model</code> as columns?</h2>
+<ul>
+<li>A</li>
+</ul>
+<pre><code>df |&gt; 
+  mutate(fitted_values = fitted(model),
+              residuals = resid(model)) |&gt;
+  select(fitted_values,
+         residuals)</code></pre>
+<ul>
+<li>B</li>
+</ul>
+<pre><code>df |&gt; 
+  summarise(fitted_values = fitted(model),
+              residuals = resid(model)) |&gt;
+  filter(fitted_values,
+         residuals)</code></pre>
+<div id="timer_f73b2689f703fe43a33b323acd45039f67569aa4" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">40</span></code>
+ </div>
+</section></section>
+<section id="break" class="title-slide slide level1 center">
+<h1>Break</h1>
+<div id="timer_f73b2689f703fe43a33b323acd45039f67569aa4" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section>
+
+<section id="the-correlation-coefficient-r" class="title-slide slide level1 center">
+<h1>The correlation coefficient <span class="math inline">\(r\)</span></h1>
+
+</section>
+
+<section id="worksheet-summarizing-numerical-associations" class="title-slide slide level1 center">
+<h1>Worksheet: <em>Summarizing Numerical Associations</em></h1>
+<div id="timer_f73b2689f703fe43a33b323acd45039f67569aa4" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section>
+
+<section>
+<section id="appendix---more-practice" class="title-slide slide level1 center">
+<h1>Appendix - more practice!</h1>
 
 </section>
 <section id="estimate-the-correlation" class="slide level2">
@@ -445,7 +602,7 @@ STAT 20: Introduction to Probability and Statistics
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<div id="timer_5c10388888a814774c525fead400afbd1f5e0a15" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_f73b2689f703fe43a33b323acd45039f67569aa4" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -459,7 +616,7 @@ STAT 20: Introduction to Probability and Statistics
 <img data-src="slides_files/figure-revealjs/unnamed-chunk-2-1.png" class="quarto-figure quarto-figure-center r-stretch" width="768"><div class="poll">
 <p>Which <em>four</em> plots exhibit the strongest association?</p>
 </div>
-<div id="timer_5c10388888a814774c525fead400afbd1f5e0a15" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_f73b2689f703fe43a33b323acd45039f67569aa4" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -485,7 +642,7 @@ STAT 20: Introduction to Probability and Statistics
 <div class="columns">
 <div class="column" style="width:45%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb1-1" class="hljs-ln-code"><a></a>df_f</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb3-1" class="hljs-ln-code"><a></a>df_f</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:55%;">
 
@@ -496,7 +653,7 @@ STAT 20: Introduction to Probability and Statistics
 <div class="columns">
 <div class="column" style="width:45%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb2-1" class="hljs-ln-code"><a></a>df_f</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a></a>df_f</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>        x            y
 1   -8.00 -1.307007369
@@ -631,12 +788,12 @@ STAT 20: Introduction to Probability and Statistics
 <div class="columns">
 <div class="column" style="width:45%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a></a>df_f <span class="sc">|&gt;</span></span>
-<span id="cb4-2" class="hljs-ln-code"><a></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> x,</span>
-<span id="cb4-3" class="hljs-ln-code"><a></a>               <span class="at">y =</span> y)) <span class="sc">+</span></span>
-<span id="cb4-4" class="hljs-ln-code"><a></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb4-5" class="hljs-ln-code"><a></a>    <span class="fu">ylim</span>(<span class="sc">-</span><span class="dv">9</span>, <span class="dv">9</span>) <span class="sc">+</span></span>
-<span id="cb4-6" class="hljs-ln-code"><a></a>    <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb6-1" class="hljs-ln-code"><a></a>df_f <span class="sc">|&gt;</span></span>
+<span id="cb6-2" class="hljs-ln-code"><a></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> x,</span>
+<span id="cb6-3" class="hljs-ln-code"><a></a>               <span class="at">y =</span> y)) <span class="sc">+</span></span>
+<span id="cb6-4" class="hljs-ln-code"><a></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb6-5" class="hljs-ln-code"><a></a>    <span class="fu">ylim</span>(<span class="sc">-</span><span class="dv">9</span>, <span class="dv">9</span>) <span class="sc">+</span></span>
+<span id="cb6-6" class="hljs-ln-code"><a></a>    <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:55%;">
 
@@ -647,12 +804,12 @@ STAT 20: Introduction to Probability and Statistics
 <div class="columns">
 <div class="column" style="width:45%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb5-1" class="hljs-ln-code"><a></a>df_f <span class="sc">|&gt;</span></span>
-<span id="cb5-2" class="hljs-ln-code"><a></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> x,</span>
-<span id="cb5-3" class="hljs-ln-code"><a></a>               <span class="at">y =</span> y)) <span class="sc">+</span></span>
-<span id="cb5-4" class="hljs-ln-code"><a></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb5-5" class="hljs-ln-code"><a></a>    <span class="fu">ylim</span>(<span class="sc">-</span><span class="dv">9</span>, <span class="dv">9</span>) <span class="sc">+</span></span>
-<span id="cb5-6" class="hljs-ln-code"><a></a>    <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb7-1" class="hljs-ln-code"><a></a>df_f <span class="sc">|&gt;</span></span>
+<span id="cb7-2" class="hljs-ln-code"><a></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> x,</span>
+<span id="cb7-3" class="hljs-ln-code"><a></a>               <span class="at">y =</span> y)) <span class="sc">+</span></span>
+<span id="cb7-4" class="hljs-ln-code"><a></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb7-5" class="hljs-ln-code"><a></a>    <span class="fu">ylim</span>(<span class="sc">-</span><span class="dv">9</span>, <span class="dv">9</span>) <span class="sc">+</span></span>
+<span id="cb7-6" class="hljs-ln-code"><a></a>    <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:55%;">
 <div class="cell">
@@ -671,11 +828,11 @@ STAT 20: Introduction to Probability and Statistics
 <div class="columns">
 <div class="column" style="width:45%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb6-1" class="hljs-ln-code"><a></a>df_f <span class="sc">|&gt;</span></span>
-<span id="cb6-2" class="hljs-ln-code"><a></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> x,</span>
-<span id="cb6-3" class="hljs-ln-code"><a></a>               <span class="at">y =</span> y)) <span class="sc">+</span></span>
-<span id="cb6-4" class="hljs-ln-code"><a></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb6-5" class="hljs-ln-code"><a></a>    <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb8-1" class="hljs-ln-code"><a></a>df_f <span class="sc">|&gt;</span></span>
+<span id="cb8-2" class="hljs-ln-code"><a></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> x,</span>
+<span id="cb8-3" class="hljs-ln-code"><a></a>               <span class="at">y =</span> y)) <span class="sc">+</span></span>
+<span id="cb8-4" class="hljs-ln-code"><a></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb8-5" class="hljs-ln-code"><a></a>    <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:55%;">
 
@@ -686,11 +843,11 @@ STAT 20: Introduction to Probability and Statistics
 <div class="columns">
 <div class="column" style="width:45%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb7-1" class="hljs-ln-code"><a></a>df_f <span class="sc">|&gt;</span></span>
-<span id="cb7-2" class="hljs-ln-code"><a></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> x,</span>
-<span id="cb7-3" class="hljs-ln-code"><a></a>               <span class="at">y =</span> y)) <span class="sc">+</span></span>
-<span id="cb7-4" class="hljs-ln-code"><a></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb7-5" class="hljs-ln-code"><a></a>    <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb9-1" class="hljs-ln-code"><a></a>df_f <span class="sc">|&gt;</span></span>
+<span id="cb9-2" class="hljs-ln-code"><a></a>    <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> x,</span>
+<span id="cb9-3" class="hljs-ln-code"><a></a>               <span class="at">y =</span> y)) <span class="sc">+</span></span>
+<span id="cb9-4" class="hljs-ln-code"><a></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb9-5" class="hljs-ln-code"><a></a>    <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:55%;">
 <div class="cell">
@@ -707,15 +864,15 @@ STAT 20: Introduction to Probability and Statistics
 <section id="pearson-correlation-and-scale-6" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Pearson Correlation and Scale</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb8-1" class="hljs-ln-code"><a></a>df_f <span class="sc">|&gt;</span></span>
-<span id="cb8-2" class="hljs-ln-code"><a></a>    <span class="fu">summarize</span>(<span class="at">pearson =</span> <span class="fu">cor</span>(x, y))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb10-1" class="hljs-ln-code"><a></a>df_f <span class="sc">|&gt;</span></span>
+<span id="cb10-2" class="hljs-ln-code"><a></a>    <span class="fu">summarize</span>(<span class="at">pearson =</span> <span class="fu">cor</span>(x, y))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="pearson-correlation-and-scale-7" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Pearson Correlation and Scale</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb9-1" class="hljs-ln-code"><a></a>df_f <span class="sc">|&gt;</span></span>
-<span id="cb9-2" class="hljs-ln-code"><a></a>    <span class="fu">summarize</span>(<span class="at">pearson =</span> <span class="fu">cor</span>(x, y))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb11-1" class="hljs-ln-code"><a></a>df_f <span class="sc">|&gt;</span></span>
+<span id="cb11-2" class="hljs-ln-code"><a></a>    <span class="fu">summarize</span>(<span class="at">pearson =</span> <span class="fu">cor</span>(x, y))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>      pearson
 1 -0.03106456</code></pre>
@@ -815,7 +972,7 @@ STAT 20: Introduction to Probability and Statistics
 <div class="poll">
 <p>Which state has the highest graduation rate given its poverty rate?</p>
 </div>
-<div id="timer_5c10388888a814774c525fead400afbd1f5e0a15" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_f73b2689f703fe43a33b323acd45039f67569aa4" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -837,9 +994,9 @@ STAT 20: Introduction to Probability and Statistics
       }</style></aside>
 </div>
 </section></section>
-<section id="worksheet-summarizing-numerical-associations" class="title-slide slide level1 center">
+<section id="worksheet-summarizing-numerical-associations-1" class="title-slide slide level1 center">
 <h1>Worksheet: Summarizing Numerical Associations</h1>
-<div id="timer_5c10388888a814774c525fead400afbd1f5e0a15" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_f73b2689f703fe43a33b323acd45039f67569aa4" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -848,9 +1005,9 @@ STAT 20: Introduction to Probability and Statistics
  </div>
 </section>
 
-<section id="break" class="title-slide slide level1 center">
+<section id="break-1" class="title-slide slide level1 center">
 <h1>Break</h1>
-<div id="timer_5c10388888a814774c525fead400afbd1f5e0a15" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_f73b2689f703fe43a33b323acd45039f67569aa4" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -861,7 +1018,7 @@ STAT 20: Introduction to Probability and Statistics
 
 <section id="lab-part-2-flights" class="title-slide slide level1 center">
 <h1>Lab Part 2: Flights</h1>
-<div id="timer_5c10388888a814774c525fead400afbd1f5e0a15" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_f73b2689f703fe43a33b323acd45039f67569aa4" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>

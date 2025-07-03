@@ -906,6 +906,48 @@
     ]
   },
   {
+    "objectID": "2-summarizing-data/04-conditioning/slides.html#agenda",
+    "href": "2-summarizing-data/04-conditioning/slides.html#agenda",
+    "title": "Conditioning",
+    "section": "Agenda",
+    "text": "Agenda\n\nAnnouncements\nReading Questions: Conditioning\nBreak\nWorksheet: Conditioning\nBreak\nLab 2: Flights"
+  },
+  {
+    "objectID": "2-summarizing-data/04-conditioning/slides.html#announcements",
+    "href": "2-summarizing-data/04-conditioning/slides.html#announcements",
+    "title": "Conditioning",
+    "section": "Announcements",
+    "text": "Announcements\n\nYou are allowed one, one-sided, handwritten cheatsheet for the Quiz on Thursday.\n\n\n\nPortfolio 2 due Thursday, not Friday, at 8pm."
+  },
+  {
+    "objectID": "2-summarizing-data/04-conditioning/slides.html#which-of-the-following-pieces-of-code-will-not-cause-an-error",
+    "href": "2-summarizing-data/04-conditioning/slides.html#which-of-the-following-pieces-of-code-will-not-cause-an-error",
+    "title": "Conditioning",
+    "section": "Which of the following pieces of code will not cause an error?",
+    "text": "Which of the following pieces of code will not cause an error?\n\nA\n\npenguins \n  |&gt; mutate(bill_size = bill_len * bill_dep) \n  |&gt; select(bill_size)\n\nB\n\npenguins |&gt; \n  mutate(bill_size = bill_len * bill_dep) |&gt;\n  select(bill_size)\n\nC\n\npenguins |&gt; \n  mutate(penguins, bill_size = bill_len * bill_dep) |&gt;\n  select(penguins, bill_size)\n\n  \n    −\n    +\n \n 00:45"
+  },
+  {
+    "objectID": "2-summarizing-data/04-conditioning/slides.html#which-option-describes-a-filter-operation",
+    "href": "2-summarizing-data/04-conditioning/slides.html#which-option-describes-a-filter-operation",
+    "title": "Conditioning",
+    "section": "Which option describes a filter operation?",
+    "text": "Which option describes a filter operation?\n\nA: Subsetting the rows of a data frame according to their position.\nB: Subsetting the columns of a data frame based on their names.\nC: Subsetting the rows of a data frame based on their values of particular variables.\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "2-summarizing-data/04-conditioning/slides.html#what-will-the-following-command-return",
+    "href": "2-summarizing-data/04-conditioning/slides.html#what-will-the-following-command-return",
+    "title": "Conditioning",
+    "section": "What will the following command return?",
+    "text": "What will the following command return?\nmean(c(TRUE, TRUE, TRUE, FALSE))\n\nA TRUE\nB FALSE\nC: An error will be produced\nD: 0.75\nE: 0.25\n\n\n  \n    −\n    +\n \n 00:40"
+  },
+  {
+    "objectID": "2-summarizing-data/04-conditioning/slides.html#which-of-the-following-lines-of-code-correctly-extracts-rows-from-the-penguins-data-frame-that-are-of-the-desired-species",
+    "href": "2-summarizing-data/04-conditioning/slides.html#which-of-the-following-lines-of-code-correctly-extracts-rows-from-the-penguins-data-frame-that-are-of-the-desired-species",
+    "title": "Conditioning",
+    "section": "Which of the following lines of code correctly extracts rows from the penguins data frame that are of the desired species?",
+    "text": "Which of the following lines of code correctly extracts rows from the penguins data frame that are of the desired species?\n\nA: filter(penguins, species %in% c(\"Adelie\", \"Chinstrap\"))\nB: filter(penguins, species == c(\"Adelie\", \"Chinstrap\"))\nC: filter(penguins, species = c(\"Adelie\", \"Chinstrap\"))\nD: slice(penguins, species %in% c(\"Adelie\", \"Chinstrap\"))\nE: select(penguins, species %in% c(\"Adelie\", \"Chinstrap\"))\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
     "objectID": "2-summarizing-data/04-conditioning/slides.html#section",
     "href": "2-summarizing-data/04-conditioning/slides.html#section",
     "title": "Conditioning",
@@ -1258,6 +1300,48 @@
     "text": "The goal of the “Think before you compute” design of these labs is that the students should be able to do their thinking without the distractions of technology. If you project this data frame, that should be sufficient for them to answer all of the questions in Part I.\n\n\n  \n    −\n    +\n \n 25:00"
   },
   {
+    "objectID": "2-summarizing-data/03-a-grammar-of-graphics/slides.html#anouncements",
+    "href": "2-summarizing-data/03-a-grammar-of-graphics/slides.html#anouncements",
+    "title": "A Grammar of Graphics",
+    "section": "Anouncements",
+    "text": "Anouncements\n\nPortfolio 2 due Thursday, July 3rd\n\n\n\nLab 2 due next Tuesday, July 8th\n\n\n\n\nQuiz 1 this week\n\n\n\n\nNo class or OH on Friday - July 4th"
+  },
+  {
+    "objectID": "2-summarizing-data/03-a-grammar-of-graphics/slides.html#which-of-these-geometries-typically-go-with-aesthetic-mappings-where-there-are-two-numerical-variables-one-on-the-x-axis-and-the-other-on-the-y-axis-select-all-that-apply.",
+    "href": "2-summarizing-data/03-a-grammar-of-graphics/slides.html#which-of-these-geometries-typically-go-with-aesthetic-mappings-where-there-are-two-numerical-variables-one-on-the-x-axis-and-the-other-on-the-y-axis-select-all-that-apply.",
+    "title": "A Grammar of Graphics",
+    "section": "Which of these geometries typically go with aesthetic mappings where there are two numerical variables, one on the x axis and the other on the y axis? Select all that apply.",
+    "text": "Which of these geometries typically go with aesthetic mappings where there are two numerical variables, one on the x axis and the other on the y axis? Select all that apply.\n\nA. Violin\nB. Dot\nC. Point\nD. Line\nE. Box\n\n\n  \n    −\n    +\n \n 00:45"
+  },
+  {
+    "objectID": "2-summarizing-data/03-a-grammar-of-graphics/slides.html#how-is-a-stacked-normalized-bar-chart-defined-in-terms-of-the-grammar-of-graphics",
+    "href": "2-summarizing-data/03-a-grammar-of-graphics/slides.html#how-is-a-stacked-normalized-bar-chart-defined-in-terms-of-the-grammar-of-graphics",
+    "title": "A Grammar of Graphics",
+    "section": "How is a stacked, normalized bar chart defined in terms of the grammar of graphics?",
+    "text": "How is a stacked, normalized bar chart defined in terms of the grammar of graphics?\n\nA. one categorical variable mapped to the x-axis, using the bar geometry.\nB. one categorical variable mapped to the x-axis, a second categorical variable mapped to the y-axis, using the bar geometry.\nC. one categorical variable mapped to the x-axis, a second categorical variable mapped to the fill, using the bar geometry.\nD. numerical variable mapped to the x-axis, a second categorical variable mapped to the fill, using the histogram geometry.\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "2-summarizing-data/03-a-grammar-of-graphics/slides.html#which-of-the-following-describes-or-is-an-example-of-mapping",
+    "href": "2-summarizing-data/03-a-grammar-of-graphics/slides.html#which-of-the-following-describes-or-is-an-example-of-mapping",
+    "title": "A Grammar of Graphics",
+    "section": "Which of the following describes or is an example of mapping?",
+    "text": "Which of the following describes or is an example of mapping?\n\nA. Adding a theme to a plot.\nB. The linking of the aesthetic attributes of a plot to the data in a column of a data frame.\nC. Adding an annotation to a plot.\nD. The tweaking of all points on a scatter plot in a cosmetic manner.\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "2-summarizing-data/03-a-grammar-of-graphics/slides.html#true-or-false-a-visualization-using-the-grammar-of-graphics-may-contain-more-than-one-aesthetic-mapping-but-not-more-than-one-geometry.",
+    "href": "2-summarizing-data/03-a-grammar-of-graphics/slides.html#true-or-false-a-visualization-using-the-grammar-of-graphics-may-contain-more-than-one-aesthetic-mapping-but-not-more-than-one-geometry.",
+    "title": "A Grammar of Graphics",
+    "section": "True or False: A visualization using the grammar of graphics may contain more than one aesthetic mapping, but not more than one geometry.",
+    "text": "True or False: A visualization using the grammar of graphics may contain more than one aesthetic mapping, but not more than one geometry.\n\nA. True\nB. False\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "2-summarizing-data/03-a-grammar-of-graphics/slides.html#when-conducting-exploratory-data-analysis-who-is-generally-the-audience-for-your-plots",
+    "href": "2-summarizing-data/03-a-grammar-of-graphics/slides.html#when-conducting-exploratory-data-analysis-who-is-generally-the-audience-for-your-plots",
+    "title": "A Grammar of Graphics",
+    "section": "When conducting exploratory data analysis, who is generally the audience for your plots?",
+    "text": "When conducting exploratory data analysis, who is generally the audience for your plots?\n\nA. Other scientists\nB. Yourself\nC. The public\nD. Your boss\nE. Oski\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
     "objectID": "2-summarizing-data/03-a-grammar-of-graphics/slides.html#section",
     "href": "2-summarizing-data/03-a-grammar-of-graphics/slides.html#section",
     "title": "A Grammar of Graphics",
@@ -1354,6 +1438,55 @@
     "title": "A Grammar of Graphics",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nFor data documentation, see the stat20data R package.↩︎\nFor data documentation, see the palmerpenguins R package.↩︎\nTo see the vast (and somewhat strange) palette of color names that R knows, type colors() at the console.↩︎\nVisualization drawn from the excellent collection of graphics at the Financial Times Covid Tracker https://ig.ft.com/coronavirus-vaccine-tracker/.↩︎\nExplore the themes available within ggplot2 by reading the documentation https://ggplot2.tidyverse.org/reference/ggtheme.html. For the additional themes held in the ggthemes package, read this: https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/.↩︎\nDocumentation for annotation layers in ggplot2: https://ggplot2.tidyverse.org/reference/annotate.html.↩︎"
+  },
+  {
+    "objectID": "2-summarizing-data/05-summarizing-associations/slides.html#agenda",
+    "href": "2-summarizing-data/05-summarizing-associations/slides.html#agenda",
+    "title": "Summarizing Numerical Associations",
+    "section": "Agenda",
+    "text": "Agenda\n\nAnnouncements\nReading Questions\nBreak\nWorksheet: Summarizing Numerical Associations\nIf time permits: the correlation coefficient \\(r\\)"
+  },
+  {
+    "objectID": "2-summarizing-data/05-summarizing-associations/slides.html#announcements",
+    "href": "2-summarizing-data/05-summarizing-associations/slides.html#announcements",
+    "title": "Summarizing Numerical Associations",
+    "section": "Announcements",
+    "text": "Announcements\n\nLab 2, part 2 shortened: see Ed Announcement\n\n\n\nQuiz 2 tomorrow (make sure you arrive on time)\n\n\n\n\nPortfolio 2 due tomorrow at 5pm\n\n\n\n\nSorry about the bCourses announcement; that was meant for my other class. Group tutoring is tomorrow from 5-7pm in Evans 340"
+  },
+  {
+    "objectID": "2-summarizing-data/05-summarizing-associations/slides.html#describe-the-meaning-of-an-association-between-two-variables.",
+    "href": "2-summarizing-data/05-summarizing-associations/slides.html#describe-the-meaning-of-an-association-between-two-variables.",
+    "title": "Summarizing Numerical Associations",
+    "section": "Describe the meaning of an association between two variables.",
+    "text": "Describe the meaning of an association between two variables.\n\nA: A change in the values of the first variable directly causes a change in the values of the second variable.\nB: The values of the second variable vary depending on the values of the first variable.\nC: The values of the second variable do not vary depending on the values of the first variable.\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "2-summarizing-data/05-summarizing-associations/slides.html#the-correlation-coefficient-rbetween-two-numerical-variables-is--.3.-what-does-that-tell-you-about-the-slope-of-the-corresponding-least-squares-line-hint-think-carefully-about-what-kinds-of-values-standard-deviation-can-take.",
+    "href": "2-summarizing-data/05-summarizing-associations/slides.html#the-correlation-coefficient-rbetween-two-numerical-variables-is--.3.-what-does-that-tell-you-about-the-slope-of-the-corresponding-least-squares-line-hint-think-carefully-about-what-kinds-of-values-standard-deviation-can-take.",
+    "title": "Summarizing Numerical Associations",
+    "section": "The correlation coefficient, \\(r\\),between two numerical variables is -.3. What does that tell you about the slope of the corresponding least squares line? Hint: think carefully about what kinds of values standard deviation can take.",
+    "text": "The correlation coefficient, \\(r\\),between two numerical variables is -.3. What does that tell you about the slope of the corresponding least squares line? Hint: think carefully about what kinds of values standard deviation can take.\n\nA: It will be negative\nB: It will be positive\nC: It may either be negative or positive.\n\n\n  \n    −\n    +\n \n 01:00"
+  },
+  {
+    "objectID": "2-summarizing-data/05-summarizing-associations/slides.html#given-two-numerical-variables-x-and-y-and-a-linear-model-which-relates-them-what-is-the-correct-way-to-calculate-a-residual-hint-what-does-a-positive-value-for-a-residual-mean-visually",
+    "href": "2-summarizing-data/05-summarizing-associations/slides.html#given-two-numerical-variables-x-and-y-and-a-linear-model-which-relates-them-what-is-the-correct-way-to-calculate-a-residual-hint-what-does-a-positive-value-for-a-residual-mean-visually",
+    "title": "Summarizing Numerical Associations",
+    "section": "Given two numerical variables \\(x\\) and \\(y\\) and a linear model which relates them, what is the correct way to calculate a residual? Hint: What does a positive value for a residual mean visually?",
+    "text": "Given two numerical variables \\(x\\) and \\(y\\) and a linear model which relates them, what is the correct way to calculate a residual? Hint: What does a positive value for a residual mean visually?\n\nA: \\(\\hat{y}_i - y_i\\)\nB: \\(\\hat{y}_i - x_i\\)\nC: \\(y_i - \\hat{y}_i\\)\nD: \\(\\hat{x}_i - x_i\\)\nE: The correct answer is not here.\n\n\n  \n    −\n    +\n \n 00:40"
+  },
+  {
+    "objectID": "2-summarizing-data/05-summarizing-associations/slides.html#i-have-a-data-frame-called-df-with-two-numerical-columns-x-and-y.-which-of-the-following-lines-of-code-creates-a-linear-model-model-which-explains-y-as-a-function-of-x",
+    "href": "2-summarizing-data/05-summarizing-associations/slides.html#i-have-a-data-frame-called-df-with-two-numerical-columns-x-and-y.-which-of-the-following-lines-of-code-creates-a-linear-model-model-which-explains-y-as-a-function-of-x",
+    "title": "Summarizing Numerical Associations",
+    "section": "I have a data frame called df with two numerical columns, x and y. Which of the following lines of code creates a linear model model which explains y as a function of x?",
+    "text": "I have a data frame called df with two numerical columns, x and y. Which of the following lines of code creates a linear model model which explains y as a function of x?\n\nA: model &lt;- lm(x ~ y, data = df)\nB: model &lt;- lm(y, x, data = df)\nC: model &lt;- lm(x, y, data = df)\nD: model &lt;- lm(y ~ x, data = df)\nE: model &lt;- lm(y |&gt; x, data = df)\n\n\n  \n    −\n    +\n \n 00:40"
+  },
+  {
+    "objectID": "2-summarizing-data/05-summarizing-associations/slides.html#which-piece-of-code-creates-a-two-column-dataframe-with-the-fitted-values-and-residuals-of-the-model-as-columns",
+    "href": "2-summarizing-data/05-summarizing-associations/slides.html#which-piece-of-code-creates-a-two-column-dataframe-with-the-fitted-values-and-residuals-of-the-model-as-columns",
+    "title": "Summarizing Numerical Associations",
+    "section": "Which piece of code creates a two-column dataframe with the fitted values and residuals of the model as columns?",
+    "text": "Which piece of code creates a two-column dataframe with the fitted values and residuals of the model as columns?\n\nA\n\ndf |&gt; \n  mutate(fitted_values = fitted(model),\n              residuals = resid(model)) |&gt;\n  select(fitted_values,\n         residuals)\n\nB\n\ndf |&gt; \n  summarise(fitted_values = fitted(model),\n              residuals = resid(model)) |&gt;\n  filter(fitted_values,\n         residuals)\n\n  \n    −\n    +\n \n 00:40"
   },
   {
     "objectID": "2-summarizing-data/05-summarizing-associations/slides.html#estimate-the-correlation",
