@@ -555,11 +555,225 @@
     ]
   },
   {
+    "objectID": "3-generalization/01-prob-foundations/slides.html#probability-of-two-events",
+    "href": "3-generalization/01-prob-foundations/slides.html#probability-of-two-events",
+    "title": "Probability Foundations",
+    "section": "Probability of two events…",
+    "text": "Probability of two events…\n\nxkcd comic showing two people discussing what it means to have a 50-50 chancehttps://imgs.xkcd.com/comics/prediction.png\n\nMaybe a bit of discussion here about situations in which two things can happen, but what do they think about the chance of each eg. coin toss, even/odd number on a die roll, winning the lottery vs not winning, getting an A in stat 20 vs not etc."
+  },
+  {
+    "objectID": "3-generalization/01-prob-foundations/slides.html#rules-of-probability",
+    "href": "3-generalization/01-prob-foundations/slides.html#rules-of-probability",
+    "title": "Probability Foundations",
+    "section": "Rules of probability",
+    "text": "Rules of probability\nLet \\(\\Omega\\) be the outcome space, and let \\(P(A)\\) denote the probability of the event \\(A\\). Then we have:\n\n\n\\(P(A) \\ge 0\\)\n\n\n\n\n\\(P(\\Omega) = 1\\)\n\n\n\n\nIf \\(A\\) and \\(B\\) are mutually exclusive (\\(A \\cap B = \\{\\}\\)), then \\(P(A \\cup B) = P(A) + P(B)\\)\n\n\nConcepts to review: (KEEP THIS BRIEF, OR INCORPORATE INTO CQ’s) - The first two rules of probability - unions and intersections - mutually exclusive events and the addition rule - good idea to draw Venn diagrams here - Use rule 3 to write down the complement rule, and show what A^C means"
+  },
+  {
+    "objectID": "3-generalization/01-prob-foundations/slides.html#the-linda-problem",
+    "href": "3-generalization/01-prob-foundations/slides.html#the-linda-problem",
+    "title": "Probability Foundations",
+    "section": "The Linda Problem",
+    "text": "The Linda Problem\n\n  \n    −\n    +\n \n 01:00\n \nThe Linda problem is from a very famous experiment conducted by Daniel Kahneman and Amos Tversky in 1983 (The version below is from the book Thinking, Fast and Slow by Kahneman, page 156):\nLinda is thirty-one years old, single, outspoken, and very bright. She majored in philosophy. As a student, she was deeply concerned with issues of discrimination and social justice, and also participated in antinuclear demonstrations.\n\nWhich alternative is more probable?\n\n\nLinda is a bank teller.\nLinda is a bank teller and is active in the feminist movement.\n\n\nCorrect answer: (a) Depending on the response, you can discuss how even though (b) is clearly contained in (a) and therefore has lower probability, an overwhelming majority of their respondents ranked (b) as more likely. “About 85% to 90% of undergraduates at several major universities chose the second option, contrary to logic”, and talk about why this is so. Probability can be tricky and counter-intuitive. If they do well, congratulate them and say that they are among the rare people who understand that \\(P(A \\textbf{ and } B)\\) must be lower than \\(P(A)\\).\n\nKahneman, Daniel. Thinking, Fast and Slow (p. 158). Farrar, Straus and Giroux."
+  },
+  {
+    "objectID": "3-generalization/01-prob-foundations/slides.html#coin-tosses-10-times",
+    "href": "3-generalization/01-prob-foundations/slides.html#coin-tosses-10-times",
+    "title": "Probability Foundations",
+    "section": "Coin tosses: 10 times",
+    "text": "Coin tosses: 10 times\n\nWe can simulate coin tosses and see if the simulations justify our intuitive understanding of what happens when we toss a fair coin. Go over code and review set.seed() and sample(). Maybe change arguments and see what happens.\n\n\nset.seed(12345)\n\ncoin &lt;- c(\"Heads\", \"Tails\")\ntosses &lt;- sample(coin, 10, replace = TRUE)\ndata.frame(tosses) |&gt;\n  group_by(tosses) |&gt; \n  summarise(n = n())\n\n# A tibble: 2 × 2\n  tosses     n\n  &lt;chr&gt;  &lt;int&gt;\n1 Heads      3\n2 Tails      7"
+  },
+  {
+    "objectID": "3-generalization/01-prob-foundations/slides.html#coin-tosses-50-times",
+    "href": "3-generalization/01-prob-foundations/slides.html#coin-tosses-50-times",
+    "title": "Probability Foundations",
+    "section": "Coin tosses: 50 times",
+    "text": "Coin tosses: 50 times\n\nComment on the fact that it is not a 50-50 split.\n\n\nset.seed(12345)\n\ntosses &lt;- sample(coin, 50, replace = TRUE)\ndata.frame(tosses) |&gt;\n  group_by(tosses) |&gt; \n  summarise(n = n())\n\n# A tibble: 2 × 2\n  tosses     n\n  &lt;chr&gt;  &lt;int&gt;\n1 Heads     15\n2 Tails     35"
+  },
+  {
+    "objectID": "3-generalization/01-prob-foundations/slides.html#coin-tosses-500-times",
+    "href": "3-generalization/01-prob-foundations/slides.html#coin-tosses-500-times",
+    "title": "Probability Foundations",
+    "section": "Coin tosses: 500 times",
+    "text": "Coin tosses: 500 times\n\nMaybe tossing five hundred times will improve the split:\n\n\nset.seed(12345)\n\ntosses &lt;- sample(coin, 500, replace = TRUE)\ndata.frame(tosses) |&gt;\n  group_by(tosses) |&gt; \n  summarise(n = n())\n\n# A tibble: 2 × 2\n  tosses     n\n  &lt;chr&gt;  &lt;int&gt;\n1 Heads    251\n2 Tails    249\n\n\nWe see that as the number of tosses increases, the split of heads and tails begins to look closer to 50-50."
+  },
+  {
+    "objectID": "3-generalization/01-prob-foundations/slides.html#looking-at-proportions",
+    "href": "3-generalization/01-prob-foundations/slides.html#looking-at-proportions",
+    "title": "Probability Foundations",
+    "section": "Looking at proportions:",
+    "text": "Looking at proportions:\nHere is a plot of the proportion of tosses that land heads when we toss a coin \\(n\\) times, where \\(n\\) varies from \\(1\\) to \\(1000\\).\n\nBe sure to explain what they are looking at. We see that at the beginning, for a small number of tosses, the proportion of times that the coin lands heads is all over the place, but it eventually settles down to be around 0.5. This verifies our intuition that if we toss a fair coin, the proportion of times that the coin lands heads should be about 0.5. This idea of the probability of a particular outcome as a long run proportion of times that we see that outcome is called the frequentist theory of probability, and we will be using this theory in our class. (A different theory of probability uses a subjective notion of probability, but we won’t get into that at this time.) We will think about the probability of heads as the long-run relative frequency, or the proportion of times the coin will land heads if we toss it many, many times. This fits with our intuition that if we have a fair coin, that means that each of the two possible outcomes will occur roughly the same number of times when we toss it over and over again. This is the justification for calling the two outcomes equally likely and allowing us to define the probability of heads to be 1/2."
+  },
+  {
+    "objectID": "3-generalization/01-prob-foundations/slides.html#section",
+    "href": "3-generalization/01-prob-foundations/slides.html#section",
+    "title": "Probability Foundations",
+    "section": "",
+    "text": "−\n    +\n \n 01:00\n \nSuppose Ali and Bettina are playing a game, in which Ali tosses a fair coin \\(n\\) times, and Bettina wins one dollar from Ali if the proportion of heads is less than 0.4. Ali lets Bettina decide if \\(n\\) is 10 or 100.\n\nWhich \\(n\\) should Bettina choose?\n\n\nThis ties into the plot of proportions of heads as the number of coin tosses increases. Hopefully Bettina realizes she has a better chance of getting the number of heads far away from 0.5 with fewer tosses."
+  },
+  {
+    "objectID": "3-generalization/01-prob-foundations/slides.html#section-1",
+    "href": "3-generalization/01-prob-foundations/slides.html#section-1",
+    "title": "Probability Foundations",
+    "section": "",
+    "text": "Part 1: Suppose we roll a die 4 times. The chance that we see six (the face with six spots) at least once is given by \\(\\displaystyle \\frac{1}{6} +  \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} =  \\frac{4}{6} = \\frac{2}{3}\\)\n\nTrue or false?\n\n\n\nPart 2: Suppose we roll a pair of dice 24 times. The chance that we see a pair of sixes at least once is given by \\(\\displaystyle 24 \\times \\frac{1}{36} =  \\frac{24}{36} = \\frac{2}{3}\\)\n\nTrue or false?\n\n\n  \n    −\n    +\n \n 01:00\n \n\nBoth parts are false since we are using the addition rule on events that are not mutually exclusive. It is important that you do NOT talk about what the actual probability is since that uses the multiplication rule and we have not discussed that in the notes. This is more an exercise in when not to use the addition rule."
+  },
+  {
+    "objectID": "3-generalization/01-prob-foundations/slides.html#section-2",
+    "href": "3-generalization/01-prob-foundations/slides.html#section-2",
+    "title": "Probability Foundations",
+    "section": "",
+    "text": "−\n    +\n \n 01:00\n \nConsider the Venn diagram below, which has 20 possible outcomes in \\(\\Omega\\), depicted by the purple dots. Suppose the dots represent equally likely outcomes. What is the probability of \\(A\\) or \\(B\\) or \\(C\\)? That is, what is \\(P(A \\cup B \\cup C)\\)?\n\n\nAsk them what is the quickest way to do this. Maybe even give them only 15 or 30 seconds."
+  },
+  {
     "objectID": "3-generalization/labs/elections/learning-objectives.html",
     "href": "3-generalization/labs/elections/learning-objectives.html",
     "title": "Stat 20",
     "section": "",
     "text": "Write down a probability model for vote counts.\nReview\n\n\nUnit of observation\n\n\n\nlibrary(rvest)\n# Reading in the table from Wikipedia\ntab &lt;- read_html(\"https://en.wikipedia.org/wiki/List_of_tallest_buildings\") %&gt;% \n  html_node(\".wikitable\") %&gt;%\n  html_table(fill = TRUE)\n\nReferences:\nOriginal iran analysis:\nhttps://www.researchgate.net/publication/45856921_A_first-digit_anomaly_in_the_2009_Iranian_presidential_election\nhttps://arxiv.org/pdf/0906.2789.pdf\nFollow up by walter mebane:\nhttp://websites.umich.edu/~wmebane/note18jun2009.pdf\nGelman’s take:"
+  },
+  {
+    "objectID": "3-generalization/02-computing-probs/notes.html",
+    "href": "3-generalization/02-computing-probs/notes.html",
+    "title": "Computing Probabilities",
+    "section": "",
+    "text": "Sally Clark after her successful appeal\n\n\nIn November 1999, Sally Clark, an English solicitor, was convicted of murdering her infant sons1. The first, Christopher, had been 11 weeks old when he died, in 1996, and the second, Harry, 8 weeks old, in January 1998, when he was found dead. Christopher was believed to have been a victim of “cot death”, called SIDS (Sudden Infant Death Syndrome) in the US. After her second baby, Harry, also died in his crib, Sally Clark was arrested for murder. The star witness for the prosecution was a well known pediatrician and professor, Sir Roy Meadow, who authored the infamous Meadow’s Law :“One sudden infant death is a tragedy, two is suspicious and three is murder until proved otherwise”2. Unfortunately it was easier to comprehend this “crude aphorism” than make the effort to understand the subtleties of conditional probability. The Royal Statistical Society protested the misuse of statistics in courts, but not early enough to prevent Sally Clark’s conviction. She was eventually acquitted and released, only to die at the age of 42 through alcohol poisoning3 The math presented by Meadow, in brief: Based on various studies, there is a probability of 1 in 8,543 of a baby dying of SIDS in a family such as the Clarks. As the Clarks suffered two deaths, Meadow multiplied 8,543 by 8,543 to arrive at 73 million. He told the jury that the chance or probability that the event of two “cot deaths” was 1 in 73 million. The defense did not employ a statistician to refute her claim, a choice that may have been disastrous for Sally Clark.\nWe will revisit this case at the end of these notes. In order to think about the probabilities involved, we need some more concepts. Let’s go back to one of the examples with die rolls that we have seen, the outcomes that puzzled the seventeenth century gambler, the Chevalier De Méré.",
+    "crumbs": [
+      "Notes",
+      "Generalization",
+      "Computing Probabilities"
+    ]
+  },
+  {
+    "objectID": "3-generalization/02-computing-probs/notes.html#sally-clark-a-tragic-victim-of-statistical-illiteracy",
+    "href": "3-generalization/02-computing-probs/notes.html#sally-clark-a-tragic-victim-of-statistical-illiteracy",
+    "title": "Computing Probabilities",
+    "section": "",
+    "text": "Sally Clark after her successful appeal\n\n\nIn November 1999, Sally Clark, an English solicitor, was convicted of murdering her infant sons1. The first, Christopher, had been 11 weeks old when he died, in 1996, and the second, Harry, 8 weeks old, in January 1998, when he was found dead. Christopher was believed to have been a victim of “cot death”, called SIDS (Sudden Infant Death Syndrome) in the US. After her second baby, Harry, also died in his crib, Sally Clark was arrested for murder. The star witness for the prosecution was a well known pediatrician and professor, Sir Roy Meadow, who authored the infamous Meadow’s Law :“One sudden infant death is a tragedy, two is suspicious and three is murder until proved otherwise”2. Unfortunately it was easier to comprehend this “crude aphorism” than make the effort to understand the subtleties of conditional probability. The Royal Statistical Society protested the misuse of statistics in courts, but not early enough to prevent Sally Clark’s conviction. She was eventually acquitted and released, only to die at the age of 42 through alcohol poisoning3 The math presented by Meadow, in brief: Based on various studies, there is a probability of 1 in 8,543 of a baby dying of SIDS in a family such as the Clarks. As the Clarks suffered two deaths, Meadow multiplied 8,543 by 8,543 to arrive at 73 million. He told the jury that the chance or probability that the event of two “cot deaths” was 1 in 73 million. The defense did not employ a statistician to refute her claim, a choice that may have been disastrous for Sally Clark.\nWe will revisit this case at the end of these notes. In order to think about the probabilities involved, we need some more concepts. Let’s go back to one of the examples with die rolls that we have seen, the outcomes that puzzled the seventeenth century gambler, the Chevalier De Méré.",
+    "crumbs": [
+      "Notes",
+      "Generalization",
+      "Computing Probabilities"
+    ]
+  },
+  {
+    "objectID": "3-generalization/02-computing-probs/notes.html#simulating-de-mérés-dice-games.",
+    "href": "3-generalization/02-computing-probs/notes.html#simulating-de-mérés-dice-games.",
+    "title": "Computing Probabilities",
+    "section": "Simulating De Méré’s dice games.",
+    "text": "Simulating De Méré’s dice games.\nRecall that De Méré wanted to bet on at least one six in four rolls of a fair die, and also at least one double six in twenty-four rolls of a pair of dice.\nIn earlier notes, you have seen the result of simulating these two games to estimate the probability of De Méré winning his bet. The simulation used the idea of thinking of the probability of an event as the long-run relative frequency, or the proportion of times we observe that particular event (or the outcomes in the event) if we repeat the action that can result in the event over and over again. Let’s do that again - that is, we estimate the probabilities using the long-run proportions. We will simulate playing the game over and over again and count the number of times we see at least one six in four rolls, and similarly for the second game. (De Méré did this by betting many times, and noticed that the number of times he won wasn’t matching the probability he had computed. Long-run relative frequency in real life!)\n\n\nNumber of simulations for game 1 with 4 rolls of a die = 1000\n\n\nThe chance of at least one six in 4 rolls of a die is about 0.514\n\n\nNumber of simulations for game 2 with 24 rolls of a pair of dice = 1000\n\n\nThe chance of at least one double six in 24 rolls of a pair of dice is about 0.487\n\n\nNow the question is how do we figure out this probability without simulations?\nWe know that if two events are mutually exclusive, we can compute the probability of at least one of the events occurring (\\(A\\cup B\\) aka \\(A \\text{ or } B\\)) using the addition rule \\(P(A \\cup B) = P(A) + P(B)\\). We cannot use the addition rule to compute the probabilities that we have simulated above, since rolling a six on the first roll and rolling a six on the second roll (for example) are not mutually exclusive. So how do we compute them? Read on…\n\nExample: Drawing red and blue tickets from a box\nConsider a box with four tickets in it, two colored red and two blue. Except for their color, they are identical: . Suppose we draw three times at random from this box, with replacement, that is, every time we draw a ticket from the box, we put it back before drawing the next ticket. List all the possible outcomes. What is the probability of seeing exactly 2 red cards among our draws?\n\n\nCheck your answer\n\nNote that since each of the cards is equally likely to be drawn, therefore all the sequences of three cards are equally likely. We can count the number of possible outcomes that contain exactly 2 red cards, and divide that number by the number of total possible outcomes to get the probability of drawing exactly 2 red cards:\n There are three outcomes that have exactly two cards, out of a total of 8 possible outcomes, so the probability of exactly two red cards in three draws at random with replacement is 3/8.\n\nNow suppose we repeat the procedure, but draw without replacement (we don’t put any tickets back). What is the probability of exactly 2 red cards in 3 draws?\n\n\nCheck your answer\n\n\n\n\n\n\nNotice that we have fewer possible outcomes (6 instead of 8, why?), though they are still equally likely. Again, there are 3 outcomes that have exactly 2 red cards, and so the probability of 2 red cards in three draws is now 3/6.\n\nWhat about the probabilities for the number of red cards in three draws? Write down all the possible values for the number of red cards in three draws from a box with 2 red cards and 2 blue cards, while drawing with replacement, and their corresponding probabilities. Repeat this exercise for the same quantity (number of red cards in three draws from a box with 2 red cards and 2 blue cards), when you draw the tickets without replacement:\n\n\nCheck your answer\n\n\n\n\n\n\n\n\n\n\n\nNumber of reds in 3 draws\nprobability, with replacement\nprobability, without replacement\n\n\n\n\n0 red tickets\n\\(\\displaystyle \\frac{1}{8}\\)\n\\(0\\)\n\n\n1 red ticket\n\\(\\displaystyle \\frac{3}{8}\\)\n\\(\\displaystyle \\frac{3}{6}\\)\n\n\n2 red tickets\n\\(\\displaystyle \\frac{3}{8}\\)\n\\(\\displaystyle \\frac{3}{6}\\)\n\n\n3 red tickets\n\\(\\displaystyle \\frac{1}{8}\\)\n\\(0\\)\n\n\n\n\n\nWhy are the numbers different? What is going on?\n\nBelow you see an illustration of what happens to the box when we draw without replacement, with the box at each stage being shown with one less ticket.\n\n\n\n\n\nWe see that the box reduces after each draw. After two draws, if the first 2 draws are red (as on the left most sequence) you can’t get another red ticket, whereas if you are drawing with replacement, you can keep on drawing red tickets. (Note that the outcomes in the bottom row are not equally likely, since on the left branch of the tree, blue is twice as likely as red to be the second card, so the outcome RB is twice as likely as RR, and the outcome BR on the right branch of the tree is twice as likely as BB.) Before going further, let’s recall what we know about the probabilities of events.\n\n\nRules of probability (recap)\n\n\\(\\Omega\\) is the set of all possible outcomes.\n\n\nWhat is the probability of \\(\\Omega\\)?\n\nThe probability of \\(\\Omega\\) is 1. It is called the certain event.\n\nWhen an event has no outcomes in it, it is called the impossible event, and denoted by \\(\\emptyset\\) or \\(\\{\\}\\).\n\n\nWhat is the probability of the impossible event?\n\nThe probability of the impossible event is 0.\n\nLet \\(A\\) be a collection of outcomes (for example, from the example above, \\(A\\) could be the event of two red tickets in 3 draws with replacement).\n\n\nThen the probability of \\(A\\) has to be ______ (fill in the blank with a suitable phrase)\n\nbetween \\(0\\) and \\(1\\) (inclusive of \\(0\\) and \\(1\\)).\n\nIf \\(A\\) and \\(B\\) are two events with no outcomes in common,\n\n\nthen they are called ______. (fill in the blanks with suitable phrases)\n\nmutually exclusive\n\nIf \\(A\\) and \\(B\\) have no outcomes in common, that is, \\(A \\cap B =  \\{\\}\\), then \\(P(A \\cup B) = P(A) + P(B)\\).\nConsider an event \\(A\\). The complement of \\(A\\) is not \\(A\\), and denoted by \\(A^C\\). The complement of \\(A\\) consists of all outcomes in \\(\\Omega\\) that are not in \\(A\\) and \\(P(A^C) = 1-P(A)\\). (Why?)",
+    "crumbs": [
+      "Notes",
+      "Generalization",
+      "Computing Probabilities"
+    ]
+  },
+  {
+    "objectID": "3-generalization/02-computing-probs/notes.html#conditional-probabilities",
+    "href": "3-generalization/02-computing-probs/notes.html#conditional-probabilities",
+    "title": "Computing Probabilities",
+    "section": "Conditional probabilities",
+    "text": "Conditional probabilities\nIn the first example above, we saw that the probability of a red ticket on a draw changes if we sample without replacement. If we get a blue ticket on the first draw, the probability of a red ticket on the second draw is 2/3 (since there are 3 tickets left, of which 2 are blue). If we get a red ticket on the first draw, the probability of a red ticket on the second draw is 1/3. These probabilities, that depend on what has happened on the first draw, are called conditional probabilities. If \\(A\\) is the event of a blue ticket on the first draw, and \\(B\\) is the event of a red ticket on the second draw, we say that the probability of \\(B\\) given \\(A\\) is 2/3, which is a conditional probability, because we put a condition on the first card, that it had to be blue.\nWhat about if we don’t put a condition on the first card? What is the probability that the second card is red?\n\n\nCheck your answer\n\nThe probability that the second card drawn is red is 1/2, if we don’t have any information about the first card drawn. To see this, it is easier to imagine that we can shuffle all the cards in the box and they are put in some random order in which each of the 4 positions is equally likely. There are 2 red cards, so the probability that a red card will occupy any of the 4 positions, including the second, is 2/4.\n\nThis kind of probability, where we put no condition on the first card, is called an unconditional probability - we don’t have any information about the first card.",
+    "crumbs": [
+      "Notes",
+      "Generalization",
+      "Computing Probabilities"
+    ]
+  },
+  {
+    "objectID": "3-generalization/02-computing-probs/notes.html#the-multiplication-rule-computing-the-probability-of-an-intersection",
+    "href": "3-generalization/02-computing-probs/notes.html#the-multiplication-rule-computing-the-probability-of-an-intersection",
+    "title": "Computing Probabilities",
+    "section": "The Multiplication Rule: computing the probability of an intersection",
+    "text": "The Multiplication Rule: computing the probability of an intersection\nWe often want to know the probability that two (or more) events will both happen: What is the probability if we roll a pair of dice, that both will show six spots; or if we deal two cards from a standard 52 card deck, that both would be kings, or in a family with two babies, both would suffer SIDS. What do we know? We can draw a Venn diagram to represent intersecting events:\n\n\n\n\n\nThis picture tells us that \\(A\\cap B\\) (the purple shaded part) is inside both \\(A\\) and \\(B\\), so its probability should be less than each of \\(P(A)\\) and \\(P(B)\\): \\(P(A\\cap B) \\le P(A), P(B)\\). In fact, we write the probability of the intersection as:\n\\[P(A \\cap B) = P(A) \\times P(B|A)\\] We read the second probability on the right-hand side of the equation as the conditional probability of \\(B\\) given \\(A\\). Note that \\(B\\vert A\\) is not an event, but we use \\(P(B\\vert A)\\) as a shorthand for the conditional probability of \\(B\\) given \\(A\\).\nFor example, in the example with the box with two red and two blue cards, let \\(A\\) is the event of drawing a red card on the first draw, and \\(B\\) is the event of drawing a blue card on the second draw. If we draw two cards without replacement, then we have that \\(P(A) = \\displaystyle \\frac{2}{4}\\), \\(P(B | A) =  \\displaystyle \\frac{2}{3}\\) (the denominator reduces by one, since there are only 3 cards left in the box, of which 2 are blue). Therefore:\n\\[P(A \\cap B) = P(A) \\times P(B|A) = \\frac{2}{4} \\times \\frac{2}{3} = \\frac{1}{3}\\] This becomes more clear if we think about the long run frequencies. We draw a red card first about half the time in the long run (if we think about drawing a card over and over again). Of those times, we would also draw a blue card second about two-thirds of the time, since a drawing a blue card would be twice as likely as drawing a red card. Therefore drawing a red card first and then a blue card would happen two thirds of one half of the time, which is about a third of the time.\nNote that the roles of \\(A\\) and \\(B\\) could be reversed in the expression above:\n\\[ P(A \\cap B) = P(A) \\times P(B | A) = P(B) \\times P(A | B)\\] This gives us a way to define the conditional probability, as long as we are not dividing by \\(0\\):\n\n\nConditional probability of \\(B\\) given \\(A\\)\n\nThis is defined to be the probability of the intersection of \\(A\\) and \\(B\\), normalized by dividing by \\(P(A)\\):\n\n\n\\[  P(B | A) = \\frac{ P(A \\cap B)}{P(A)} \\]\n\nThe idea here is that we know that \\(A\\) happened, therefore the only outcomes we are concerned about are the ones in \\(A\\) - this is our new outcome space. We compute the relative size of the part of \\(B\\) that happen (\\(A\\cap B\\)) to the size of the new outcome space.\n\n\n\n\n\n\nImportant\n\n\n\nNote that \\(P(A | B)\\) and \\(P(B | A)\\) can be very different. Consider the scenario shown in the Venn diagram here:",
+    "crumbs": [
+      "Notes",
+      "Generalization",
+      "Computing Probabilities"
+    ]
+  },
+  {
+    "objectID": "3-generalization/02-computing-probs/notes.html#independence",
+    "href": "3-generalization/02-computing-probs/notes.html#independence",
+    "title": "Computing Probabilities",
+    "section": "Independence",
+    "text": "Independence\n\n\nIndependent events\n\nWe say that two events are independent if the probabilities for the second event remain the same even if you know that the first event has happened, no matter how the first event turns out. Otherwise, the events are said to be dependent.\n\n\n\nIf \\(A\\) and \\(B\\) are independent, \\(P(B\\vert A) = P(B)\\).\nConsequently, the multiplication rule reduces to:\n\\[ P(A \\cap B) = P(A) \\times P(B | A) = P(A) \\times P(B) \\]\nUsually the fastest and most convenient way to check if two events are independent is to see if the product of their probabilities is the same as the probability of their intersection.\n\nComputational check for independence Check if \\(P(A \\cap B) = P(A)\\times P(B)\\)\n\nFor example, consider our box of red and blue tickets. When we draw with replacement, the probability of a red ticket on the second draw given a blue ticket on the first draw remains at 1/2. If we had a red ticket on the first draw, the probability of the second ticket being red is still 1/2. The probability doesn’t change because it does not depend on the outcome of the first draw, since we put the ticket back.\nIf we draw the tickets without replacement, we have seen that the probabilities of draws change. The probability of a blue ticket on the second draw given a red ticket on the first draw is 2/3, but the probability of a red ticket on the second draw given a red ticket on the first is 1/3.\nThe lesson here is that when we draw tickets with replacement, the draws are independent - the outcome of the first draw does not affect the second. If we draw tickets without replacement, the draws are dependent. The outcome of the first draw changes the probabilities of the tickets for the second draw.\n\nExample: Selecting 2 people out of a group of 5\n\n(drawing without replacement)\nWe have a group of 5 people: Alex, Emi, Fred, Max, and Nan. Two of the five are to be selected at random to form a two person committee. Represent this situation using draws from a box of tickets.\n\n\nCheck your answer\n\nWe only care about who is picked, not the order in which they are picked. For instance, picking Alex first and then Emi results in the same committee as picking first Emi and then Alex.\n\n\n\n\n\nAll the ten pairs are equally likely. On the first draw, there are 5 tickets to choose from, and on the second there are 4, making \\(5 \\times 4 = 20\\) possible draws of two tickets, drawn from this box, one at a time, without replacement. We have only 10 pairs here because of those 20 pairs, there are only 10 distinct ones. When we count 20 pairs, we are counting Alex \\(+\\) Emi as one pair, and Emi \\(+\\) Alex as another pair.\n\nWhat is the probability that Alex and Emi will be selected? Guess! (Hint: you have seen all the possible pairs above, and they are equally likely. What will be the probability of any one of them?)\nWe could use the multiplication rule to compute this probability, which is much simpler than writing out all the possible outcomes. The committee can consist of Alex and Emi either if Alex is drawn first and Emi second, or Emi is drawn first and Alex second. The probability that Alex will be drawn first is \\(1/5\\). The conditional probability that Emi will be drawn second given that Alex was drawn is \\(1/4\\) since there are only 4 tickets left in the box. Using the multiplication rule, the probability that Alex will be drawn first and Emi second is \\((1/4) \\times (1/5) = 1/20\\). Similarly, the probability that Emi will be drawn first and Alex second is \\(1/20\\). This means that the probability that Alex and Emi will be selected for the committee is \\(1/20 + 1/20 = 1/10\\).\n\n\n\nExample: Colored and numbered tickets\nI have two boxes that with numbered tickets colored red or blue as shown below.\n\n\n\n\n\nAre color and number independent or dependent for box 1? What about box 2?\nFor example, is the probability of a ticket marked 1 the same whether the ticket is red or blue?\n\n\nCheck your answer\n\nFor box 1, color and number are dependent, since the probability of 3 given that the ticket is red is 1/3, but the probability of 3 given that the ticket is blue is 0 (and similarly for the probability of 4).\nEven though the probability for 1 or 2 given the ticket is red is the same as the probability for 1 or 2 given the ticket is blue, we say that color and number are dependent because of the tickets marked 3 or 4.\nNow you work it out for box 2.\n\n\n\nExample: Tickets with more than one number on them\nNow I have two boxes that with numbered tickets, where each ticket has two numbers on them, as shown. For each box, are the two numbers independent or dependent? For example, if I know that the first number is 1 does it change the probability of the second number being 6 (or the other way around: if I know the second number is 6, does it change the probability of the first number being 1)?\n\n\n\n\n\n\n\nCheck your answer\n\nFor box 1, the first number and second number are independent, as shown below, using 1 and 6 as examples. If we know that the first number is 1, the box reduces as shown. The probability of the second number being 6 does not change for box 1. The probability does change for box 2, increasing from 1/2 to 2/3, since the second number is more likely to be 6 if the first number is 1.",
+    "crumbs": [
+      "Notes",
+      "Generalization",
+      "Computing Probabilities"
+    ]
+  },
+  {
+    "objectID": "3-generalization/02-computing-probs/notes.html#back-to-sally-clark",
+    "href": "3-generalization/02-computing-probs/notes.html#back-to-sally-clark",
+    "title": "Computing Probabilities",
+    "section": "Back to Sally Clark",
+    "text": "Back to Sally Clark\nProfessor Roy Meadow claimed that the probability of two of Sally Clark’s sons dying of SIDS was 1 in 73 million. He obtained this number by multiplying 8543 by 8543, using the multiplication rule, treating the two events as independent. The question is, are they really independent? Was a crime really committed? Unfortunately for Sally Clark, two catastrophic errors were committed in her case by the prosecution, and not caught by the defense. (She appealed the decision, and was acquitted and released, but after spending 4 years in prison after being accused of murdering her babies. You can imagine how she was treated.)\nThe first error was in treating the deaths as independent, and the second was in looking at the wrong probability. Let’s look at the first mistake. It turns out that the probability of a second child dying of “cot death” or SIDS is 1/60 given that the first child died of SIDS. This was a massive error, and it turned out that the prosecution suppressed the pathology reports for the second baby, who had a very bad infection and might have died of that. It is also believed that male infants are more likely to suffer cot death.\nThe second error is an example of what is called the Prosecutor’s Fallacy. What is needed is \\(P(\\text{innocence }\\vert \\text{ evidence})\\), but it is often confused with (the much smaller) \\(P(\\text{evidence }\\vert \\text{ innocence})\\). They should have actually compared the probability of innocence given the evidence with the probability of murder given the evidence. These multiple errors ruined many lives. Though Sally Clark was eventually acquitted, helped by the Royal Statistical Society’s evidence, her life was shattered, and she died soon after being released. The moral of this story is to be very careful while multiplying probabilities. You must check to see if the events are actually independent.",
+    "crumbs": [
+      "Notes",
+      "Generalization",
+      "Computing Probabilities"
+    ]
+  },
+  {
+    "objectID": "3-generalization/02-computing-probs/notes.html#de-mérés-paradox",
+    "href": "3-generalization/02-computing-probs/notes.html#de-mérés-paradox",
+    "title": "Computing Probabilities",
+    "section": "De Méré’s paradox",
+    "text": "De Méré’s paradox\nLet’s finally compute the probability of rolling at least one six in 4 rolls of a fair six-sided die. This is much easier to compute if we use the complement rule. The complement of at least one six is no sixes in 4 rolls. Each roll is independent of the other rolls because what you roll does not affect the values of future rolls. This means that we can use the multiplication rule to figure out the chance of no sixes in any of the rolls. The chance of no six in any particular roll is \\(5/6\\) (there are five outcomes that are not six).\nThe chance of no sixes in any of the 4 rolls is therefore \\(\\displaystyle \\left( \\frac{5}{6}\\right)^4\\) (because the rolls are independent). Using the complement rule, we get that: \\[ P(\\text{at least one six in 4 rolls}) = 1 - P(\\text{no sixes in any of the 4 rolls}) = 1 - \\left( \\frac{5}{6}\\right)^4 \\approx 0.518\\]\nSimilarly, the probability of at least 1 double six in 24 rolls of a pair of dice is given by \\[ 1- P(\\text{no double sixes in any of the 24 rolls}) = 1 - \\left( \\frac{35}{36}\\right)^{24} \\approx 0.491\\]\nBy the way, notice that the simulation was pretty accurate!\nBefore we wrap up these notes, let’s review two important things. The first has to do with a very common misconception, confusing mutually exclusive and independent events.",
+    "crumbs": [
+      "Notes",
+      "Generalization",
+      "Computing Probabilities"
+    ]
+  },
+  {
+    "objectID": "3-generalization/02-computing-probs/notes.html#mutually-exclusive-vs-independent-events",
+    "href": "3-generalization/02-computing-probs/notes.html#mutually-exclusive-vs-independent-events",
+    "title": "Computing Probabilities",
+    "section": "Mutually exclusive vs independent events",
+    "text": "Mutually exclusive vs independent events\nNote that if two events \\(A\\) and \\(B\\), both with positive probability, are mutually exclusive, they cannot be independent. If \\(P(A \\cap B) = 0\\), but neither \\(P(A) =0\\) nor \\(P(B) = 0\\), then \\(P(A \\cap B) = 0 \\ne P(A)\\times P(B)\\). However, if two events are not independent, that does not mean they are mutually exclusive.\nThe second item generalizes the multiplication rule that we have already seen, by extending it to events that are not mutually exclusive. It is called the “inclusion-exclusion formula”.",
+    "crumbs": [
+      "Notes",
+      "Generalization",
+      "Computing Probabilities"
+    ]
+  },
+  {
+    "objectID": "3-generalization/02-computing-probs/notes.html#inclusion-exclusion-generalized-addition-rule",
+    "href": "3-generalization/02-computing-probs/notes.html#inclusion-exclusion-generalized-addition-rule",
+    "title": "Computing Probabilities",
+    "section": "Inclusion-exclusion (generalized addition rule)",
+    "text": "Inclusion-exclusion (generalized addition rule)\nNow that we know how to compute the probability of the intersection of two events, we can compute the probability of the union of two events:\n\n\n\n\n\n\\[P(A \\cup B) = P(A) + P(B) - P(A \\cap B) \\]\nYou can see that if we just add the probabilities of \\(A\\) and \\(B\\), we double count the overlap. By subtracting it once, we can get the correct probability, and we know how to compute the probability of \\(A\\cap B\\). This is known as the inclusion-exclusion principle.",
+    "crumbs": [
+      "Notes",
+      "Generalization",
+      "Computing Probabilities"
+    ]
+  },
+  {
+    "objectID": "3-generalization/02-computing-probs/notes.html#summary",
+    "href": "3-generalization/02-computing-probs/notes.html#summary",
+    "title": "Computing Probabilities",
+    "section": "Summary",
+    "text": "Summary\nIn this lecture, we do a deep dive into computing probabilities. It is well known that people are just not good at estimating probabilities of events, and we saw the tragic example of Sally Clark (who, even more sadly, is not a unique case)4.\nWe defined conditional probability and independence, and the multiplication rule, considering draws at random with and without replacement. We finally computed the probabilities in the dice games from 17th century France by combining the multiplication rule and the complement rule.\nWe noted that independent events are very different from mutually exclusive events, and finally we learned how to compute probabilities of unions of events that may not be mutually exclusive with the inclusion-exclusion or generalized addition rule.",
+    "crumbs": [
+      "Notes",
+      "Generalization",
+      "Computing Probabilities"
+    ]
+  },
+  {
+    "objectID": "3-generalization/02-computing-probs/notes.html#footnotes",
+    "href": "3-generalization/02-computing-probs/notes.html#footnotes",
+    "title": "Computing Probabilities",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n(https://www.theguardian.com/uk-news/2021/nov/20/sally-clark-cot-death-mothers-wrongly-jailed)↩︎\nFrom the archives of The Guardian newspaper https://www.theguardian.com/uk/2001/jul/15/johnsweeney.theobserver↩︎\nThe thumbnail image of the headline from the Manchester Evening News and some details of the case are from http://www.inference.org.uk/sallyclark↩︎\nhttps://www.theguardian.com/uk-news/2021/nov/20/sally-clark-cot-death-mothers-wrongly-jailed↩︎",
+    "crumbs": [
+      "Notes",
+      "Generalization",
+      "Computing Probabilities"
+    ]
   },
   {
     "objectID": "2-summarizing-data/notes.html",
@@ -1287,6 +1501,55 @@
     "title": "Summarizing Categorical Data",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nThis argument is generally not important for the other plots we create in this course, which is why in the initial piece of code featuring geom_bar(), it was not specified at all.↩︎"
+  },
+  {
+    "objectID": "2-summarizing-data/06-multiple-linear-regression/slides.html#agenda",
+    "href": "2-summarizing-data/06-multiple-linear-regression/slides.html#agenda",
+    "title": "Multiple Linear Regression",
+    "section": "Agenda",
+    "text": "Agenda\n\nAnnouncements\nReading Questions (open-note)\nBreak\nWorksheet: Multiple Linear Regression\nAppendix: more practice (quiz-level questions)."
+  },
+  {
+    "objectID": "2-summarizing-data/06-multiple-linear-regression/slides.html#announcements",
+    "href": "2-summarizing-data/06-multiple-linear-regression/slides.html#announcements",
+    "title": "Multiple Linear Regression",
+    "section": "Announcements",
+    "text": "Announcements\n\nLab 2: Flights due tomorrow at 12pm.\n\nPart 1: Submit like your portfolios - scan and upload\nPart 2: Render to PDF, download, and upload - make sure to assign pages\n\n\n\n\nNo reading questions for the next six lectures leading up to the quiz (traditional-style lecture)."
+  },
+  {
+    "objectID": "2-summarizing-data/06-multiple-linear-regression/slides.html#what-are-b_0-b_1-...-b_p-in-the-multiple-linear-regression-formula-called",
+    "href": "2-summarizing-data/06-multiple-linear-regression/slides.html#what-are-b_0-b_1-...-b_p-in-the-multiple-linear-regression-formula-called",
+    "title": "Multiple Linear Regression",
+    "section": "What are \\(b_0, b_1, ..., b_p\\) in the multiple linear regression formula called?",
+    "text": "What are \\(b_0, b_1, ..., b_p\\) in the multiple linear regression formula called?\n\nA: Terms\nB: Coefficients\nC: Variables\nD: Predictors\n\n\n  \n    −\n    +\n \n 02:00"
+  },
+  {
+    "objectID": "2-summarizing-data/06-multiple-linear-regression/slides.html#what-values-can-the-variable-geowest-in-the-shown-formula-take",
+    "href": "2-summarizing-data/06-multiple-linear-regression/slides.html#what-values-can-the-variable-geowest-in-the-shown-formula-take",
+    "title": "Multiple Linear Regression",
+    "section": "What values can the variable \\(geowest\\) in the shown formula take?",
+    "text": "What values can the variable \\(geowest\\) in the shown formula take?\n\\[ \\widehat{price} = -15.97+2.87\\times food-1.45 \\times geowest\\]\n\nA: any value on the real number line\nB: either 0 or 1\nC: \"east\" or \"west\"\n\n\n  \n    −\n    +\n \n 02:00"
+  },
+  {
+    "objectID": "2-summarizing-data/06-multiple-linear-regression/slides.html#what-name-is-given-to-a-level-of-a-categorical-variable-which-is-not-given-an-indicator-in-a-linear-model",
+    "href": "2-summarizing-data/06-multiple-linear-regression/slides.html#what-name-is-given-to-a-level-of-a-categorical-variable-which-is-not-given-an-indicator-in-a-linear-model",
+    "title": "Multiple Linear Regression",
+    "section": "What name is given to a level of a categorical variable which is not given an indicator in a linear model?",
+    "text": "What name is given to a level of a categorical variable which is not given an indicator in a linear model?\n\nA: Indicator level\nB: Coefficient\nC: Reference level\nD: Primary level\n\n\n  \n    −\n    +\n \n 02:00"
+  },
+  {
+    "objectID": "2-summarizing-data/06-multiple-linear-regression/slides.html#if-you-include-a-numerical-variable-as-an-input-variable-to-a-linear-model-how-many-terms-for-it-will-appear-in-the-model",
+    "href": "2-summarizing-data/06-multiple-linear-regression/slides.html#if-you-include-a-numerical-variable-as-an-input-variable-to-a-linear-model-how-many-terms-for-it-will-appear-in-the-model",
+    "title": "Multiple Linear Regression",
+    "section": "If you include a numerical variable as an input variable to a linear model, how many terms for it will appear in the model?",
+    "text": "If you include a numerical variable as an input variable to a linear model, how many terms for it will appear in the model?\n\nA: 1\nB: 2\nC: 3\nD: 4\n\n\n  \n    −\n    +\n \n 02:00"
+  },
+  {
+    "objectID": "2-summarizing-data/06-multiple-linear-regression/slides.html#if-you-include-a-categorical-variable-with-3-levels-as-an-input-variable-in-a-linear-model-how-many-terms-for-it-will-appear-in-the-model",
+    "href": "2-summarizing-data/06-multiple-linear-regression/slides.html#if-you-include-a-categorical-variable-with-3-levels-as-an-input-variable-in-a-linear-model-how-many-terms-for-it-will-appear-in-the-model",
+    "title": "Multiple Linear Regression",
+    "section": "If you include a categorical variable with 3 levels as an input variable in a linear model, how many terms for it will appear in the model?",
+    "text": "If you include a categorical variable with 3 levels as an input variable in a linear model, how many terms for it will appear in the model?\n\nA: 1\nB: 2\nC: 3\nD: 4\n\n\n  \n    −\n    +\n \n 02:00"
   },
   {
     "objectID": "2-summarizing-data/06-multiple-linear-regression/slides.html#question-1",
@@ -2219,7 +2482,7 @@
     "href": "assignments.html#worksheets",
     "title": "Assignments",
     "section": "Worksheets",
-    "text": "Worksheets\nWorksheets are pen-and-paper practice problems that we work on in class. The goal of the worksheets is simply practice: they help you drill the techniques needed to complete the labs.\n\n\n\nWS: Taxonomy of Data\n\n\nWS: Summarizing Categorical Data\n\n\nWS: Summarizing Numerical Data\n\n\nWS: A Grammar of Graphics\n\n\nWS: Conditioning\n\n\nWS: Summarizing Numerical Associations\n\n\n\nNo matching items"
+    "text": "Worksheets\nWorksheets are pen-and-paper practice problems that we work on in class. The goal of the worksheets is simply practice: they help you drill the techniques needed to complete the labs.\n\n\n\nWS: Taxonomy of Data\n\n\nWS: Summarizing Categorical Data\n\n\nWS: Summarizing Numerical Data\n\n\nWS: A Grammar of Graphics\n\n\nWS: Conditioning\n\n\nWS: Summarizing Numerical Associations\n\n\nWS: Probability Foundations\n\n\n\nNo matching items"
   },
   {
     "objectID": "assets/quiz-slides.html#individual-quiz",

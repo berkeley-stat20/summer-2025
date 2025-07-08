@@ -7,7 +7,9 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-6f7931aacaeb22aa467d6667c6f1725d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-6f7931aacaeb22aa467d6667c6f1725d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/quarto-contrib/countdown-0.5.0/countdown.js"></script>
+<link href="../../site_libs/quarto-contrib/countdown-0.5.0/countdown.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.25">
 
   <meta name="author" content="STAT 20: Introduction to Probability and Statistics">
@@ -419,19 +421,144 @@ STAT 20: Introduction to Probability and Statistics
 </div>
 
 </section>
-<section id="multiple-linear-regression-refresher" class="title-slide slide level1 center">
-<h1>Multiple Linear Regression Refresher</h1>
+<section id="agenda" class="slide level2">
+<h2>Agenda</h2>
 <ul>
-<li>Head to <code>pollev.com</code> for a set of rapid-fire questions on last night’s notes.</li>
+<li>Announcements</li>
+<li>Reading Questions (open-note)</li>
+<li><em>Break</em></li>
+<li>Worksheet: <em>Multiple Linear Regression</em></li>
+<li>Appendix: more practice (quiz-level questions).</li>
 </ul>
+</section>
+<section id="announcements" class="slide level2">
+<h2>Announcements</h2>
+<ul>
+<li>Lab 2: Flights due <em>tomorrow</em> at 12pm.
+<ul>
+<li>Part 1: Submit like your portfolios - scan and upload</li>
+<li>Part 2: Render to PDF, download, and upload - make sure to assign pages</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>No reading questions for the next six lectures leading up to the quiz (traditional-style lecture).</li>
+</ul>
+</div>
+</section>
+<section>
+<section id="reading-questions" class="title-slide slide level1 center">
+<h1>Reading Questions</h1>
+<ul>
+<li>Join https://pollev.com/jeremysanchez! You may register with your name or as an anonymous guest. You will not be graded today, but you can get a sense of how you would do by keeping track of the points you score based on your answers.</li>
+</ul>
+</section>
+<section id="what-are-b_0-b_1-...-b_p-in-the-multiple-linear-regression-formula-called" class="slide level2">
+<h2>What are <span class="math inline">\(b_0, b_1, ..., b_p\)</span> in the multiple linear regression formula called?</h2>
+<ul>
+<li>A: Terms</li>
+<li>B: Coefficients</li>
+<li>C: Variables</li>
+<li>D: Predictors</li>
+</ul>
+<div id="timer_76b9edd40e461c5c13c9c78f1f68bd081fa122a9" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section>
+<section id="what-values-can-the-variable-geowest-in-the-shown-formula-take" class="slide level2">
+<h2>What values can the variable <span class="math inline">\(geowest\)</span> in the shown formula take?</h2>
+<p><span class="math display">\[ \widehat{price} = -15.97+2.87\times food-1.45 \times geowest\]</span></p>
+<ul>
+<li>A: any value on the real number line</li>
+<li>B: either 0 or 1</li>
+<li>C: <code>"east"</code> or <code>"west"</code></li>
+</ul>
+<div id="timer_76b9edd40e461c5c13c9c78f1f68bd081fa122a9" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section>
+<section id="what-name-is-given-to-a-level-of-a-categorical-variable-which-is-not-given-an-indicator-in-a-linear-model" class="slide level2">
+<h2>What name is given to a level of a categorical variable which is <em>not</em> given an indicator in a linear model?</h2>
+<ul>
+<li>A: Indicator level</li>
+<li>B: Coefficient</li>
+<li>C: Reference level</li>
+<li>D: Primary level</li>
+</ul>
+<div id="timer_76b9edd40e461c5c13c9c78f1f68bd081fa122a9" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section>
+<section id="if-you-include-a-numerical-variable-as-an-input-variable-to-a-linear-model-how-many-terms-for-it-will-appear-in-the-model" class="slide level2">
+<h2>If you include a numerical variable as an input variable to a linear model, how many terms for it will appear in the model?</h2>
+<ul>
+<li>A: 1</li>
+<li>B: 2</li>
+<li>C: 3</li>
+<li>D: 4</li>
+</ul>
+<div id="timer_76b9edd40e461c5c13c9c78f1f68bd081fa122a9" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section>
+<section id="if-you-include-a-categorical-variable-with-3-levels-as-an-input-variable-in-a-linear-model-how-many-terms-for-it-will-appear-in-the-model" class="slide level2">
+<h2>If you include a categorical variable with 3 levels as an input variable in a linear model, how many terms for it will appear in the model?</h2>
+<ul>
+<li>A: 1</li>
+<li>B: 2</li>
+<li>C: 3</li>
+<li>D: 4</li>
+</ul>
+<div id="timer_76b9edd40e461c5c13c9c78f1f68bd081fa122a9" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section></section>
+<section id="break" class="title-slide slide level1 center">
+<h1><em>Break</em></h1>
+<div id="timer_76b9edd40e461c5c13c9c78f1f68bd081fa122a9" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section>
+
+<section id="worksheet-multiple-linear-regression" class="title-slide slide level1 center">
+<h1>Worksheet: <em>Multiple Linear Regression</em></h1>
+<div id="timer_76b9edd40e461c5c13c9c78f1f68bd081fa122a9" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section>
 
 <section>
-<section id="quiz-review" class="title-slide slide level1 center">
-<h1>Quiz Review</h1>
-<ul>
-<li>Head to <code>pollev.com</code> for a set of quiz-level questions pertaining to <em>Summarizing Numerical Associations</em> and <em>Multiple Linear Regression</em>.</li>
-</ul>
+<section id="appendix---more-practice" class="title-slide slide level1 center">
+<h1>Appendix - More practice!</h1>
+
 </section>
 <section id="question-1" class="slide level2">
 <h2>Question 1</h2>
@@ -471,7 +598,7 @@ STAT 20: Introduction to Probability and Statistics
 <h2>Question 2</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_bb0ef0e0" data-update-every="1" tabindex="0" style="top:0;right:0;">
+<div class="countdown" id="timer_1d5991dc" data-update-every="1" tabindex="0" style="top:0;right:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -516,7 +643,7 @@ Coefficients:
 <h2>Question 3</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_3de18ae2" data-update-every="1" tabindex="0" style="top:0;right:0;">
+<div class="countdown" id="timer_e997184a" data-update-every="1" tabindex="0" style="top:0;right:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -561,7 +688,7 @@ Coefficients:
 <h2>Question 4</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_0c46169d" data-update-every="1" tabindex="0" style="top:0;right:0;">
+<div class="countdown" id="timer_5e0d4027" data-update-every="1" tabindex="0" style="top:0;right:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -644,7 +771,7 @@ Coefficients:
 <div class="fragment">
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_bce6722a" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_c77d8eb4" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -678,7 +805,7 @@ Coefficients:
 
 
 ```{=html}
-<div class="countdown" id="timer_98029676" data-update-every="1" tabindex="0" style="top:0;right:0;">
+<div class="countdown" id="timer_43d0ad71" data-update-every="1" tabindex="0" style="top:0;right:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -771,7 +898,7 @@ Coefficients:
 
 
 ```{=html}
-<div class="countdown" id="timer_bb4c2651" data-update-every="1" tabindex="0" style="top:0;right:0;">
+<div class="countdown" id="timer_a45ecda9" data-update-every="1" tabindex="0" style="top:0;right:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -866,7 +993,7 @@ A variable that is 1 if an observation takes a particular level of a categorical
 
 
 ```{=html}
-<div class="countdown" id="timer_00169552" data-update-every="1" tabindex="0" style="top:0;right:0;">
+<div class="countdown" id="timer_07685624" data-update-every="1" tabindex="0" style="top:0;right:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -964,7 +1091,7 @@ This was a former final question.
 
 
 ```{=html}
-<div class="countdown" id="timer_03904e20" data-update-every="1" tabindex="0" style="top:0;right:0;">
+<div class="countdown" id="timer_13f8b45d" data-update-every="1" tabindex="0" style="top:0;right:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
