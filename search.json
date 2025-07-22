@@ -2663,6 +2663,62 @@
     ]
   },
   {
+    "objectID": "3-generalization/07-from-samps-to-pops/slides.html#agenda",
+    "href": "3-generalization/07-from-samps-to-pops/slides.html#agenda",
+    "title": "From Samples to Populations",
+    "section": "Agenda",
+    "text": "Agenda\n\nAnnouncements\nReading Questions\nBreak\nWorksheet: From Samples to Populations"
+  },
+  {
+    "objectID": "3-generalization/07-from-samps-to-pops/slides.html#announcements",
+    "href": "3-generalization/07-from-samps-to-pops/slides.html#announcements",
+    "title": "From Samples to Populations",
+    "section": "Announcements",
+    "text": "Announcements\n\nQuiz 1 grades out. Request a regrade for any grading questions.\n\n\n\nPortfolio 5 (three worksheets) is due Friday at 5pm.\n\n\n\n\nLab 3 (two parts) is due next Monday at 12pm."
+  },
+  {
+    "objectID": "3-generalization/07-from-samps-to-pops/slides.html#which-unit-of-the-course-are-we-in",
+    "href": "3-generalization/07-from-samps-to-pops/slides.html#which-unit-of-the-course-are-we-in",
+    "title": "From Samples to Populations",
+    "section": "Which unit of the course are we in?",
+    "text": "Which unit of the course are we in?\n\nA: Summaries\nB: Generalization\nC: Causal Claims\nD: Prediction\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "3-generalization/07-from-samps-to-pops/slides.html#the-sampling-distribution-is",
+    "href": "3-generalization/07-from-samps-to-pops/slides.html#the-sampling-distribution-is",
+    "title": "From Samples to Populations",
+    "section": "The sampling distribution is…",
+    "text": "The sampling distribution is…\n\nA: the distribution of a sample of data.\nB: the distribution of a statistic that you would see if you were to draw many samples of data from the population and compute many statistics.\nC: the distribution of a population from which a sample of data is drawn.\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "3-generalization/07-from-samps-to-pops/slides.html#read-this-first.",
+    "href": "3-generalization/07-from-samps-to-pops/slides.html#read-this-first.",
+    "title": "From Samples to Populations",
+    "section": "Read this first.",
+    "text": "Read this first.\n\nA research group at the University of Rochester conducted a study to understand the typical sleep habits of college students who drink coffee. Researchers enrolled 230 college students between the ages of 18 and 22, all of whom drink more than two cups of coffee per day. The study found that the mean hours of nightly sleep is 6.2 hours.\n\n\n  \n    −\n    +\n \n 00:45"
+  },
+  {
+    "objectID": "3-generalization/07-from-samps-to-pops/slides.html#what-is-the-population-parameter-in-the-previous-setting",
+    "href": "3-generalization/07-from-samps-to-pops/slides.html#what-is-the-population-parameter-in-the-previous-setting",
+    "title": "From Samples to Populations",
+    "section": "What is the population parameter in the previous setting?",
+    "text": "What is the population parameter in the previous setting?\n\nA: 230\nB: 18-22\nC: 6.2 hours\nD: Whatever the average nightly sleep is of all college students who drink coffee.\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "3-generalization/07-from-samps-to-pops/slides.html#read-this-first.-1",
+    "href": "3-generalization/07-from-samps-to-pops/slides.html#read-this-first.-1",
+    "title": "From Samples to Populations",
+    "section": "Read this first.",
+    "text": "Read this first.\n\nThe researcher from the last question ask the participants to record their nightly sleep times each morning using a specially-designed app. At the conclusion of the study, they find that they only have full data on 140 of the students.\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "3-generalization/07-from-samps-to-pops/slides.html#which-form-of-error-might-be-present",
+    "href": "3-generalization/07-from-samps-to-pops/slides.html#which-form-of-error-might-be-present",
+    "title": "From Samples to Populations",
+    "section": "Which form of error might be present?",
+    "text": "Which form of error might be present?\n\nA: Selection bias\nB: Measurement bias\nC: Nonresponse bias\nD: Sampling variability\nE: Measurement variability\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
     "objectID": "3-generalization/07-from-samps-to-pops/slides.html#section",
     "href": "3-generalization/07-from-samps-to-pops/slides.html#section",
     "title": "From Samples to Populations",
