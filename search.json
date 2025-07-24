@@ -759,6 +759,48 @@
     "text": "Part I: Understanding the Context of the Data\n\n\n\nReference Materials\n\nChancellor’s Email\nBackground Methods PDF\nQuestionnaire\n\n\n  \n    −\n    +\n \n 25:00"
   },
   {
+    "objectID": "3-generalization/08-confidence-intervals/slides.html#agenda",
+    "href": "3-generalization/08-confidence-intervals/slides.html#agenda",
+    "title": "Confidence Intervals",
+    "section": "Agenda",
+    "text": "Agenda\n\nAnnouncements\n\n\n\nReading Questions: Confidence Intervals\n\n\n\n\nBreak\n\n\n\n\nLab 3: Part 1\n\n\n\n\nAppendix: more practice!"
+  },
+  {
+    "objectID": "3-generalization/08-confidence-intervals/slides.html#announcements",
+    "href": "3-generalization/08-confidence-intervals/slides.html#announcements",
+    "title": "Confidence Intervals",
+    "section": "Announcements",
+    "text": "Announcements\n\nQuiz 1 grades should be matched now - apologies.\n\n\n\nLab 3 deadline extended to Wednesday at 12:30pm. Part 2 shortened. See Ed for details.\n\n\n\n\nPortfolio 5 due Friday (Mon., Wed., Thu. worksheet)\n\n\n\n\nWe will spend the majority of Thursday completing that day’s worksheet."
+  },
+  {
+    "objectID": "3-generalization/08-confidence-intervals/slides.html#is-this-a-correct-interpretation-of-a-90-percent-confidence-interval",
+    "href": "3-generalization/08-confidence-intervals/slides.html#is-this-a-correct-interpretation-of-a-90-percent-confidence-interval",
+    "title": "Confidence Intervals",
+    "section": "Is this a correct interpretation of a 90 percent confidence interval?",
+    "text": "Is this a correct interpretation of a 90 percent confidence interval?\n\nI am 90 percent confident that the sample mean is between the lower and upper bounds of my interval.\n\n\nA: True\nB: False\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "3-generalization/08-confidence-intervals/slides.html#is-this-a-correct-interpretation-of-a-90-percent-confidence-interval-1",
+    "href": "3-generalization/08-confidence-intervals/slides.html#is-this-a-correct-interpretation-of-a-90-percent-confidence-interval-1",
+    "title": "Confidence Intervals",
+    "section": "Is this a correct interpretation of a 90 percent confidence interval?",
+    "text": "Is this a correct interpretation of a 90 percent confidence interval?\n\nThe probability that the population mean is between the lower and upper bounds of my interval is 0.90.\n\n\nA: True\nB: False\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "3-generalization/08-confidence-intervals/slides.html#which-of-the-following-is-the-most-suitable-definition-of-the-standard-error",
+    "href": "3-generalization/08-confidence-intervals/slides.html#which-of-the-following-is-the-most-suitable-definition-of-the-standard-error",
+    "title": "Confidence Intervals",
+    "section": "Which of the following is the most suitable definition of the standard error?",
+    "text": "Which of the following is the most suitable definition of the standard error?\n\nA: The standard deviation of the population\nB: The standard deviation of a given sample from the population.\nC: The standard deviation of a statistic upon hypothetical resampling.\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "3-generalization/08-confidence-intervals/slides.html#true-or-false-a-simple-random-sample-of-400-units-from-a-large-population-will-be-about-4-times-more-accurate-as-a-simple-random-sample-of-25.",
+    "href": "3-generalization/08-confidence-intervals/slides.html#true-or-false-a-simple-random-sample-of-400-units-from-a-large-population-will-be-about-4-times-more-accurate-as-a-simple-random-sample-of-25.",
+    "title": "Confidence Intervals",
+    "section": "True or False: A simple random sample of 400 units from a large population will be about 4 times more accurate as a simple random sample of 25.",
+    "text": "True or False: A simple random sample of 400 units from a large population will be about 4 times more accurate as a simple random sample of 25.\n\nA: True\nB: False\n\n\n  \n    −\n    +\n \n 00:40"
+  },
+  {
     "objectID": "3-generalization/08-confidence-intervals/slides.html#section",
     "href": "3-generalization/08-confidence-intervals/slides.html#section",
     "title": "Confidence Intervals",
@@ -823,6 +865,41 @@
       "Generalization",
       "Generalization"
     ]
+  },
+  {
+    "objectID": "3-generalization/10-hypothesis-tests/slides.html#section",
+    "href": "3-generalization/10-hypothesis-tests/slides.html#section",
+    "title": "Hypothesis Testing",
+    "section": "",
+    "text": "Which of the following statements below represents claims that correspond to a null hypothesis (as opposed to an alternative hypothesis)?\nHint: try to write them using parameters (statements about means / proportions / etc)\nA. King cheetahs on average run the same speed as standard spotted cheetahs.\nB. For a particular student, the probability of correctly answering a 5-option multiple choice test is larger than 0.2 (i.e., better than guessing).\nC. The mean length of African elephant tusks has changed over the last 100 years.\nD. The risk of facial clefts is equal for babies born to mothers who take folic acid supplements compared with those from mothers who do not.\nE. Mean birth weight of newborns is dependent on caffeine intake during pregnancy.\nF. The probability of getting in a car accident is the same if using a cell phone than if not using a cell phone.\n\n\n  \n    −\n    +\n \n 01:00\n \n\nCorrect answers: A, D, F.\nMost of these they haven’t seen examples of, so it will be worth laying out the null hypotheses."
+  },
+  {
+    "objectID": "3-generalization/10-hypothesis-tests/slides.html#section-1",
+    "href": "3-generalization/10-hypothesis-tests/slides.html#section-1",
+    "title": "Hypothesis Testing",
+    "section": "",
+    "text": "A pharmaceutical company developed a new treatment for eczema and performed a hypothesis test to see if it worked better than the company’s old treatment. The P-value for the test was \\(10\\%\\). Which one of the following statements are true?\n\n\nA. The probability that the null hypothesis is false is \\(10\\%\\).\nB. The P-value of about \\(10\\%\\) was computed assuming that the null hypothesis was true.\nC. The new drug is significantly better than the old.\nD. The alternative hypothesis is 10 times more likely the null.\n\n  \n    −\n    +\n \n 01:00"
+  },
+  {
+    "objectID": "3-generalization/10-hypothesis-tests/slides.html#what-do-you-think",
+    "href": "3-generalization/10-hypothesis-tests/slides.html#what-do-you-think",
+    "title": "Hypothesis Testing",
+    "section": "What do you think?",
+    "text": "What do you think?\nAnswer at pollev.com."
+  },
+  {
+    "objectID": "3-generalization/10-hypothesis-tests/slides.html#what-do-you-think-about-the-of-the-experiment-in-the-video",
+    "href": "3-generalization/10-hypothesis-tests/slides.html#what-do-you-think-about-the-of-the-experiment-in-the-video",
+    "title": "Hypothesis Testing",
+    "section": "What do you think about the of the experiment in the video?",
+    "text": "What do you think about the of the experiment in the video?\n\nDiscuss with your group, identifying anything that seems amiss.\n\n\n  \n    −\n    +\n \n 01:00"
+  },
+  {
+    "objectID": "3-generalization/10-hypothesis-tests/slides.html#do-you-still-think-yawning-is-contagious",
+    "href": "3-generalization/10-hypothesis-tests/slides.html#do-you-still-think-yawning-is-contagious",
+    "title": "Hypothesis Testing",
+    "section": "Do you still think yawning is contagious?",
+    "text": "Do you still think yawning is contagious?\nAnswer at pollev.com."
   },
   {
     "objectID": "3-generalization/02-computing-probs/notes.html",
@@ -967,6 +1044,111 @@
       "Generalization",
       "Probability Foundations II"
     ]
+  },
+  {
+    "objectID": "3-generalization/09-bootstrapping/slides.html#while-youre-waiting",
+    "href": "3-generalization/09-bootstrapping/slides.html#while-youre-waiting",
+    "title": "Bootstrapping",
+    "section": "While you’re waiting",
+    "text": "While you’re waiting\nIf you’ve been given an index card, please write on it:\n\nYour first name\nYour year at Cal (1 is first year, 2 is second year, etc)\nWhether or not you are interested in majoring in a business- or econ-related field. 1 = yes, 0 = no\n\n\nAs students arrive, randomly give ~8 of them an index card."
+  },
+  {
+    "objectID": "3-generalization/09-bootstrapping/slides.html#section",
+    "href": "3-generalization/09-bootstrapping/slides.html#section",
+    "title": "Bootstrapping",
+    "section": "",
+    "text": "Which of these is a valid bootstrap sample?\n\n\n  \n    −\n    +\n \n 01:00\n \n\n\n  \n\n\n\nOriginal Sample\n\n\nname\nspecies\nlength\n\n\n\n\nGus\nChinstrap\n50.7\n\n\nLuz\nGentoo\n48.5\n\n\nIda\nChinstrap\n52.8\n\n\nOla\nGentoo\n44.5\n\n\nAbe\nAdelie\n42.0\n\n\n\n\n\n\n\n\n\n\n\nBS A\n\n\nname\nspecies\nlength\n\n\n\n\nIda\nChinstrap\n52.8\n\n\nLuz\nGentoo\n48.5\n\n\nAbe\nAdelie\n42.0\n\n\nOla\nGentoo\n44.5\n\n\nIda\nChinstrap\n52.8\n\n\n\n\n\n\n\n\nBS B\n\n\nname\nspecies\nlength\n\n\n\n\nOla\nGentoo\n44.5\n\n\nGus\nChinstrap\n50.7\n\n\nIda\nChinstrap\n52.8\n\n\nLuz\nGentoo\n48.5\n\n\nGus\nChinstrap\n50.7\n\n\nGus\nChinstrap\n50.7\n\n\n\n\n\n\n\n\n\n\n\nBS C\n\n\nname\nspecies\nlength\n\n\n\n\nGus\nChinstrap\n50.7\n\n\nOla\nGentoo\n48.5\n\n\nOla\nChinstrap\n52.8\n\n\nIda\nGentoo\n44.5\n\n\nIda\nAdelie\n42.0\n\n\n\n\n\n\n\n\nBS D\n\n\nname\nspecies\nlength\n\n\n\n\nGus\nChinstrap\n50.7\n\n\nAbe\nAdelie\n42.0\n\n\nGus\nChinstrap\n50.7\n\n\nGus\nChinstrap\n50.7\n\n\nGus\nChinstrap\n50.7"
+  },
+  {
+    "objectID": "3-generalization/09-bootstrapping/slides.html#parameters-and-statistics",
+    "href": "3-generalization/09-bootstrapping/slides.html#parameters-and-statistics",
+    "title": "Bootstrapping",
+    "section": "Parameters and Statistics",
+    "text": "Parameters and Statistics\n\n\nOur Goal: Assess the sampling variability in our estimate of the median year at Cal and the proportion of students in an econ-related field.\n\n\n\nOur Tool: The Bootstrap"
+  },
+  {
+    "objectID": "3-generalization/09-bootstrapping/slides.html#collecting-a-sample-of-data",
+    "href": "3-generalization/09-bootstrapping/slides.html#collecting-a-sample-of-data",
+    "title": "Bootstrapping",
+    "section": "Collecting a sample of data",
+    "text": "Collecting a sample of data\nIf you’ve been given an index card, please write on it:\n\nYour first name\nYour year at Cal (1 is first year, 2 is second year, etc)\nWhether or not you are interested in majoring in a business- or econ-related field. 1 = yes, 0 = no"
+  },
+  {
+    "objectID": "3-generalization/09-bootstrapping/slides.html#section-3",
+    "href": "3-generalization/09-bootstrapping/slides.html#section-3",
+    "title": "Bootstrapping",
+    "section": "",
+    "text": "boardwork\n\nCollect index cards from students and record the data into a data frame on the board labelled “Observed sample”. Calculate the sample median and sample proportion of econ-related majors.\nAsk for a volunteer to generate the first bootstrap sample. Hand them the stack of cards and have them randomly choose a single card and read off the data to you. As they do so, write out the first row of a “Bootstrap Sample 1” data frame on the board. Be sure to label the row with the student name - that helps emphasis when there are repeats.Have them return the card to the deck, shuffle, and randomly choose a card and read off the data. Repeat until you have filled out the same number of rows as in the original data set. Calculate the median and proportion (you may want to write dplyr code to do this using summarize()).\nAsk for a second volunteer to generate the second bootstrap sample. Repeat the procedure as before, drawing a third data frame on the board and computing a second set of statistics (median and proportion).\nCollect the bootstrapped medians and proportions and sketch them as the first few points in a broader density plot that we’ll be able to see when we take more and more bootstrap samples. Label this as the “bootstrap distribution” and speak of it as an approximation to the true sampling distribution. You can explain the 1 - alpha bootstrap interval as the interval that captures the middle 95% of bootstrapped statistics."
+  },
+  {
+    "objectID": "3-generalization/09-bootstrapping/slides.html#example-penguins",
+    "href": "3-generalization/09-bootstrapping/slides.html#example-penguins",
+    "title": "Bootstrapping",
+    "section": "Example: Penguins",
+    "text": "Example: Penguins\nLet’s consider our 344 penguins to be a SRS from the broader population of Antarctic penguins. What is a point and interval estimate for the population proportion of penguins that are Adelie?\n\n\n\n\n\n\npenguins &lt;- penguins |&gt;\n  mutate(is_adelie = species == \"Adelie\")\n\npenguins |&gt;\n  ggplot(aes(x = is_adelie)) +\n  geom_bar()"
+  },
+  {
+    "objectID": "3-generalization/09-bootstrapping/slides.html#point-estimate",
+    "href": "3-generalization/09-bootstrapping/slides.html#point-estimate",
+    "title": "Bootstrapping",
+    "section": "Point estimate",
+    "text": "Point estimate\n\nobs_stat &lt;- penguins |&gt;\n  summarize(p_adelie = mean(is_adelie))\nobs_stat\n\n# A tibble: 1 × 1\n  p_adelie\n     &lt;dbl&gt;\n1    0.442"
+  },
+  {
+    "objectID": "3-generalization/09-bootstrapping/slides.html#generating-one-bootstrap-sample",
+    "href": "3-generalization/09-bootstrapping/slides.html#generating-one-bootstrap-sample",
+    "title": "Bootstrapping",
+    "section": "Generating one bootstrap sample",
+    "text": "Generating one bootstrap sample\n\nlibrary(infer)\npenguins |&gt;\n  specify(response = is_adelie,\n          success = \"TRUE\") |&gt;\n  generate(reps = 1, \n           type = \"bootstrap\")\n\n\n\n\nResponse: is_adelie (factor)\n# A tibble: 344 × 2\n# Groups:   replicate [1]\n   replicate is_adelie\n       &lt;int&gt; &lt;fct&gt;    \n 1         1 FALSE    \n 2         1 FALSE    \n 3         1 TRUE     \n 4         1 FALSE    \n 5         1 TRUE     \n 6         1 TRUE     \n 7         1 FALSE    \n 8         1 TRUE     \n 9         1 TRUE     \n10         1 TRUE     \n# ℹ 334 more rows"
+  },
+  {
+    "objectID": "3-generalization/09-bootstrapping/slides.html#two-more-bootstrap-samples",
+    "href": "3-generalization/09-bootstrapping/slides.html#two-more-bootstrap-samples",
+    "title": "Bootstrapping",
+    "section": "Two more bootstrap samples",
+    "text": "Two more bootstrap samples\n\n\n\npenguins |&gt;\n  specify(response = is_adelie,\n          success = \"TRUE\") |&gt;\n  generate(reps = 1, \n           type = \"bootstrap\")\n\nResponse: is_adelie (factor)\n# A tibble: 344 × 2\n# Groups:   replicate [1]\n   replicate is_adelie\n       &lt;int&gt; &lt;fct&gt;    \n 1         1 FALSE    \n 2         1 TRUE     \n 3         1 FALSE    \n 4         1 FALSE    \n 5         1 FALSE    \n 6         1 TRUE     \n 7         1 TRUE     \n 8         1 FALSE    \n 9         1 FALSE    \n10         1 FALSE    \n# ℹ 334 more rows\n\n\n\n\npenguins |&gt;\n  specify(response = is_adelie,\n          success = \"TRUE\") |&gt;\n  generate(reps = 1, \n           type = \"bootstrap\")\n\nResponse: is_adelie (factor)\n# A tibble: 344 × 2\n# Groups:   replicate [1]\n   replicate is_adelie\n       &lt;int&gt; &lt;fct&gt;    \n 1         1 FALSE    \n 2         1 TRUE     \n 3         1 TRUE     \n 4         1 FALSE    \n 5         1 FALSE    \n 6         1 TRUE     \n 7         1 TRUE     \n 8         1 FALSE    \n 9         1 FALSE    \n10         1 FALSE    \n# ℹ 334 more rows"
+  },
+  {
+    "objectID": "3-generalization/09-bootstrapping/slides.html#visualizing-9-bs-samples",
+    "href": "3-generalization/09-bootstrapping/slides.html#visualizing-9-bs-samples",
+    "title": "Bootstrapping",
+    "section": "Visualizing 9 bs samples",
+    "text": "Visualizing 9 bs samples\n\n\n\npenguins |&gt;\n  specify(response = is_adelie,\n          success = \"TRUE\") |&gt;\n  generate(reps = 9, \n           type = \"bootstrap\") |&gt;\n  ggplot(aes(x = is_adelie)) +\n  geom_bar() +\n  facet_wrap(vars(replicate),\n             nrow = 3)"
+  },
+  {
+    "objectID": "3-generalization/09-bootstrapping/slides.html#calculating-9-hatp",
+    "href": "3-generalization/09-bootstrapping/slides.html#calculating-9-hatp",
+    "title": "Bootstrapping",
+    "section": "Calculating 9 \\(\\hat{p}\\)",
+    "text": "Calculating 9 \\(\\hat{p}\\)\n\n\n\npenguins |&gt;\n  specify(response = is_adelie,\n          success = \"TRUE\") |&gt;\n  generate(reps = 9, \n           type = \"bootstrap\") |&gt;\n  calculate(stat = \"prop\")\n\n\n\n\nResponse: is_adelie (factor)\n# A tibble: 9 × 2\n  replicate  stat\n      &lt;int&gt; &lt;dbl&gt;\n1         1 0.404\n2         2 0.430\n3         3 0.404\n4         4 0.433\n5         5 0.468\n6         6 0.448\n7         7 0.427\n8         8 0.413\n9         9 0.474\n\n\n\n\n\nNote the change in data frame size."
+  },
+  {
+    "objectID": "3-generalization/09-bootstrapping/slides.html#the-bootstrap-dist-reps-500",
+    "href": "3-generalization/09-bootstrapping/slides.html#the-bootstrap-dist-reps-500",
+    "title": "Bootstrapping",
+    "section": "The bootstrap dist (reps = 500)",
+    "text": "The bootstrap dist (reps = 500)\n\n\n\n\npenguins |&gt;\n  specify(response = is_adelie,\n          success = \"TRUE\") |&gt;\n  generate(reps = 500, \n           type = \"bootstrap\") |&gt;\n  calculate(stat = \"prop\") |&gt;\n  ggplot(aes(x = stat)) +\n  geom_histogram()"
+  },
+  {
+    "objectID": "3-generalization/09-bootstrapping/slides.html#interval-estimate",
+    "href": "3-generalization/09-bootstrapping/slides.html#interval-estimate",
+    "title": "Bootstrapping",
+    "section": "Interval Estimate",
+    "text": "Interval Estimate\n\nWe can extract the middle 95% by identifying the .025 quantile and the .975 quantile of the bootstrap distribution with get_ci().\n\npenguins |&gt;\n  specify(response = is_adelie,\n          success = \"TRUE\") |&gt;\n  generate(reps = 500, \n           type = \"bootstrap\") |&gt;\n  calculate(stat = \"prop\") |&gt;\n  get_ci(level = .95)\n\n\n\n\n\n# A tibble: 1 × 2\n  lower_ci upper_ci\n     &lt;dbl&gt;    &lt;dbl&gt;\n1    0.392    0.494"
+  },
+  {
+    "objectID": "3-generalization/09-bootstrapping/slides.html#documentation-infer.tidymodels.org",
+    "href": "3-generalization/09-bootstrapping/slides.html#documentation-infer.tidymodels.org",
+    "title": "Bootstrapping",
+    "section": "Documentation: infer.tidymodels.org",
+    "text": "Documentation: infer.tidymodels.org"
+  },
+  {
+    "objectID": "3-generalization/09-bootstrapping/slides.html#your-turn",
+    "href": "3-generalization/09-bootstrapping/slides.html#your-turn",
+    "title": "Bootstrapping",
+    "section": "Your Turn",
+    "text": "Your Turn\n\nCreate a 95% confidence interval for the median bill length of penguins.\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "license.html",
@@ -2059,6 +2241,102 @@
     "title": "Probability Foundations II",
     "section": "Concept Question 5",
     "text": "Concept Question 5\n\n\n\n−+\n01:00\n\n\n\n\n\nSuppose we assume, instead, that the probability that the Dodgers would have beaten the Yankees in any single game was 50%, independently of all the other games. In this case, was the probability that the series would have gone to 6 games higher than the probability that the series would have gone to 7 games, given that 5 games were played?\n\n\nif 5 games are played it means one of the teams is leading 3-2. Therefore there are two scenarios: the team that is ahead wins game 6 and the series, or the team that is behind wins game 6 and they go to 7 games. Both are equally likely."
+  },
+  {
+    "objectID": "3-generalization/10-hypothesis-tests/notes.html",
+    "href": "3-generalization/10-hypothesis-tests/notes.html",
+    "title": "Hypothesis Testing",
+    "section": "",
+    "text": "Classical statistics features two primary methods for using a sample of data to make an inference about a more general process. The first is the confidence interval, which expresses the uncertainty in an estimate of a population parameter. The second classical method of generalization is the hypothesis test.\nThe hypothesis test takes a more active approach to reasoning: it posits a specific explanation for how the data could be generated, then evaluates whether or not the observed data is consistent with that model. The hypothesis test is one of the most common statistical tools in the social and natural sciences, but the reasoning involved can be counter-intuitive. Let’s introduce the logic of a hypothesis test by looking at another criminal case that drew statisticians into the mix.",
+    "crumbs": [
+      "Notes",
+      "Generalization",
+      "Hypothesis Testing"
+    ]
+  },
+  {
+    "objectID": "3-generalization/10-hypothesis-tests/notes.html#example-the-united-states-vs-kristen-gilbert",
+    "href": "3-generalization/10-hypothesis-tests/notes.html#example-the-united-states-vs-kristen-gilbert",
+    "title": "Hypothesis Testing",
+    "section": "Example: The United States vs Kristen Gilbert",
+    "text": "Example: The United States vs Kristen Gilbert\n\n\n\n\n\nIn 1989, fresh out of nursing school, Kristen Gilbert got a job at the VA Medical Center in Northampton, Massachusetts, not far from where she grew up1. Within a few years, she became admired for her skill and competence.\nGilbert’s skill was on display whenever a “code blue” alarm was sounded. This alarm indicates that a patient has gone into cardiac arrest and must be addressed quickly by administering a shot of epinephrine to restart the heart. Gilbert developed for a reputation for her steady hand in these crises.\nBy the mid-1990s, however, the other nurses started to grow suspicious. There seemed to be a few too many code blues, and a few too many deaths, during Gilbert’s shifts. The staff brought their concerns to the VA administration, who brought in a statistician to evaluate the data.\n\nThe Data\nThe data that the VA provided to the statistician contained the number of deaths at the medical center over the previous 10 years, broken out by the three shifts of the days: night, daytime, and evening. As part of the process of exploratory data analysis, the statistician constructed a plot.\n\n\n\n\n\nThis visualization reveals several striking trends. Between 1990 and 1995, there were dramatically more deaths than the years before and after that interval. Within that time span, it was the evening shift that had most of the deaths. The exception is 1990, when the night and daytime shifts had the most deaths.\nSo when was Gilbert working? She began working in this part of the hospital in March 1990 and stopped working in February 1996. Her shifts throughout that time span? The evening shifts. The one exception was 1990, when she was assigned to work the night shift.\nThis evidence is compelling in establishing an association between Gilbert and the increase in deaths. When the district attorney brought a case against Gilbert in court, this was the first line of evidence they provided. In a trial, however, there is a high burden of proof.\nCould there be an alternative explanation for the trend found in this data?\n\n\nThe role of random chance\nSuppose for a moment that the occurrence of deaths at the hospital had nothing to do with Gilbert being on shift. In that case we would expect that the proportion of shifts with a death would be fairly similar when comparing shifts where Gilbert was working and shifts where she was not. But we wouldn’t expect those proportions to be exactly equal. It’s reasonable to think that a slightly higher proportion of Gilbert’s shifts could have had a death just due to random chance, not due to anything malicious on her part.\nSo just how different were these proportions in the data? The plot above shows data from 1,641 individual shifts, on which three different variables were recorded: the shift number, whether or not there was a death on the shift, and whether or not Gilbert was working that shift.\nHere are the first 10 observations.\n\n\n# A tibble: 1,641 × 3\n   shift death staff     \n   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;     \n 1   626 no    no_gilbert\n 2   590 no    no_gilbert\n 3  1209 no    no_gilbert\n 4  1122 no    no_gilbert\n 5   622 no    no_gilbert\n 6  1536 no    no_gilbert\n 7  1472 no    no_gilbert\n 8   214 no    gilbert   \n 9   277 yes   no_gilbert\n10  1332 no    no_gilbert\n# ℹ 1,631 more rows\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUsing this data frame, we can calculate the sample proportion of shifts where Gilbert was working (257) that had a death (40) and compare them to the sample proportion of shifts where Gilbert was not working (1384) that had a death (34).\n\\[\n\\hat{p}_{gilbert} - \\hat{p}_{no\\_gilbert} = \\frac{40}{257} - \\frac{34}{1384} = .155 - .024 = .131\n\\]\n\n\nA note on notation: it’s common to use \\(\\hat{p}\\) (“p hat”) to indicate that a proportion has been computed from a sample of data.\nA difference of .131 seems dramatic, but is that within the bounds of what we might expect just due to chance? One way to address this question is to phrase it as: if in fact the probability of a death on a given shift is independent of whether or not Gilbert is on the shift, what values would we expect for the difference in observed proportions?\nWe can answer this question by using simulation. To a simulate a world in which deaths are independent of Gilbert, we can\n\nShuffle (or permute) the values in the death variable in the data frame to break the link between that variable and the staff variable.\nCalculate the resulting difference in proportion of deaths in each group.\n\nThe rationale for shuffling values in one of the columns is that if in fact those two columns are independent of one another, then it was just random chance that led to a value of one variable landing in the same row as the value of the other variable. It could just as well have been a different pairing. Shuffling captures another example of the arbitrary pairings that we could have observed if the two variables were independent of one another2.\nBy repeating steps 1 and 2 many many times, we can build up the full distribution of the values that this difference in proportions could take.\n\n\n\n\n\n\n\n\n\nAs expected, in a world where these two variables are independent of one another, we would expect a difference in proportions around zero. Sometimes, however, that statistic might reach values of +/- .01 or .02 or rarely .03. In the 500 simulated statistics shown above, however, none of them reached beyond +/- .06.\nSo if that’s the range of statistics we would expect in a world where random chance is the only mechanism driving the difference in proportions, how does it compare to the world that we actually observed? The statistic that we observed in the data was .131, more than twice the value of the most extreme statistic observed above.\nTo put that into perspective, we can plot the observed statistic as a vertical line on the same plot.\n\n\n\n\n\n\n\n\n\nThe method used above shows that the chance of observing a difference of .131 is incredibly unlikely if in fact deaths were independent of Gilbert being on shift. On this point, the statisticians on the case agreed that they could rule out random chance as an explanation for this difference. Something else must have been happening.",
+    "crumbs": [
+      "Notes",
+      "Generalization",
+      "Hypothesis Testing"
+    ]
+  },
+  {
+    "objectID": "3-generalization/10-hypothesis-tests/notes.html#elements-of-a-hypothesis-test",
+    "href": "3-generalization/10-hypothesis-tests/notes.html#elements-of-a-hypothesis-test",
+    "title": "Hypothesis Testing",
+    "section": "Elements of a Hypothesis Test",
+    "text": "Elements of a Hypothesis Test\nThe logic used by the statisticians in the Gilbert case is an example of a hypothesis test. There are a few key components common to every hypothesis test, so we’ll lay them out one-by-one.\nA hypothesis test begins with the assertion of a null hypothesis.\n\nNull Hypothesis\n\nA description of the chance process for generating data. Sometimes referred to as \\(H_0\\) (“H naught”).\n\n\nIt is common for the null hypothesis to be that nothing interesting is happening or that it is business as usual, a hypothesis that statisticians try to refute with data. In Gilbert case, this could be described as “The occurrence of a death is independence of the presence of Gilbert” or “The probability of death is the same whether or not Gilbert is on shift” or “The difference in the probability of death is zero, when comparing shifts where Gilbert is present to shifts where Gilbert is not present”. Importantly, the null model describes a possible state of the world, therefore the latter two versions are framed in terms of parameters (\\(p\\) for proportions) instead of observed statistics (\\(\\hat{p}\\)).\nThe hypothesis that something indeed is going on is usually framed as the alternative hypothesis.\n\nAlternative Hypothesis\n\nThe assertion that a mechanism other than the null hypothesis generated the data. Sometimes referred to as \\(H_A\\) (“H A).\n\n\nIn the Gilbert case, the corresponding alternative hypothesis is that there is “The occurrence of a death is dependent on the presence of Gilbert” or “The probability of death is different whether or not Gilbert is on shift” or “The difference in the probability of death is non-zero, when comparing shifts where Gilbert is present to shifts where Gilbert is not present”\nIn order to determine whether the observed data is consistent with the null hypothesis, it is necessary to compress the data down into a single statistic.\n\nTest Statistic\n\nA numerical summary of the observed data that bears on the null hypothesis. Under the null hypothesis it has a sampling distribution (also called a “Null Distribution”).\n\n\nIn Gilbert’s case, a difference in two proportions, \\(\\hat{p}_1 - \\hat{p}_2\\) is a natural test statistic and the observed test statistic was .131.\nIt’s not enough, though, to just compute the observed statistic. We need to know how likely this statistic would be in a world where the null hypothesis is true. This probability is captured in the notion of a p-value.\n\np-value\n\nThe probability of a test statistic as rare or even more rare than the one observed under the assumptions of the null hypothesis.\n\n\nIf the p-value is high, then the data is consistent with the null hypothesis. If the p-value is very low, however, there the statistic that was observed would be very unlikely in a world where the null hypothesis was true. As a consequence, the null hypothesis can be rejected as reasonable model for the data.\nThe p-value can be estimated using the proportion of statistics from the simulated null distribution that are as or more extreme than the observed statistic. In the simulation for the Gilbert case, there were 0 statistics greater than .131, so the estimated p-value is zero.",
+    "crumbs": [
+      "Notes",
+      "Generalization",
+      "Hypothesis Testing"
+    ]
+  },
+  {
+    "objectID": "3-generalization/10-hypothesis-tests/notes.html#what-a-p-value-is-not",
+    "href": "3-generalization/10-hypothesis-tests/notes.html#what-a-p-value-is-not",
+    "title": "Hypothesis Testing",
+    "section": "What a p-value is not",
+    "text": "What a p-value is not\nThe p-value has been called the most used as well as the most abused tool in statistics. Here are three common misinterpretations to be wary of.\n\nThe p-value is the probability that the null hypothesis is true (FALSE!)\nThis is one of the most common confusions about p-values. Graphically, a p-value corresponds to the area in the tail of the null distribution that is more extreme than the observed test statistic. That null distribution can only be created if you assume that the null hypothesis is true. The p-value is fundamentally a conditional probability of observing the statistic (or more extreme) given the null hypothesis is true. It is flawed reasoning to start with an assumption that the null hypothesis is true and arrive at a probability of that same assumption.\nA very high p-value suggests that the null hypothesis is true (FALSE!)\nThis interpretation is related to the first one but can lead to particularly wrongheaded decisions. One way to keep your interpretation of a p-value straight is to recall the distinction made in the US court system. A trial proceeds under the assumption that the defendant is innocent. The prosecution presents evidence of guilt. If the evidence is convincing the jury will render a verdict of “guilty”. If the evidence is not-convincing (that is, the p-value is high) then the jury will render a verdict of “not guilty” - not a verdict of “innocent”.\nImagine a setting where the prosecution has presented no evidence at all. That by no means indicates that the defendant is innocent, just that there was insufficient evidence to establish guilt.\nThe p-value is the probability of the data (FALSE!)\nThis statement has a semblance of truth to it but is missing an important qualifier. The probability is calculated based on the null distribution, which requires the assumption that the null hypothesis is true. It’s also not quite specific enough. Most often p-values are calculated as probabilities of test statistics, not probabilities of the full data sets.\n\nAnother more basic check on your understanding of a p-value: a p-value is a (conditional) probability, therefore it must between a number between 0 and 1. If you ever find yourself computing a p-value of -6 or 3.2, be sure to pause and revisit your calculations!",
+    "crumbs": [
+      "Notes",
+      "Generalization",
+      "Hypothesis Testing"
+    ]
+  },
+  {
+    "objectID": "3-generalization/10-hypothesis-tests/notes.html#one-test-many-variations",
+    "href": "3-generalization/10-hypothesis-tests/notes.html#one-test-many-variations",
+    "title": "Hypothesis Testing",
+    "section": "One test, many variations",
+    "text": "One test, many variations\nThe hypothesis testing framework laid out above is far more general than just this particular example from the case of Kristen Gilbert where we computed a difference in proportions and used shuffling (aka permutation) to build the null distribution. Below are just a few different research questions that could be addressed using a hypothesis test.\n\nPollsters have surveyed a sample of 200 voters ahead of an election to assess their relative support for the Republican and Democratic candidate. The observed difference in those proportions is .02. Is this consistent with the notion of evenly split support for the two candidates, or is one decidedly in the lead?\nBrewers have tapped 7 barrels of beer and measured the average level of a compound related to the acidity of the beer as 610 parts per million. The acceptable level for this compound is 500 parts per million. Is this average of 610 consistent with the notion that the average of the whole batch of beer (many hundreds of barrels) is at the acceptable level of this compound?\nA random sample of 40 users of a food delivery app were randomly assigned two different versions of a menu where they entered the amount of their tip: one with the tip amount in ascending order, the other in descending order. The average tip amount of those with the menu in ascending order was found to be $3.87 while the average tip of the users in the descending order group was $3.96. Could this difference in averages be explained by chance?\n\nAlthough the contexts of these problems are very different, as are the types of statistics they’ve calculated, they can still be characterized as a hypothesis test by asking the following questions:\n\nWhat is the null hypothesis used by the researchers?\nWhat is the value of the observed test statistic?\nHow did researchers approximate the null distribution?\nWhat was the p-value, what does it tell us and what does it not tell us?",
+    "crumbs": [
+      "Notes",
+      "Generalization",
+      "Hypothesis Testing"
+    ]
+  },
+  {
+    "objectID": "3-generalization/10-hypothesis-tests/notes.html#summary",
+    "href": "3-generalization/10-hypothesis-tests/notes.html#summary",
+    "title": "Hypothesis Testing",
+    "section": "Summary",
+    "text": "Summary\nIn classical statistics there are two primary tools for assessing the role that random variability plays in the data that you have observed. The first is the confidence interval, which quantifies the amount of uncertainty in a point estimate due to the variability inherent in drawing a small random sample from a population. The second is the hypothesis test, which postings a specific model by which the data could be generated, then assesses the degree to which the observed data is consistent with that model.\nThe hypothesis test begins with the assertion of a null hypothesis that describes a chance mechanism for generating data. A test statistic is then selected that corresponds to that null hypothesis. From there, the sampling distribution of that statistic under the null hypothesis is approximated through a computational method (such as using permutation, as shown here) or one rooted in probability theory (such as the Central Limit Theorem). The final result of the hypothesis test procedure is the p-value, which is approximated as the proportion of the null distribution that is as or more extreme than the observed test statistic. The p-value measures the consistency between the null hypothesis and the observed test statistic and should be interpreted carefully.\nA postscript on the case of Kristen Gilbert. Although the hypothesis test ruled out random chance as the reason for the spike in deaths under her watch, it didn’t rule out other potential causes for that spike. It’s possible, after all, that the nightshifts that Gilbert was working happen to be the time of day when cardiac arrests are more common. For this reason, the statistical evidence was never presented to the jury, but the jury nonetheless found her guilty based on other evidence presented in the trial.",
+    "crumbs": [
+      "Notes",
+      "Generalization",
+      "Hypothesis Testing"
+    ]
+  },
+  {
+    "objectID": "3-generalization/10-hypothesis-tests/notes.html#the-ideas-in-code",
+    "href": "3-generalization/10-hypothesis-tests/notes.html#the-ideas-in-code",
+    "title": "Hypothesis Testing",
+    "section": "The Ideas in Code",
+    "text": "The Ideas in Code\nA hypothesis test using permutation can be implemented by introducing one new step into the process used for calculating a bootstrap interval. The key distinction is that in a hypothesis test the researchers puts forth a model for how the data could be generated. That is the role of hypothesize().\n\n\n\n\n\n\nhypothesize()\nA function to place before generate() in an infer pipeline where you can specify a null model under which to generate data. The one necessary argument is\n\nnull: the null hypothesis. Options include \"independence\" and \"point\".\n\nThe following example implements a permutation test under the null hypothesis that there is no relationship between the body mass of penguins and their\n\nlibrary(tidyverse)\nlibrary(stat20data)\nlibrary(infer)\n\npenguins |&gt;\n  specify(response = body_mass_g,\n          explanatory = sex) |&gt;\n  hypothesize(null = \"independence\")\n\nResponse: body_mass_g (numeric)\nExplanatory: sex (factor)\nNull Hypothesis: independence\n# A tibble: 333 × 2\n   body_mass_g sex   \n         &lt;dbl&gt; &lt;fct&gt; \n 1        3750 male  \n 2        3800 female\n 3        3250 female\n 4        3450 female\n 5        3650 male  \n 6        3625 female\n 7        4675 male  \n 8        3200 female\n 9        3800 male  \n10        4400 male  \n# ℹ 323 more rows\n\n\nObserve:\n\nThe output is the original data frame with new information appended to describe what the null hypothesis is for this data set.\nThere are other forms of hypothesis tests that you will see involving a \"point\" null hypothesis. Those require adding additional arguments to hypothesize().\n\n\n\nCalculating an observed statistic\nLet’s say for this example you select as your test statistic a difference in means, \\(\\bar{x}_{female} - \\bar{x}_{male}\\). While you can use tools you know - group_by() and summarize() to calculate this statistic, you can also recycle much of the code that you’ll use to build the null distribution with infer.\n\nobs_stat &lt;- penguins |&gt;\n  specify(response = body_mass_g,\n          explanatory = sex) |&gt;\n  calculate(stat = \"diff in means\")\n\nobs_stat\n\nResponse: body_mass_g (numeric)\nExplanatory: sex (factor)\n# A tibble: 1 × 1\n   stat\n  &lt;dbl&gt;\n1 -683.\n\n\n\n\nCalculating the null distribution\nTo generate a null distribution of the kind of differences in means that you’d observe in a world where body mass had nothing to do with sex, just add the hypothesis with hypothesize() and the generation mechanism with generate().\n\nnull &lt;- penguins |&gt;\n  specify(response = body_mass_g,\n          explanatory = sex) |&gt;\n  hypothesize(null = \"independence\") |&gt;\n  generate(reps = 500, type = \"permute\") |&gt;\n  calculate(stat = \"diff in means\")\n\nnull\n\nResponse: body_mass_g (numeric)\nExplanatory: sex (factor)\nNull Hypothesis: independence\n# A tibble: 500 × 2\n   replicate    stat\n       &lt;int&gt;   &lt;dbl&gt;\n 1         1  -59.9 \n 2         2 -125.  \n 3         3   68.9 \n 4         4   37.1 \n 5         5  129.  \n 6         6   36.5 \n 7         7   -7.08\n 8         8   60.8 \n 9         9  -16.7 \n10        10  -63.8 \n# ℹ 490 more rows\n\n\nObserve:\n\nThe output data frame has reps rows and 2 columns: one indicating the replicate and the other with the statistic (a difference in means).\n\n\n\nvisualize()\nOnce you have a collection of test statistics under the null hypothesis saved as null, it can be useful to visualize that approximation of the null distribution. For that, use the function visualize().\n\npenguins |&gt;\n  specify(response = body_mass_g,\n          explanatory = sex) |&gt;\n  hypothesize(null = \"independence\") |&gt;\n  generate(reps = 9, type = \"permute\") |&gt;\n  calculate(stat = \"diff in means\")\n\nResponse: body_mass_g (numeric)\nExplanatory: sex (factor)\nNull Hypothesis: independence\n# A tibble: 9 × 2\n  replicate   stat\n      &lt;int&gt;  &lt;dbl&gt;\n1         1  95.6 \n2         2 -14.0 \n3         3 -28.1 \n4         4 -49.4 \n5         5 124.  \n6         6 -53.6 \n7         7 -32.0 \n8         8 -96.9 \n9         9  -4.08\n\nnull |&gt;\n  visualize() +\n  shade_p_value(100, direction = \"both\")\n\n\n\n\n\n\n\n\nObserve:\n\nvisualize() expects a data frame of statistics.\nIt is a short cut to creating a particular type of ggplot, so like any ggplot, you can add layers to it with ++.\nshade_p_value() is a function you can add to shade the part of the null distribution that corresponds to the p-value. The first argument is the observed statistic, which we’ve recorded as 100 here to see the behavior of the function. direction is an argument where you specify if you would like to shade values \"less than\" or \"more than\" the observed value, or \"both\" for a two-tailed p-value.",
+    "crumbs": [
+      "Notes",
+      "Generalization",
+      "Hypothesis Testing"
+    ]
+  },
+  {
+    "objectID": "3-generalization/10-hypothesis-tests/notes.html#footnotes",
+    "href": "3-generalization/10-hypothesis-tests/notes.html#footnotes",
+    "title": "Hypothesis Testing",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThis case study appears in Statistics in the Courtroom: United States v. Kristen Gilbert by Cobb and Gelbach, published in Statistics: A Guide to the Unknown by Peck et. al.↩︎\nThe technical notion that motivates the use of shuffling is a slightly more general notion than independence called exchangability. The distinction between these two related concepts is a topic in a course in probability.↩︎",
+    "crumbs": [
+      "Notes",
+      "Generalization",
+      "Hypothesis Testing"
+    ]
   },
   {
     "objectID": "3-generalization/08-confidence-intervals/notes.html",
@@ -3771,6 +4049,6 @@
     "href": "assignments.html#worksheets",
     "title": "Assignments",
     "section": "Worksheets",
-    "text": "Worksheets\nWorksheets are pen-and-paper practice problems that we work on in class. The goal of the worksheets is simply practice: they help you drill the techniques needed to complete the labs.\n\n\n\nWS: Taxonomy of Data\n\n\nWS: Summarizing Categorical Data\n\n\nWS: Summarizing Numerical Data\n\n\nWS: A Grammar of Graphics\n\n\nWS: Conditioning\n\n\nWS: Summarizing Numerical Associations\n\n\nWS: Multiple Linear Regression\n\n\nWS: Probability Foundations\n\n\nWS: Probability Foundations II\n\n\nWS: Probability Distributions\n\n\nWS: Random Variables\n\n\nWS: Expected Value and Variance\n\n\nWS: Probability Foundations II\n\n\nWS: Sampling Distributions\n\n\n\nNo matching items"
+    "text": "Worksheets\nWorksheets are pen-and-paper practice problems that we work on in class. The goal of the worksheets is simply practice: they help you drill the techniques needed to complete the labs.\n\n\n\nWS: Taxonomy of Data\n\n\nWS: Summarizing Categorical Data\n\n\nWS: Summarizing Numerical Data\n\n\nWS: A Grammar of Graphics\n\n\nWS: Conditioning\n\n\nWS: Summarizing Numerical Associations\n\n\nWS: Multiple Linear Regression\n\n\nWS: Probability Foundations\n\n\nWS: Probability Foundations II\n\n\nWS: Probability Distributions\n\n\nWS: Random Variables\n\n\nWS: Expected Value and Variance\n\n\nWS: Probability Foundations II\n\n\nWS: Sampling Distributions\n\n\nWS: Bootstrapping\n\n\nWS: Hypothesis Testing\n\n\n\nNo matching items"
   }
 ]
