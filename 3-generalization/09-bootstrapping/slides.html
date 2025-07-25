@@ -421,28 +421,137 @@ STAT 20: Introduction to Probability and Statistics
 </div>
 
 </section>
-<section id="while-youre-waiting" class="slide level2">
-<h2>While you’re waiting</h2>
-<p>If you’ve been given an index card, please write on it:</p>
-<ol type="1">
-<li>Your first name</li>
-<li>Your year at Cal (1 is first year, 2 is second year, etc)</li>
-<li>Whether or not you are interested in majoring in a business- or econ-related field. 1 = yes, 0 = no</li>
-</ol>
-<aside class="notes">
-<p>As students arrive, randomly give ~8 of them an index card.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+<section id="agenda" class="slide level2">
+<h2>Agenda</h2>
+<ul>
+<li>Announcements</li>
+<li>Reading Questions</li>
+<li><em>Break</em></li>
+<li>Worksheet: <em>Bootstrapping</em></li>
+<li>Appendix</li>
+</ul>
 </section>
+<section id="announcements" class="slide level2">
+<h2>Announcements</h2>
+<ul>
+<li>Portfolio 5 due Friday at 5pm</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Lab 3 due Wednesday at 12pm</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Quiz 3 next Thursday.</li>
+</ul>
+</div>
+</section>
+<section>
+<section id="reading-questions" class="title-slide slide level1 center">
+<h1>Reading Questions</h1>
+<ul>
+<li>Please put your laptops under your desk and your phones away.</li>
+<li>Write your name, ID, and bubble in Version “A” on your answer sheet.</li>
+<li>You may work only with those at your table!</li>
+</ul>
+</section>
+<section id="read-this-first." class="slide level2">
+<h2>Read this first.</h2>
+<blockquote>
+<p>From a population of size 1,000, we take a sample of size 100. We then create a bootstrapped percentile confidence interval for the population median using 10,000 statistics. Each of these statistics was generated from one bootstrap sample.</p>
+</blockquote>
+</section>
+<section id="how-large-is-each-bootstrap-sample" class="slide level2">
+<h2>How large is each bootstrap sample?</h2>
+<ul>
+<li>A: 10000</li>
+<li>B: 1000</li>
+<li>C: 100</li>
+<li>D: The correct answer is not listed here.</li>
+</ul>
+<div id="timer_8979791594026819164587f75df0be78d587985d" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">40</span></code>
+ </div>
+</section>
+<section id="suppose-we-change-the-sample-size-from-100-to-something-else.-which-of-the-following-sizes-makes-the-bootstrap-method-for-creating-a-confidence-interval-most-prone-to-failure" class="slide level2">
+<h2>Suppose we change the sample size from 100 to something else. Which of the following sizes makes the bootstrap method for creating a confidence interval most prone to failure?</h2>
+<ul>
+<li>A: 200</li>
+<li>B: 75</li>
+<li>C: 50</li>
+<li>D: 20</li>
+</ul>
+<div id="timer_8979791594026819164587f75df0be78d587985d" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">40</span></code>
+ </div>
+</section>
+<section id="true-or-false-a-bootstrap-sample-is-taken-with-replacement." class="slide level2">
+<h2><em>True or false</em>: a bootstrap sample is taken <em>with</em> replacement.</h2>
+<ul>
+<li>A: True</li>
+<li>B: False</li>
+</ul>
+<div id="timer_8979791594026819164587f75df0be78d587985d" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
+ </div>
+</section>
+<section id="we-have-obtained-a-confidence-interval-for-the-regression-coefficient-b1-in-the-model-haty-b_0-b_1x-using-the-bootstrap.-the-interval-for-b1-does-not-contain-0.-what-does-this-suggest" class="slide level2">
+<h2>We have obtained a confidence interval for the regression coefficient <span class="math inline">\(b1\)</span> in the model <span class="math inline">\(\hat{y} = b_0 + b_1x\)</span> using the bootstrap. The interval for <span class="math inline">\(b1\)</span> does not contain 0. What does this suggest?</h2>
+<ul>
+<li>A: In the population, there is a linear association between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>.</li>
+<li>B: Within our table, there is a linear association between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>.</li>
+<li>C: In the population, there is no linear association between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>.</li>
+<li>D: Within our table, there is no linear association between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>.</li>
+<li>E: In the population, there is a causal link between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>.</li>
+</ul>
+<div id="timer_8979791594026819164587f75df0be78d587985d" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
+ </div>
+</section></section>
+<section id="break" class="title-slide slide level1 center">
+<h1>Break</h1>
+<div id="timer_8979791594026819164587f75df0be78d587985d" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section>
+
+<section id="worksheet-bootstrapping" class="title-slide slide level1 center">
+<h1>Worksheet: <em>Bootstrapping</em></h1>
+<div id="timer_8979791594026819164587f75df0be78d587985d" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">40</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section>
+
+<section id="appendix" class="title-slide slide level1 center">
+<h1>Appendix</h1>
+
+</section>
+
 <section>
 <section id="concept-questions" class="title-slide slide level1 center">
 <h1>Concept Questions</h1>
@@ -453,7 +562,7 @@ STAT 20: Introduction to Probability and Statistics
 <div class="poll">
 <p>Which of these is a valid bootstrap sample?</p>
 </div>
-<div id="timer_f07cd29be613ee5c88b674f034de69559535e561" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_8979791594026819164587f75df0be78d587985d" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -1010,7 +1119,7 @@ STAT 20: Introduction to Probability and Statistics
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_6280f733" data-update-every="1" tabindex="0" style="right:0;bottom:0;font-size:2em;">
+<div class="countdown" id="timer_10e4ba2e" data-update-every="1" tabindex="0" style="right:0;bottom:0;font-size:2em;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
