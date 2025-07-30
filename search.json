@@ -360,6 +360,62 @@
     ]
   },
   {
+    "objectID": "3-generalization/11-hypothesis-tests-2/slides.html#agenda",
+    "href": "3-generalization/11-hypothesis-tests-2/slides.html#agenda",
+    "title": "Hypothesis Tests II",
+    "section": "Agenda",
+    "text": "Agenda\n\nAnnouncements\nReading Questions: Hypothesis Tests II\nBreak\nWorksheet: Hypothesis Tests II\nAppendix"
+  },
+  {
+    "objectID": "3-generalization/11-hypothesis-tests-2/slides.html#announcements",
+    "href": "3-generalization/11-hypothesis-tests-2/slides.html#announcements",
+    "title": "Hypothesis Tests II",
+    "section": "Announcements",
+    "text": "Announcements\n\nQuiz 3 on Thursday\n\n\n\nPortfolio 5 (Mon., Tue., Wed.) due Friday at 5pm"
+  },
+  {
+    "objectID": "3-generalization/11-hypothesis-tests-2/slides.html#read-this-first.",
+    "href": "3-generalization/11-hypothesis-tests-2/slides.html#read-this-first.",
+    "title": "Hypothesis Tests II",
+    "section": "Read this first.",
+    "text": "Read this first.\n\nConsider a setting where you have observed data from 120 rolls of a six sided die. The proportion of rolls of each outcome were \\(\\hat{p}_1 = 0.21\\), \\(\\hat{p}_2 = 0.16\\), \\(\\hat{p}_3 = 0.16\\), \\(\\hat{p}_4 = 0.14\\), \\(\\hat{p}_5 = 0.18\\), \\(\\hat{p}_6 = 0.15\\). The proportion of 1s seem a bit high, so you conduct a hypothesis test to determine whether or not this data is consistent with it being a fair six-sided die. Let \\(\\hat{p}_i\\) be the observed proportion of rolls on side \\(i\\) and let \\(p_i\\) be the corresponding true probability (a parameter)."
+  },
+  {
+    "objectID": "3-generalization/11-hypothesis-tests-2/slides.html#which-of-the-following-is-the-correct-articulation-of-the-null-hypothesis",
+    "href": "3-generalization/11-hypothesis-tests-2/slides.html#which-of-the-following-is-the-correct-articulation-of-the-null-hypothesis",
+    "title": "Hypothesis Tests II",
+    "section": "Which of the following is the correct articulation of the null hypothesis?",
+    "text": "Which of the following is the correct articulation of the null hypothesis?\n\nA: \\(H_A: \\hat{p}_1 = 0.21, \\hat{p}_2 = 0.16, \\hat{p}_3 = 0.16, \\hat{p}_4 = 0.14, \\hat{p}_5 = 0.18, \\hat{p}_6 = 0.15\\)\nB: \\(H_0: \\hat{p}_1 = 0.21, \\hat{p}_2 = 0.16, \\hat{p}_3 = 0.16, \\hat{p}_4 = 0.14, \\hat{p}_5 = 0.18, \\hat{p}_6 = 0.15\\)\nC: \\(H_0: \\hat{p}_1 = 1/6, \\hat{p}_2 = 1/6, \\hat{p}_3 = 1/6, \\hat{p}_4 = 1/6, \\hat{p}_5 = 1/6, \\hat{p}_6 = 1/6\\)\nD: \\(H_0: p_1 = 1/6, p_2 = 1/6, p_3 = 1/6, p_4 = 1/6, p_5 = 1/6, p_6 = 1/6\\)\n\n\n  \n    −\n    +\n \n 01:00"
+  },
+  {
+    "objectID": "3-generalization/11-hypothesis-tests-2/slides.html#you-would-like-to-simulate-500-data-sets-using-the-process-by-which-you-observed-your-data-under-the-null-hypothesis.-how-would-you-simulate-one-such-dataset",
+    "href": "3-generalization/11-hypothesis-tests-2/slides.html#you-would-like-to-simulate-500-data-sets-using-the-process-by-which-you-observed-your-data-under-the-null-hypothesis.-how-would-you-simulate-one-such-dataset",
+    "title": "Hypothesis Tests II",
+    "section": "You would like to simulate 500 data sets using the process by which you observed your data under the null hypothesis. How would you simulate one such dataset?",
+    "text": "You would like to simulate 500 data sets using the process by which you observed your data under the null hypothesis. How would you simulate one such dataset?\n\nA: Make a box with 6 tickets, each one with a digit 1 through 6 on it. Draw 120 tickets out of it without replacement.\nB: Make a box with 6 tickets, each one with a digit 1 through 6 on it. Draw 500 tickets out of it with replacement.\nC: Make a box with 6 tickets, each one with a digit 1 through 6 on it. Draw 500 tickets out of it without replacement.\nD: Make a box with 6 tickets, each one with a digit 1 through 6 on it. Draw 120 tickets out of it with replacement.\n\n\n  \n    −\n    +\n \n 00:40"
+  },
+  {
+    "objectID": "3-generalization/11-hypothesis-tests-2/slides.html#read-this-first.-1",
+    "href": "3-generalization/11-hypothesis-tests-2/slides.html#read-this-first.-1",
+    "title": "Hypothesis Tests II",
+    "section": "Read this first.",
+    "text": "Read this first.\n\nYou calculate one chi-squared statistic per data set (for a total of 500 statistics), and plot a null distribution with these 500 statistics. Your observed chi-squared statistic lies in the center of the null distribution."
+  },
+  {
+    "objectID": "3-generalization/11-hypothesis-tests-2/slides.html#what-does-the-above-tell-you-about-the-relationship-between-your-data-and-your-null-hypothesis",
+    "href": "3-generalization/11-hypothesis-tests-2/slides.html#what-does-the-above-tell-you-about-the-relationship-between-your-data-and-your-null-hypothesis",
+    "title": "Hypothesis Tests II",
+    "section": "What does the above tell you about the relationship between your data and your null hypothesis?",
+    "text": "What does the above tell you about the relationship between your data and your null hypothesis?\n\nA: The data is consistent with the null hypothesis.\nB: The data is inconsistent with the null hypothesis.\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "3-generalization/11-hypothesis-tests-2/slides.html#suppose-you-set-a-significance-level-of-alpha-0.02-before-running-the-hypothesis-test-and-then-calculate-a-p-value-after-creating-the-null-distribution.-based-on-the-location-of-your-observed-test-statistic-what-is-most-likely",
+    "href": "3-generalization/11-hypothesis-tests-2/slides.html#suppose-you-set-a-significance-level-of-alpha-0.02-before-running-the-hypothesis-test-and-then-calculate-a-p-value-after-creating-the-null-distribution.-based-on-the-location-of-your-observed-test-statistic-what-is-most-likely",
+    "title": "Hypothesis Tests II",
+    "section": "Suppose you set a significance level of \\(\\alpha = 0.02\\) before running the hypothesis test, and then calculate a p-value after creating the null distribution. Based on the location of your observed test statistic, what is most likely?",
+    "text": "Suppose you set a significance level of \\(\\alpha = 0.02\\) before running the hypothesis test, and then calculate a p-value after creating the null distribution. Based on the location of your observed test statistic, what is most likely?\n\nA: The p-value is less than \\(\\alpha\\).\nB: We need more information to determine an answer.\nC: The p-value is greater than \\(\\alpha\\).\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
     "objectID": "3-generalization/11-hypothesis-tests-2/slides.html#section",
     "href": "3-generalization/11-hypothesis-tests-2/slides.html#section",
     "title": "Hypothesis Tests II",
@@ -1544,6 +1600,97 @@
     "text": "Footnotes\n\n\nImage from Shutterstock/SpeedKingz, obtained from Pawlowski, A. (Dec 2015). Kids can’t resist candy? Stores try junk food-free ‘healthy checkout lanes.’ Today.com. https://www.today.com/parents/kids-cant-resist-candy-stores-try-junk-food-free-healthy-t60621.↩︎\nData is a modified version of data used in Ejlerskov KT, Sharp SJ, Stead M, Adamson AJ, White M, Adams J. Supermarket policies on less-healthy food at checkouts: Natural experimental evaluation using interrupted time series analyses of purchases. PLoS Med. 2018 Dec 18;15(12). Accessed via a repository described in Turner, S. L., Korevaar, E., Karahalios, A., Forbes, A. B., & McKenzie, J. E. (2023). Interrupted time series datasets from studies investigating the impact of interventions or exposures in public health and social science: A data note. Available at ResearchSquare, https://doi.org/10.21203/rs.3.rs-3669411/v1.↩︎\nImage from Haber, N. A., Clarke-Deelder, E., Salomon, J. A., Feller, A., & Stuart, E. A. (2021). Impact evaluation of coronavirus disease 2019 policy: A guide to common design issues. , 190(11), 2474-2486.↩︎\nThe original version of the supermarket checkout data does not actually contain pure controls, so observations for two control units have been synthetically generated for illustrative purposes.↩︎\nWe still might feel better about believing the parallel trends assumptions if pure control stores looked generally similar to treated stores in size and in other attributes. If we had a larger set of pure controls available and more store covariates measured, we could check covariate balance and conduct matching first, then run the difference-in-difference design on the pre/post data from the matched subjects only.↩︎\nFor interrupted time series, the regression model we estimate cannot easily be written in terms of unit differences. Hypothesis testing and confidence intervals require instead that groups of observations be permuted or resampled in a specific pattern, using tools such as clustered standard errors or the block bootstrap. These more complex procedures cannot be carried out using the infer package and we won’t cover them in this class.↩︎"
   },
   {
+    "objectID": "4-causation/labs/taste-test/slides.html#making-claims-with-data",
+    "href": "4-causation/labs/taste-test/slides.html#making-claims-with-data",
+    "title": "Lab: A Matter of Taste",
+    "section": "Making Claims with Data",
+    "text": "Making Claims with Data\n\nSo far: Pose question -&gt; observe data -&gt; analyze data -&gt; make claim.\n\n\n\ne.g. Checking election results:\n\nDid fraud occur?\nObserve vote counts by city.\nTest of hypothesis that votes follow Benford’s law.\nVotes don’t follow Benford’s law well; but we wouldn’t expect them to in a fair election."
+  },
+  {
+    "objectID": "4-causation/labs/taste-test/slides.html#making-claims-with-data-1",
+    "href": "4-causation/labs/taste-test/slides.html#making-claims-with-data-1",
+    "title": "Lab: A Matter of Taste",
+    "section": "Making Claims with Data",
+    "text": "Making Claims with Data\n\nThis week:\n\nIdentify possible claim\nImagine analysis that would show it.\nPlan data collection to allow that analysis.\nCarry out data collection + analysis.\nCheck claim.\n\n\n\nThis week students will work backwards: start with a claim that they think may be true, then decide how to collect data in a manner that will be most effective at determining whether or not the claim is true."
+  },
+  {
+    "objectID": "4-causation/labs/taste-test/slides.html#but-first",
+    "href": "4-causation/labs/taste-test/slides.html#but-first",
+    "title": "Lab: A Matter of Taste",
+    "section": "But first",
+    "text": "But first\nPlease get into groups of 3 (or 4). Take turns introducing yourselves."
+  },
+  {
+    "objectID": "4-causation/labs/taste-test/slides.html#a-matter-of-taste",
+    "href": "4-causation/labs/taste-test/slides.html#a-matter-of-taste",
+    "title": "Lab: A Matter of Taste",
+    "section": "A Matter of Taste",
+    "text": "A Matter of Taste\nYour challenge: Determine whether you can affect one your teammates’ perceptions of bubble water by manipulating their experience of tasting.\n\n\n\n\nEach team will have access to\n\n50 minutes (half of next class)\n2 cans of soda water, each one from a different flavor\nsmall paper cups\nsaltine crackers\nother materials welcome"
+  },
+  {
+    "objectID": "4-causation/labs/taste-test/slides.html#group-members",
+    "href": "4-causation/labs/taste-test/slides.html#group-members",
+    "title": "Lab: A Matter of Taste",
+    "section": "Group Members",
+    "text": "Group Members\n\n\nThe main reason for the roles here is to dedicate just one person to handling the materials for health safety."
+  },
+  {
+    "objectID": "4-causation/labs/taste-test/slides.html#question-and-hypotheses",
+    "href": "4-causation/labs/taste-test/slides.html#question-and-hypotheses",
+    "title": "Lab: A Matter of Taste",
+    "section": "Question and Hypotheses",
+    "text": "Question and Hypotheses\n\n\nPrompt them to think carefully about their wording here in the question. How ambitious and general do they want to be?\nIt is also very common for people to suggest non-causal questions. It will help to underline the idea of intervention on this slide."
+  },
+  {
+    "objectID": "4-causation/labs/taste-test/slides.html#hypotheses",
+    "href": "4-causation/labs/taste-test/slides.html#hypotheses",
+    "title": "Lab: A Matter of Taste",
+    "section": "Hypotheses",
+    "text": "Hypotheses"
+  },
+  {
+    "objectID": "4-causation/labs/taste-test/slides.html#protocol",
+    "href": "4-causation/labs/taste-test/slides.html#protocol",
+    "title": "Lab: A Matter of Taste",
+    "section": "Protocol",
+    "text": "Protocol\n\n\nHere they must be very precise. We’re spoken about reproducible science in class, so use that language to encourage careful work. They must be able to pass this protocol off to another group, and they should be able to carry out the intended experiment with no ambiguity."
+  },
+  {
+    "objectID": "4-causation/labs/taste-test/slides.html#data",
+    "href": "4-causation/labs/taste-test/slides.html#data",
+    "title": "Lab: A Matter of Taste",
+    "section": "Data",
+    "text": "Data\n\n\nThis is intended to be a blank table with n rows and at least 1 column. They may plan to record either several extraneous variables or not enough to draw the conclusions they intend. As before, don’t correct them. They may discover mid-experiment that they did this part wrong, and that’s great."
+  },
+  {
+    "objectID": "4-causation/labs/taste-test/slides.html#graphics",
+    "href": "4-causation/labs/taste-test/slides.html#graphics",
+    "title": "Lab: A Matter of Taste",
+    "section": "Graphics",
+    "text": "Graphics\n\n\nEncourage them to check that their viz is possible given their data frame and their data frame is possible give their protocol, and that their viz bears directly on their hypotheses."
+  },
+  {
+    "objectID": "4-causation/labs/taste-test/slides.html#things-to-remember",
+    "href": "4-causation/labs/taste-test/slides.html#things-to-remember",
+    "title": "Lab: A Matter of Taste",
+    "section": "Things to remember",
+    "text": "Things to remember\n\nBe precise in your protocol.\nBe sure your claim corresponds to your protocol corresponds to your data corresponds to your plots.\nImportant: Part I must be fully completed and shown to instructor/tutor before beginning part II.\n\n\n  \n    −\n    +\n \n 50:00\n \n\nSTOP HERE ON DAY 1 OF THIS LAB!! The rest of the slides are to be covered once they have done the experiment on Day 2."
+  },
+  {
+    "objectID": "4-causation/labs/taste-test/slides.html#the-essential-question-of-our-time",
+    "href": "4-causation/labs/taste-test/slides.html#the-essential-question-of-our-time",
+    "title": "Lab: A Matter of Taste",
+    "section": "The Essential Question of Our Time",
+    "text": "The Essential Question of Our Time\n\n\nWhich is the best flavor?\n\n\nThis purely for fun. Some people have strong opinions about this."
+  },
+  {
+    "objectID": "4-causation/labs/taste-test/slides.html#section-1",
+    "href": "4-causation/labs/taste-test/slides.html#section-1",
+    "title": "Lab: A Matter of Taste",
+    "section": "",
+    "text": "Could your taster distinguish between flavors?\n\nYes, and it was statistically significant (p &lt; .05).\n\nYes, but it was not statistically significant (p &gt; .05).\n\nYes, but we haven’t conducted the test yet.\nNo.\n\nNot sure, we haven’t computed the difference in proportions yet.\nWe tested a different claim.\n\n\n\n\nThe goal of this question is to allow all groups to concisely share their results with the class. It also opens up the conversation about how there were many different ways to carry out this experiment. Two groups might have come to different conclusions because their tasters really had different abilities, or because their claims and experiments were slightly different, or just due to random chance.\nYou may want to project 1 or 2 protocols and ask the groups to talk through how they uses the principles of experimental design."
+  },
+  {
     "objectID": "4-causation/notes.html",
     "href": "4-causation/notes.html",
     "title": "Causation",
@@ -2390,6 +2537,41 @@
     "title": "Causal Effects in Observational Studies",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nImage credit Keith Allison, obtained from Wikimedia Commons.↩︎\nFrom Price, J., & Wolfers, J. (2010). Racial discrimination among NBA referees. , 125(4), 1859-1887.↩︎\nInterestingly, after Price’s and Wolfers’ study led to a back-and-forth debate with NBA statisticians and received significant media attention, they repeated their study on mid-2010s data and found that the effect had disappeared. Based on these results, they claimed that awareness of the potential for racial bias can cause evaluators to eliminate it from their process. You can read about their follow-up study in Pope, D. G., Price, J., & Wolfers, J. (2018). Awareness reduces racial bias. Management Science, 64(11), 4988-4995.↩︎\nThere is a rich literature that uses data bases of twins to determine genetic determinants of health outcomes. For a recent study on smoking and cancer, see Cancer in twin pairs discordant for smoking: The Nordic Twin Study of Cancer by Korhonen et al., 2022.↩︎\nMatching is conceptually related to prediction, since you can think of it as a way to predict the missing counterfactual outcome for an observed subject. However, compared to the problems we tackled in the prediction unit, we can’t as easily evaluate how good the predictions are, since we never get to see the counterfactual outcomes or calculate the equivalent of a test MSE.↩︎\nFor \\(k=2\\) the Euclidean distance is also the same notion of distance that we get from the Pythagorean theorem. The general formula extends this idea to many dimensions.↩︎\nNote that when we compute SMDs after matching, we use the same denominator as for the original SMD (based on the entire dataset). This ensures that the “before matching” and “after matching” SMDs use the same standard deviation measure as units, which allows us to compare them meaningfully.↩︎\noptimal matching may not always fix balance this effectively. Sometimes one of the treated units has no comparable control available, or not all variables end up balanced well. In these scenarios, modifications to the matching strategy can help, including eliminating some treated units or using a different kind of distance. Although we won’t discuss these modifications in detail, the MatchIt package in R supports many of them and provides a handy online guide: https://kosukeimai.github.io/MatchIt/articles/matching-methods.html.↩︎"
+  },
+  {
+    "objectID": "4-causation/01-defining-causality/slides.html#section",
+    "href": "4-causation/01-defining-causality/slides.html#section",
+    "title": "Defining Causality",
+    "section": "",
+    "text": "Suppose that a prisoner is about to be executed by a firing squad. A certain chain of events must occur for this to happen. First, the judge orders the execution. The order goes to a captain, who signals the two soldiers of the firing squad (soldier 1 and soldier 2) to fire. They are obedient and expert marksmen, so they only fire on command, and if either one of them shoots, the prisoner dies.\n\nUsing the conditional counterfactual definition, who caused the death of the prisoner?\nA. The judge\nB. The captain\nC. Soldier 1\nD. Soldier 2\n\n\n\n\n−+\n02:00\n\n\n\n\nThe goal of this example is to reinforce the definition of cause and effect by applying it to a fairly complicated causal graph. The correct answers are A and B, because had the judge not ordered, or had the captain not signaled, the prisoner would not have died. Each of the soldiers individually fail this definition because if one of them doesn’t fire (and they’re acting independently), the prisoner will still die.\nYou can debrief this one by drawing a causal diagram with judge -&gt; captain -&gt; -&gt; two arrows to separate solider 1 and soldier 2 -&gt; -&gt; two arrows back to prisoner. You can start at the top, drawing 2 by 3 data frames of first the judge, then captain, then soldiers, showing one world in the first row and the other world in the second row and showing that the potential outcomes would differ based on the action of the first two.\nYou can also use the graph method of: if you break the causal chain after a given node, is there still a connected path to the prisoner? The answer is no for judge and captain but yes for each solider.\nStudents may bring up good points about ambiguity in the wording of the problem or a different interpretation of the “rules of the game” around how the causal structure works. That’s good! If students suggest different interpretations, you could draw that graph or draw that data frame, and analyze that one to identify causes.\nAs a postscript, this is likely one reason why firing squads are have multiple shooters. Each one has plausible deniability that “the prisoner would have died anyways”, so they didn’t cause the death. Apparently, it’s common for marksmen to occasionally neglect to fire, so this also has redundancy. The judge and captain, though they might be insolated from guilt because they are higher up the causal chain, they are still a cause of the death by this definition."
+  },
+  {
+    "objectID": "4-causation/01-defining-causality/slides.html#section-1",
+    "href": "4-causation/01-defining-causality/slides.html#section-1",
+    "title": "Defining Causality",
+    "section": "",
+    "text": "All of the four people in the table below need to travel from Berkeley to San Francisco today, and are trying to decide whether to take BART or to drive. The table below shows travel times for each individual (assume these are the true, known numbers, not just predictions).\n\n\n\nName\nTravel time by car (min)\nTravel time by BART (min)\n\n\n\n\nMaria\n35\n28\n\n\nFan\n30\n32\n\n\nAlice\n40\n55\n\n\nMuhammad\n30\n40\n\n\n\n\n\nPick the correct way to fill in the following sentence: “Taking BART instead of driving will cause ___ to arrive more than ___ minutes later.”\n\n\nThis is the first of two questions that deal with a hypothetical world: what if we could see both potential outcomes of each unit? This question is distinctive in that it has us thinking about unit-level causation, so the options all refer to one of the four people and then their causal effect - just the difference in travel times.\nThis one should be quick - only 30 seconds or so.\n\n\n  \n    −\n    +\n \n 01:00"
+  },
+  {
+    "objectID": "4-causation/01-defining-causality/slides.html#section-2",
+    "href": "4-causation/01-defining-causality/slides.html#section-2",
+    "title": "Defining Causality",
+    "section": "",
+    "text": "All of the four people in the table below need to travel from Berkeley to San Francisco today, and are trying to decide whether to take BART or to drive. The table below shows travel times for each individual (assume these are the true, known numbers, not just predictions).\n\n\n\nName\nTravel time by car (min)\nTravel time by BART (min)\n\n\n\n\nMaria\n35\n28\n\n\nFan\n30\n32\n\n\nAlice\n40\n55\n\n\nMuhammad\n30\n40\n\n\n\n\n\nWhat is the average treatment effect of taking BART on travel time for these four subjects?\n\n\nNote that we’re still in a hypothetical world where we’re able to see both potential outcomes.\nThis question shifts the focus from individual causal effects to group causal effects - the average treatment effect. The answer here the difference in average travel times of each travel type:\nmean(bart times) - mean(car times) = 38.75 - 33.75 = +5\n\n\n  \n    −\n    +\n \n 01:00"
+  },
+  {
+    "objectID": "4-causation/01-defining-causality/slides.html#section-3",
+    "href": "4-causation/01-defining-causality/slides.html#section-3",
+    "title": "Defining Causality",
+    "section": "",
+    "text": "All of the four people in the table below need to travel from Berkeley to San Francisco today. The table below shows the actual travel times for each individual using the method they chose to use.\n\n\n\nName\nTravel time by car (min)\nTravel time by BART (min)\n\n\n\n\nMaria\n?\n28\n\n\nFan\n?\n32\n\n\nAlice\n40\n?\n\n\nMuhammad\n30\n?\n\n\n\n\n\nWhat is a natural estimate of the average effect of taking BART (rather than driving) if we only observed this data?\n\n\nWe’ve now left the hypothetical world and entered the real world scenario where on every unit we only get to observe one of the potential outcomes.\nThe answer is still a difference in average travel times, but the particular times that are now observed cause the average treatment effect to flip it’s sign from +5 to -5.\nmean(bart times) - mean(car times) = 30 - 35 = -5\n\n\n  \n    −\n    +\n \n 01:00"
+  },
+  {
+    "objectID": "4-causation/01-defining-causality/slides.html#section-4",
+    "href": "4-causation/01-defining-causality/slides.html#section-4",
+    "title": "Defining Causality",
+    "section": "",
+    "text": "All of the four people in the table below need to travel from Berkeley to San Francisco today. The table below shows the actual travel times for each individual using the method they chose to use.\n\n\n\nName\nTravel time by car (min)\nTravel time by BART (min)\n\n\n\n\nMaria\n?\n28\n\n\nFan\n?\n32\n\n\nAlice\n40\n?\n\n\nMuhammad\n30\n?\n\n\n\n\n\nWhat are two different reasons why this estimate of the average treatment effect might not be very reliable?\n\n\n  \n    −\n    +\n \n 03:00\n \n\nThis last question is designed to be a “pair and share” exercise and does not have an associated PollEV item. After they discuss you can ask a couple of them to share. Common answers include:\n\nMaria and Fan live closer to Bart stations than Alice and Muhammad\nAlice and Muhammad migth travel to SF during rush hour, lengthening car travel times, while Maria and Fan do not.\n\nThis is a good chance to talk about why it’s hard to measure causal effects. Asking “How would you try to collect data about this causal claim differently to get a better measure of the causal effect?” provides a nice lead-in to the lab."
   },
   {
     "objectID": "CONTRIBUTING.html",
@@ -3395,6 +3577,62 @@
     ]
   },
   {
+    "objectID": "3-generalization/12-wrong-by-design/slides.html#agenda",
+    "href": "3-generalization/12-wrong-by-design/slides.html#agenda",
+    "title": "Wrong By Design",
+    "section": "Agenda",
+    "text": "Agenda\n\nAnnouncements\nReading Questions: Wrong By Design\nBreak\nWorksheet: Wrong By Design\nBreak\nLab 3: People’s Park"
+  },
+  {
+    "objectID": "3-generalization/12-wrong-by-design/slides.html#announcements",
+    "href": "3-generalization/12-wrong-by-design/slides.html#announcements",
+    "title": "Wrong By Design",
+    "section": "Announcements",
+    "text": "Announcements\n\nLab 3 (both parts) due tomorrow. You are only required to finish the portions mentioned on Ed.\n\n\n\nQuiz 3 on Thursday.\n\n\n\n\nPortfolio 6 (Mon., Tue., Wed.) due Friday at 5pm."
+  },
+  {
+    "objectID": "3-generalization/12-wrong-by-design/slides.html#read-this-first.",
+    "href": "3-generalization/12-wrong-by-design/slides.html#read-this-first.",
+    "title": "Wrong By Design",
+    "section": "Read this first.",
+    "text": "Read this first.\n\nA patient named Ana was diagnosed with Fibromyalgia, a long-term syndrome of body pain, and was prescribed anti-depressants. Being the skeptic that she is, Ana didn’t initially believe that anti-depressants would help her symptoms. However, after a couple months of being on the medication she would like to re-evaluates this belief.\n\n\n  \n    −\n    +\n \n 00:40"
+  },
+  {
+    "objectID": "3-generalization/12-wrong-by-design/slides.html#let-anas-null-hypothesis-be-that-anti-depressants-would-not-help-her-symptoms.-describe-a-type-i-error.",
+    "href": "3-generalization/12-wrong-by-design/slides.html#let-anas-null-hypothesis-be-that-anti-depressants-would-not-help-her-symptoms.-describe-a-type-i-error.",
+    "title": "Wrong By Design",
+    "section": "Let Ana’s null hypothesis be that anti-depressants would not help her symptoms. Describe a Type I error.",
+    "text": "Let Ana’s null hypothesis be that anti-depressants would not help her symptoms. Describe a Type I error.\n\nA: Deciding that the anti-depressants helped her symptoms when in fact they did not help.\nB: Deciding that the anti-depressants helped her symptoms when they did help.\nC: Deciding that the anti-depressants did not help her symptoms when in fact they did help.\nD: The correct answer is not here.\n\n\n  \n    −\n    +\n \n 00:40"
+  },
+  {
+    "objectID": "3-generalization/12-wrong-by-design/slides.html#let-anas-null-hypothesis-be-that-anti-depressants-would-not-help-her-symptoms.-describe-a-type-ii-error.",
+    "href": "3-generalization/12-wrong-by-design/slides.html#let-anas-null-hypothesis-be-that-anti-depressants-would-not-help-her-symptoms.-describe-a-type-ii-error.",
+    "title": "Wrong By Design",
+    "section": "Let Ana’s null hypothesis be that anti-depressants would not help her symptoms. Describe a Type II error.",
+    "text": "Let Ana’s null hypothesis be that anti-depressants would not help her symptoms. Describe a Type II error.\n\nA: Deciding that the anti-depressants helped her symptoms when in fact they did not help.\nB: Deciding that the anti-depressants did not help when they did not help.\nC: Deciding that the anti-depressants helped her symptoms when they did help.\nD: The correct answer is not here.\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "3-generalization/12-wrong-by-design/slides.html#which-of-the-following-is-not-an-upside-of-a-two-tailed-two-sided-hypothesis-test-as-compared-to-a-one-tailed-hypothesis-test",
+    "href": "3-generalization/12-wrong-by-design/slides.html#which-of-the-following-is-not-an-upside-of-a-two-tailed-two-sided-hypothesis-test-as-compared-to-a-one-tailed-hypothesis-test",
+    "title": "Wrong By Design",
+    "section": "Which of the following is not an upside of a two-tailed (two-sided) hypothesis test as compared to a one-tailed hypothesis test?",
+    "text": "Which of the following is not an upside of a two-tailed (two-sided) hypothesis test as compared to a one-tailed hypothesis test?\n\nA: A two-tailed hypothesis tests removes “confirmation bias”.\nB: A two-tailed hypothesis test results in a lower p-value than the corresponding one-tailed test.\nC: A two-tailed hypothesis tests helps ensure that we are not inflating the type I error rate.\nD: All of these are upsides.\n\n\n  \n    −\n    +\n \n 00:40"
+  },
+  {
+    "objectID": "3-generalization/12-wrong-by-design/slides.html#read-this-first.-1",
+    "href": "3-generalization/12-wrong-by-design/slides.html#read-this-first.-1",
+    "title": "Wrong By Design",
+    "section": "Read this first.",
+    "text": "Read this first.\n\nA study of 40 California voters failed to find any significant difference in the proportion that supported increased funding for NASA when comparing Republicans to Democrats (that is, the study retained the null hypothesis)."
+  },
+  {
+    "objectID": "3-generalization/12-wrong-by-design/slides.html#based-on-just-the-information-above-which-of-the-statements-below-do-we-know-is-false",
+    "href": "3-generalization/12-wrong-by-design/slides.html#based-on-just-the-information-above-which-of-the-statements-below-do-we-know-is-false",
+    "title": "Wrong By Design",
+    "section": "Based on just the information above, which of the statements below do we know is false?",
+    "text": "Based on just the information above, which of the statements below do we know is false?\n\nA: The sample of California voters may have been biased.\nB: The study may have had lower power as a result of the small sample size.\nC: The researchers may have committed a Type I error.\nD. The researchers may have committed a Type II error.\n\n\n  \n    −\n    +\n \n 00:40"
+  },
+  {
     "objectID": "3-generalization/12-wrong-by-design/slides.html#section",
     "href": "3-generalization/12-wrong-by-design/slides.html#section",
     "title": "Wrong By Design",
@@ -3434,7 +3672,7 @@
     "href": "3-generalization/12-wrong-by-design/slides.html#section-5",
     "title": "Wrong By Design",
     "section": "",
-    "text": "null &lt;- ppk |&gt;\n  specify(response = support_before,\n          success = \"TRUE\") |&gt;\n  hypothesize(null = \"point\", p = .5) |&gt;\n  generate(reps = 500, type = \"draw\") |&gt;\n  calculate(stat = \"prop\")\nnull\n\nResponse: support_before (factor)\nNull Hypothesis: point\n# A tibble: 500 × 2\n   replicate  stat\n   &lt;fct&gt;     &lt;dbl&gt;\n 1 1         0.491\n 2 2         0.496\n 3 3         0.517\n 4 4         0.484\n 5 5         0.495\n 6 6         0.498\n 7 7         0.478\n 8 8         0.513\n 9 9         0.504\n10 10        0.516\n# ℹ 490 more rows"
+    "text": "null &lt;- ppk |&gt;\n  specify(response = support_before,\n          success = \"TRUE\") |&gt;\n  hypothesize(null = \"point\", p = .5) |&gt;\n  generate(reps = 500, type = \"draw\") |&gt;\n  calculate(stat = \"prop\")\nnull\n\nResponse: support_before (factor)\nNull Hypothesis: point\n# A tibble: 500 × 2\n   replicate  stat\n   &lt;fct&gt;     &lt;dbl&gt;\n 1 1         0.496\n 2 2         0.483\n 3 3         0.486\n 4 4         0.490\n 5 5         0.512\n 6 6         0.493\n 7 7         0.511\n 8 8         0.496\n 9 9         0.492\n10 10        0.506\n# ℹ 490 more rows"
   },
   {
     "objectID": "3-generalization/12-wrong-by-design/slides.html#section-6",
@@ -4475,6 +4713,6 @@
     "href": "assignments.html#worksheets",
     "title": "Assignments",
     "section": "Worksheets",
-    "text": "Worksheets\nWorksheets are pen-and-paper practice problems that we work on in class. The goal of the worksheets is simply practice: they help you drill the techniques needed to complete the labs.\n\n\n\nWS: Taxonomy of Data\n\n\nWS: Summarizing Categorical Data\n\n\nWS: Summarizing Numerical Data\n\n\nWS: A Grammar of Graphics\n\n\nWS: Conditioning\n\n\nWS: Summarizing Numerical Associations\n\n\nWS: Multiple Linear Regression\n\n\nWS: Probability Foundations\n\n\nWS: Probability Foundations II\n\n\nWS: Probability Distributions\n\n\nWS: Random Variables\n\n\nWS: Expected Value and Variance\n\n\nWS: Probability Foundations II\n\n\nWS: Sampling Distributions\n\n\nWS: Bootstrapping\n\n\nWS: Hypothesis Testing\n\n\nWS: Hypothesis Tests II\n\n\nWS: Wrong by Design\n\n\n\nNo matching items"
+    "text": "Worksheets\nWorksheets are pen-and-paper practice problems that we work on in class. The goal of the worksheets is simply practice: they help you drill the techniques needed to complete the labs.\n\n\n\nWS: Taxonomy of Data\n\n\nWS: Summarizing Categorical Data\n\n\nWS: Summarizing Numerical Data\n\n\nWS: A Grammar of Graphics\n\n\nWS: Conditioning\n\n\nWS: Summarizing Numerical Associations\n\n\nWS: Multiple Linear Regression\n\n\nWS: Probability Foundations\n\n\nWS: Probability Foundations II\n\n\nWS: Probability Distributions\n\n\nWS: Random Variables\n\n\nWS: Expected Value and Variance\n\n\nWS: Probability Foundations II\n\n\nWS: Sampling Distributions\n\n\nWS: Bootstrapping\n\n\nWS: Hypothesis Testing\n\n\nWS: Hypothesis Tests II\n\n\nWS: Wrong by Design\n\n\nWS: A Matter of Taste\n\n\n\nNo matching items"
   }
 ]
