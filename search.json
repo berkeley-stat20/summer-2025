@@ -2680,6 +2680,20 @@
     "text": "Questions and Data\n\n\nData\n\nAn item of (chiefly numerical) information, especially one obtained by scientific work, a number of which are typically collected together for reference, analysis, or calculation. From Latin datum: that which is given. Facts.\n\n\n\n\n\nVariable\n\nA characteristic of an object or observational unit that can be measured and recorded.\n\n\n\n\n\nNumerical Variable\n\nA variable that take numbers as values and where the magnitude of the number has a quantitative meaning.\n\n\n\n\n\nCategorical Variable\n\nA variable that take categories as values. Each unique category is called a level.\n\n\n\n\n\nContinuous Numerical Variable\n\nA numerical variable that takes values on an interval of the real number line.\n\n\n\n\n\nDiscrete Numerical Variable\n\nA numerical variable that takes values that have jumps between them.\n\n\n\n\n\nOrdinal Categorical Variable\n\nA categorical variable with levels that have a natural ordering.\n\n\n\n\n\nNominal Categorical Variable\n\nA categorical variable with levels with no ordering.\n\n\n\n\n\nData Frame\n\nAn array that associates the observations (downs the rows) with the variables measured on each observation (across the columns). Each cell stores a value observed for a variable on an observation.\n\n\n\n\n\nUnit of Observation\n\nThe class of object on which the variables are observed.\n\n\n\n\n\nSummary\n\nA numerical, graphical, or verbal description of an aspect of data that is on hand.\n\n\n\n\n\nGeneralization\n\nA numerical, graphical, or verbal description of a broader set of units than those on which data was been recorded.\n\n\n\n\n\nCausal Claim\n\nA claim that changing the value of one variable will influence the value of another variable.\n\n\n\n\n\nPrediction\n\nA guess about the value of an unknown variable, based on other known variables."
   },
   {
+    "objectID": "4-causation/02-experiments/slides.html#agenda",
+    "href": "4-causation/02-experiments/slides.html#agenda",
+    "title": "Experiments",
+    "section": "Agenda",
+    "text": "Agenda\n\nAnnouncements\nWorksheet: Experiments"
+  },
+  {
+    "objectID": "4-causation/02-experiments/slides.html#announcements",
+    "href": "4-causation/02-experiments/slides.html#announcements",
+    "title": "Experiments",
+    "section": "Announcements",
+    "text": "Announcements\n\nPortfolio 7 due on Friday at 5pm.\n\n\n\nLab 3 releases tomorrow and is due next Tuesday.\n\n\n\n\nFinal is next Thursday and will cover everything."
+  },
+  {
     "objectID": "4-causation/02-experiments/slides.html#section",
     "href": "4-causation/02-experiments/slides.html#section",
     "title": "Experiments",
@@ -4030,7 +4044,7 @@
     "href": "3-generalization/12-wrong-by-design/slides.html#section-5",
     "title": "Wrong By Design",
     "section": "",
-    "text": "null &lt;- ppk |&gt;\n  specify(response = support_before,\n          success = \"TRUE\") |&gt;\n  hypothesize(null = \"point\", p = .5) |&gt;\n  generate(reps = 500, type = \"draw\") |&gt;\n  calculate(stat = \"prop\")\nnull\n\nResponse: support_before (factor)\nNull Hypothesis: point\n# A tibble: 500 × 2\n   replicate  stat\n   &lt;fct&gt;     &lt;dbl&gt;\n 1 1         0.513\n 2 2         0.487\n 3 3         0.496\n 4 4         0.539\n 5 5         0.508\n 6 6         0.527\n 7 7         0.496\n 8 8         0.504\n 9 9         0.505\n10 10        0.507\n# ℹ 490 more rows"
+    "text": "null &lt;- ppk |&gt;\n  specify(response = support_before,\n          success = \"TRUE\") |&gt;\n  hypothesize(null = \"point\", p = .5) |&gt;\n  generate(reps = 500, type = \"draw\") |&gt;\n  calculate(stat = \"prop\")\nnull\n\nResponse: support_before (factor)\nNull Hypothesis: point\n# A tibble: 500 × 2\n   replicate  stat\n   &lt;fct&gt;     &lt;dbl&gt;\n 1 1         0.514\n 2 2         0.482\n 3 3         0.493\n 4 4         0.504\n 5 5         0.496\n 6 6         0.487\n 7 7         0.483\n 8 8         0.494\n 9 9         0.489\n10 10        0.492\n# ℹ 490 more rows"
   },
   {
     "objectID": "3-generalization/12-wrong-by-design/slides.html#section-6",
