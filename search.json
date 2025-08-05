@@ -1775,6 +1775,55 @@
     ]
   },
   {
+    "objectID": "5-prediction/01-method-of-least-squares/slides.html#concept-question-1",
+    "href": "5-prediction/01-method-of-least-squares/slides.html#concept-question-1",
+    "title": "Method of Least Squares",
+    "section": "Concept Question 1",
+    "text": "Concept Question 1\nAn engineer working for Waymo self-driving cars is working to solve a problem. When it rains, reflections of other cars in puddles can disorient the self-driving car. Their team is working on a model to determine when the self-driving car is seeing a reflection of a car vs a real car.\n\nThink of a potential response and predictor, and about whether this is a regression or classification problem.\n\n\n\n\n−+\n01:00\n\n\n\n\nThis is a serious challenge encountered by self-driving cars at the moment. This is probably best thought of as a classification problem, with the response being either reflection / not or puddle / not. The predictors could be sensor input (cameras, lidar) as well as weather info (to know if it’s been raining)."
+  },
+  {
+    "objectID": "5-prediction/01-method-of-least-squares/slides.html#concept-question-2",
+    "href": "5-prediction/01-method-of-least-squares/slides.html#concept-question-2",
+    "title": "Method of Least Squares",
+    "section": "Concept Question 2",
+    "text": "Concept Question 2\nAn analyst working for the UC Berkeley Admissions Office is working to help the university decide how many students to send offer letters to. They have a target class size (that fits within the budget and residence halls), but they’re not sure how many students will accept the offer. How many should they admit?\n\nThink of a potential response and predictor, and about whether this is a regression or classification problem.\n\n\n\n\n−+\n01:00\n\n\n\n\nThis is another very real task. Universities use what’s called a “yield model” to predict whether or not a student will accept the offer. That’s a classification method. Those classifiers aggregated up across all offers lead to a numerical prediction for the total yield, which looks more like a regression problem, so either answer could work. It could also be a direct regression model where they use aggregate stats of the class to predict the total yield.\nResponse is either the decision of a single student or the total number of students that accept. Predictors could be either student level covariates (for classification) or class-level averages (for regression). Those might also include broader economic indicators like unemployment rate."
+  },
+  {
+    "objectID": "5-prediction/01-method-of-least-squares/slides.html#concept-question-3",
+    "href": "5-prediction/01-method-of-least-squares/slides.html#concept-question-3",
+    "title": "Method of Least Squares",
+    "section": "Concept Question 3",
+    "text": "Concept Question 3\n\nHere is a function f.\n\n\nf &lt;- function(x, y) {\n  y*(x + 3) \n}\n\n\n\nWhat will the following line of code return?\n\n\n\n\nf(3,5)\n\n\nThis question reminds students that if function arguments are unnamed, they are assumed to have been input in the order they were originally specified as in the function definition. x will be assigned 3, and y will be assigned 5, so the correct answer is 30."
+  },
+  {
+    "objectID": "5-prediction/labs/07-baseball/slides.html#baseball-rules",
+    "href": "5-prediction/labs/07-baseball/slides.html#baseball-rules",
+    "title": "Lab: Multiple Regression with Baseball",
+    "section": "Baseball Rules",
+    "text": "Baseball Rules\n\n\nKey terms to define here are Runs (R) and Wins (W). Here’s a helpful glossary from MLB: https://www.mlb.com/glossary"
+  },
+  {
+    "objectID": "5-prediction/labs/07-baseball/slides.html#baseball-rules-1",
+    "href": "5-prediction/labs/07-baseball/slides.html#baseball-rules-1",
+    "title": "Lab: Multiple Regression with Baseball",
+    "section": "Baseball Rules",
+    "text": "Baseball Rules"
+  },
+  {
+    "objectID": "5-prediction/labs/07-baseball/slides.html#sabermetrics",
+    "href": "5-prediction/labs/07-baseball/slides.html#sabermetrics",
+    "title": "Lab: Multiple Regression with Baseball",
+    "section": "Sabermetrics",
+    "text": "Sabermetrics\nCoined by Bill James in 1980, sabermetrics is\n\n“the search for objective knowledge about baseball.”"
+  },
+  {
+    "objectID": "5-prediction/labs/07-baseball/slides.html#history-of-sabermetrics",
+    "href": "5-prediction/labs/07-baseball/slides.html#history-of-sabermetrics",
+    "title": "Lab: Multiple Regression with Baseball",
+    "section": "History of Sabermetrics",
+    "text": "History of Sabermetrics\n\nHenry Chadwick, a NY sportswriter, developed the box score in 1859\n“Percentage Baseball” by Earnshaw Cook in 1964\nThe Bill James Baseball Abstract, annual book beginning in 1977\nMoneyball"
+  },
+  {
     "objectID": "docs/website.html",
     "href": "docs/website.html",
     "title": "Configuring this Website",
@@ -2477,6 +2526,78 @@
     "crumbs": [
       "Tutorials",
       "R Tutorials"
+    ]
+  },
+  {
+    "objectID": "5-prediction/02-improving-predictions/notes.html",
+    "href": "5-prediction/02-improving-predictions/notes.html",
+    "title": "Evaluating and Improving Predictions",
+    "section": "",
+    "text": "In the last lecture we built our first prediction machine: a line drawn through a scatter plot that that minimizes the sum of squared residuals. In these lecture notes we focus on two questions: How can we evaluate the quality of our predictions? and How can we improve them?",
+    "crumbs": [
+      "Notes",
+      "Prediction",
+      "Evaluating and Improving Predictions"
+    ]
+  },
+  {
+    "objectID": "5-prediction/02-improving-predictions/notes.html#evaluating-the-fit-to-your-data",
+    "href": "5-prediction/02-improving-predictions/notes.html#evaluating-the-fit-to-your-data",
+    "title": "Evaluating and Improving Predictions",
+    "section": "Evaluating the fit to your data",
+    "text": "Evaluating the fit to your data\nOnce you have fit a linear model to a scatter plot, you are able to answer questions such as:\n\nWhat graduation rate would you expect for a state with a poverty rate of 15%?\n\nGraphically, this can be done by drawing a vertical line from where the poverty rate is 15% and finding where that line intersects your linear model. If you trace from that intersection point horizontally to the y-axis, you’ll find the predicted graduation rate.\n\n\n\n\n\n\n\n\n\nFrom the plot above, we can tell that the model yields a prediction around roughly 82.5%. To be more precise, we could plug the x-value into our equation for the line and solve.\n\\[ \\hat{y} = 96.2 + -0.89 \\cdot 15 = 82.85 \\]\nSo how good of a prediction is 82.85%? Until we observe a state with a poverty rate of 15%, we’ll never know! What we can know, however, is how well our model explains the structure found in the data that we have observed. For those observations, we have both the predicted (or fitted) values \\(\\hat{y}_i\\) as well as their actual y-values \\(y_i\\). These can be used to calculate a statistic that measures the explanatory power of our model.\n\nMeasuring explanatory power: \\(R^2\\)\n\\(R^2\\) is a statistic that captures how good the predictions from your linear model are (\\(\\hat{y}\\)) by comparing them another even simpler model: \\(\\bar{y}\\). To understand how this statistic is constructed please watch this short video, “R^2”, found in the Media Gallery on bCourses (14 minutes).\n\n\n\n\n\n\nR-squared (\\(R^2\\))\n\nA statistic that measures the proportion of the total variability in the y-variable (total sum of squares, TSS) that is explained away using our model involving x (sum of squares due to regression, SSR).\n\\[R^2 = \\frac{SSR}{TSS} = \\frac{\\sum_{i=1}^n (\\hat{y}_i - \\bar{y})^2}{\\sum_{i=1}^n (y_i - \\bar{y})^2}\\]\nBecause the total variablity is composed of the explained and the unexplain variability, \\(R^2\\) can be equivalent formulated as 1 minus the proportion of total variability that is unexplained by the model, which uses the more familiar residual sum of squares (RSS).\n\\[R^2 = 1 - \\frac{RSS}{TSS} = 1 - \\frac{\\sum_{i=1}^n (y_i - \\hat{y}_i)^2}{\\sum_{i=1}^n (y_i - \\bar{y})^2}\\]\n\\(R^2\\) has the following properties:\n\nAlways takes values between 0 and 1.\n\\(R^2\\) near 1 means predictions were more accurate.\n\\(R^2\\) near 0 means predictions were less accurate.\n\n\n\n\n\n\n\n\n\n\n\nExample: Poverty and Graduation\nTo fit the least squares linear regression model to predict graduation rate using the poverty rate, we turn to the familiar lm() function.\nFor this particular model, \\(R^2 = .56\\). This means that poverty rate is able to explain about 56% of the variability found in graduation rates. That’s a good start!",
+    "crumbs": [
+      "Notes",
+      "Prediction",
+      "Evaluating and Improving Predictions"
+    ]
+  },
+  {
+    "objectID": "5-prediction/02-improving-predictions/notes.html#improving-predictions",
+    "href": "5-prediction/02-improving-predictions/notes.html#improving-predictions",
+    "title": "Evaluating and Improving Predictions",
+    "section": "Improving predictions",
+    "text": "Improving predictions\n\\(R^2\\) allows us to quantify how well the model explains the structure found in the data set. From a model-building standpoint, it gives us a goal: to find a model with the highest possible \\(R^2\\). Here we outline three different methods for pursuing this goal - adding predictors, transformations, and polynomials - and we’d look at a different data set for each one.\n\nAdding Predictors\nLet’s return to the data set that that we studying when we first learned about multiple linear regression: ratings of Italian restaurants from the ZAGAT guide. For each of the 168 restaurants in the data set, we have observations on the average price of a meal, the food quality, the quality of the decor, the quality of the service, and whether it is east or west of Fifth Avenue.\n\n\n# A tibble: 168 × 6\n   restaurant          price  food decor service geo  \n   &lt;chr&gt;               &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;\n 1 Daniella Ristorante    43    22    18      20 west \n 2 Tello's Ristorante     32    20    19      19 west \n 3 Biricchino             34    21    13      18 west \n 4 Bottino                41    20    20      17 west \n 5 Da Umberto             54    24    19      21 west \n 6 Le Madri               52    22    22      21 west \n 7 Le Zie                 34    22    16      21 west \n 8 Pasticcio              34    20    18      21 east \n 9 Belluno                39    22    19      22 east \n10 Cinque Terre           44    21    17      19 east \n# ℹ 158 more rows\n\n\nMaybe we want a model that will tell us how much we will have to spend at a new restaurant that is not upfront about its pricing; or maybe we just opened a new restaurant and want to know how much customers expect to spend. So price will serve as our response variable, leaving us four possible predictor variables. Let’s fit four different regression models, each one incorporating more more information by adding a predictor.\n\nm1 &lt;- lm(price ~ food, data = zagat)\nm2 &lt;- lm(price ~ food + geo, data = zagat)\nm3 &lt;- lm(price ~ food + geo + decor, data = zagat)\nm4 &lt;- lm(price ~ food + geo + decor + service, data = zagat)\n\nUnfortunately we can’t visualize these four linear models as four lines on a scatterplot because only the first model describes a line. The second describes two parallel lines; the third describes two parallel planes in 3D; the fourth describes two parallel hyperplanes in 4D (🤯).\nWe can, however, compare these four models in an arena where they’re all on the same playing field: how well they predict price. To quantify that, we can calculate the \\(R^2\\) value for each.\n\n\n  model R_squared\n1    m1 0.3931835\n2    m2 0.3987720\n3    m3 0.6278808\n4    m4 0.6278809\n\n\nObserve that the more information we provide the model - by adding predictors - the greater the \\(R^2\\) becomes! This is not a particular characteristic of the ZAGAT data set but of \\(R^2\\) in general. Adding new predictors will never lower the \\(R^2\\) of a model fit using least squares.\n\n\nNon-linear transformation\nThe world is not always linear. We can create non-linear prediction models by building off the above linear model machinery. To demonstrate how to use this approach to increase the predictive power of our model, we’ll turn to a non-linear trend that should look familiar…\n\nA single non-linear term\nTake a question from flights lab as an example where we plot the average airspeed vs. flight distance. First let’s try fitting a linear model.\n\n\n\n\n\n\n\n\n\nA linear model does not seem appropriate to model average speed from distance. There does appear to be a monotonically increasing trend, but it starts out steeper then flattens out1. This trend is reminiscent of functions like log or square root.\nLets try transforming our predictor (distance) with the log function to create a new variable called log_dist.\n\nflights &lt;- flights |&gt; \n    mutate(log_dist = log(distance))\n\nWe can then fit a linear model using this new log_dist variable as the predictor.\n\nlm_speed_from_log_dist &lt;- \n  lm(formula = avg_speed ~ log_dist, data=flights)\n\nLooking at the data below, we see there does seem to be a linear relationship between avg_speed and our new variable log_dist! Notice the x-axis in the below plot is log_dist whereas it was distance in the above plot.\n\n\n\n\n\n\n\n\n\nThe linear model with log_dist (\\(R^2=0.843\\)) predicts avg_speed better than the linear model with distance (\\(R^2=0.72\\))\nWe can now think of our predictive model as\n\\[\n\\widehat{y} = b_0 + b_1 \\cdot \\log(x)\n\\]\nIn other words, our model is non-linear since \\(x\\) appears inside of a logarithm. We can plot the non-linear prediction function in the original predictor distance and we see the prediction function is curved!\n\n\n\n\n\n\n\n\n\nSo is this a linear model or a non-linear model? It’s both. We created a new variable log_dist by transforming the original variable; the prediction function is a linear function of this new variable. But we can also think of this as a function of the original variable distance; the prediction function is a non-linear function of this original variable.\n\n\n\nPolynomials\nSometimes we need an more complex transformation than just a simple function (e.g. \\(\\sqrt{x}, \\log(x),  x^2,...\\)). Take the following example where there is a strong association between x and y, but it’s not linear (this data, admitted, was simulated in R).\n\n\n\n\n\n\n\n\n\nSo how should we model this? Polynomials to the rescue!\nA polynomial is a function like\n\\[\nf(x) = -20 + 34 x - 16 x^2 + 2 x^3\n\\]\nMore generally a polynomial is a function like\n\\[\nf(x) = c_0 + c_1 \\cdot x + c_2 \\cdot x^2 + \\dots + c_d \\cdot x^d\n\\]\nwhere the \\(d+1\\) coefficients \\(c_0, c_1, \\dots, c_d\\) are constants The number \\(d\\) is called the degree of the polynomial – this is the largest exponent that appears.\nPolynomials are flexible functions that can be quite useful for modeling. We can fit a polynomial model by adding new transformed variables to the data frame then fitting a linear model with these new transformed variables. This is just like how we fit a logarithmic function before by adding a new log transformed variable to the data frame then fit a linear model.\n\nThe prediction function here is a polynomial given by\n\\[\n\\widehat{y} = -20.086 + 34.669 \\cdot x -16.352 \\cdot x^2 + 2.042 \\cdot x^3\n\\]",
+    "crumbs": [
+      "Notes",
+      "Prediction",
+      "Evaluating and Improving Predictions"
+    ]
+  },
+  {
+    "objectID": "5-prediction/02-improving-predictions/notes.html#the-ideas-in-code",
+    "href": "5-prediction/02-improving-predictions/notes.html#the-ideas-in-code",
+    "title": "Evaluating and Improving Predictions",
+    "section": "The Ideas in Code",
+    "text": "The Ideas in Code\n\nInspect model output with the broom library\nConsider the code we ran earlier to fit a linear model which can predict graduation rate using the poverty rate.\n\nm1 &lt;- lm(Graduates ~ Poverty, data = poverty)\n\nWhen you run this code, you’ll see a new object appear in your environment: m1. This new object, though, is not a vector or a data frame. It’s a much richer object called a list that stores all sorts of information about your linear model. You can click through the different part of m1 in your environment pane, or your can use functions from the broom package to extract the important components using code.\n\nlibrary(broom)\nglance(m1)\n\n# A tibble: 1 × 12\n  r.squared adj.r.squared sigma statistic  p.value    df logLik   AIC   BIC\n      &lt;dbl&gt;         &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     0.558         0.549  2.50      61.8 3.11e-10     1  -118.  242.  248.\n# ℹ 3 more variables: deviance &lt;dbl&gt;, df.residual &lt;int&gt;, nobs &lt;int&gt;\n\n\nThe glance() function returns a series of different metrics used to evaluate the quality of your model. First among those is r-squared. Because the output of glance() is just another data frame, we can extract just the r-squared column using select().\n\nglance(m1) |&gt;\n    select(r.squared)\n\n# A tibble: 1 × 1\n  r.squared\n      &lt;dbl&gt;\n1     0.558\n\n\nHere’s the \\(R^2\\) we got earlier!\n\n\nFitting polynomials in R with poly()\nIn R, we can fit polynomials using the poly() function. Here is the code that was used to fit the polynomial earlier in the notes.\nYou do not need to worry about the meaning behind the raw = TRUE argument. The simulated data frame mentioned earlier is called df, and has two variables in it: predictor and response.\n\ndf &lt;- df |&gt;\n  mutate(predictor = x, \n         response = y)\n\n\nlm(formula = response ~ poly(x = predictor, \n                   degree = 3, \n                   raw = TRUE), data = df)\n\n\nCall:\nlm(formula = response ~ poly(x = predictor, degree = 3, raw = TRUE), \n    data = df)\n\nCoefficients:\n                                 (Intercept)  \n                                     -20.086  \npoly(x = predictor, degree = 3, raw = TRUE)1  \n                                      34.669  \npoly(x = predictor, degree = 3, raw = TRUE)2  \n                                     -16.352  \npoly(x = predictor, degree = 3, raw = TRUE)3  \n                                       2.042  \n\n\n\n\nMaking predictions on a new observation with predict()\nWe have spending a lot of time talking about how to fit a model meant for predicting, but have not actually done any predicting! The predict() function can help us do this. It takes in two main arguments:\n\nobject: This is the linear model object which contains the coefficients \\(b_0\\), …, \\(b_p\\). In the graduate and poverty example, this object was m1. We had m1 through m4 in the ZAGAT example.\nnewdata: This is a data frame containing the new observation(s). This data frame must at least contain each of the predictor variables used in the column, with a value of these variables for each observation.\n\n\nExample: ZAGAT food rating\nHere, we will use m2 from the ZAGAT example. This model used \\(food\\) and \\(geo\\) in an attempt to predict price at a restaurant.\nFirst, let’s make a new data frame with a couple of new, made-up observations.\n\nrestaurants &lt;- data.frame(\n  food = c(25, 17),\n  geo = c(\"east\", \"west\"))\n\nOne of these restaurants is located in east Manhattan and has a food score of 25/30, while the other one is in west Manhattan and has a food score of 17/30.\nNow, we can use this data frame alongside our m2 model object to make predictions for the prices.\n\npredict(object = m2, newdata = restaurants)\n\n       1        2 \n55.89738 31.44043 \n\n\nWe are predicted to have to pay roughly \\(\\$56\\) at the first restaurant and roughly \\(\\$31\\) at the second.",
+    "crumbs": [
+      "Notes",
+      "Prediction",
+      "Evaluating and Improving Predictions"
+    ]
+  },
+  {
+    "objectID": "5-prediction/02-improving-predictions/notes.html#summary",
+    "href": "5-prediction/02-improving-predictions/notes.html#summary",
+    "title": "Evaluating and Improving Predictions",
+    "section": "Summary",
+    "text": "Summary\nIn this lecture we learned how to evaluate and improve out predictions. While there are many metrics to measure the explanatory power of a model, one of the most commonly used is \\(R^2\\), the proportion of the variability of the \\(y\\) that is explained by the model.\nTo improve our predictions - and increase the \\(R^2\\) - we saw three different strategies. If you have additional predictors in your data frame, its easy as pie to add them to your regression model and you are guaranteed to increase your \\(R^2\\).\nA second strategy is capture non-linear structure by creating new variables that are simple transformations of the existing variable. The third approach, also targeting non-linear structure, is to replace a single predictor with a polynomial.",
+    "crumbs": [
+      "Notes",
+      "Prediction",
+      "Evaluating and Improving Predictions"
+    ]
+  },
+  {
+    "objectID": "5-prediction/02-improving-predictions/notes.html#footnotes",
+    "href": "5-prediction/02-improving-predictions/notes.html#footnotes",
+    "title": "Evaluating and Improving Predictions",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nWe call this concave or sometimes diminishing marginal returns.↩︎",
+    "crumbs": [
+      "Notes",
+      "Prediction",
+      "Evaluating and Improving Predictions"
     ]
   },
   {
@@ -3909,7 +4030,7 @@
     "href": "3-generalization/12-wrong-by-design/slides.html#section-5",
     "title": "Wrong By Design",
     "section": "",
-    "text": "null &lt;- ppk |&gt;\n  specify(response = support_before,\n          success = \"TRUE\") |&gt;\n  hypothesize(null = \"point\", p = .5) |&gt;\n  generate(reps = 500, type = \"draw\") |&gt;\n  calculate(stat = \"prop\")\nnull\n\nResponse: support_before (factor)\nNull Hypothesis: point\n# A tibble: 500 × 2\n   replicate  stat\n   &lt;fct&gt;     &lt;dbl&gt;\n 1 1         0.511\n 2 2         0.491\n 3 3         0.492\n 4 4         0.493\n 5 5         0.501\n 6 6         0.493\n 7 7         0.488\n 8 8         0.501\n 9 9         0.505\n10 10        0.507\n# ℹ 490 more rows"
+    "text": "null &lt;- ppk |&gt;\n  specify(response = support_before,\n          success = \"TRUE\") |&gt;\n  hypothesize(null = \"point\", p = .5) |&gt;\n  generate(reps = 500, type = \"draw\") |&gt;\n  calculate(stat = \"prop\")\nnull\n\nResponse: support_before (factor)\nNull Hypothesis: point\n# A tibble: 500 × 2\n   replicate  stat\n   &lt;fct&gt;     &lt;dbl&gt;\n 1 1         0.513\n 2 2         0.487\n 3 3         0.496\n 4 4         0.539\n 5 5         0.508\n 6 6         0.527\n 7 7         0.496\n 8 8         0.504\n 9 9         0.505\n10 10        0.507\n# ℹ 490 more rows"
   },
   {
     "objectID": "3-generalization/12-wrong-by-design/slides.html#section-6",
@@ -4950,6 +5071,6 @@
     "href": "assignments.html#worksheets",
     "title": "Assignments",
     "section": "Worksheets",
-    "text": "Worksheets\nWorksheets are pen-and-paper practice problems that we work on in class. The goal of the worksheets is simply practice: they help you drill the techniques needed to complete the labs.\n\n\n\nWS: Taxonomy of Data\n\n\nWS: Summarizing Categorical Data\n\n\nWS: Summarizing Numerical Data\n\n\nWS: A Grammar of Graphics\n\n\nWS: Conditioning\n\n\nWS: Summarizing Numerical Associations\n\n\nWS: Multiple Linear Regression\n\n\nWS: Probability Foundations\n\n\nWS: Probability Foundations II\n\n\nWS: Probability Distributions\n\n\nWS: Random Variables\n\n\nWS: Expected Value and Variance\n\n\nWS: Probability Foundations II\n\n\nWS: Sampling Distributions\n\n\nWS: Bootstrapping\n\n\nWS: Hypothesis Testing\n\n\nWS: Hypothesis Tests II\n\n\nWS: Wrong by Design\n\n\nWS: A Matter of Taste\n\n\nWS: A Matter of Taste\n\n\n\nNo matching items"
+    "text": "Worksheets\nWorksheets are pen-and-paper practice problems that we work on in class. The goal of the worksheets is simply practice: they help you drill the techniques needed to complete the labs.\n\n\n\nWS: Taxonomy of Data\n\n\nWS: Summarizing Categorical Data\n\n\nWS: Summarizing Numerical Data\n\n\nWS: A Grammar of Graphics\n\n\nWS: Conditioning\n\n\nWS: Summarizing Numerical Associations\n\n\nWS: Multiple Linear Regression\n\n\nWS: Probability Foundations\n\n\nWS: Probability Foundations II\n\n\nWS: Probability Distributions\n\n\nWS: Random Variables\n\n\nWS: Expected Value and Variance\n\n\nWS: Probability Foundations II\n\n\nWS: Sampling Distributions\n\n\nWS: Bootstrapping\n\n\nWS: Hypothesis Testing\n\n\nWS: Hypothesis Tests II\n\n\nWS: Wrong by Design\n\n\nWS: A Matter of Taste\n\n\nWS: A Matter of Taste\n\n\nWS: The Method of Least Squares\n\n\n\nNo matching items"
   }
 ]
