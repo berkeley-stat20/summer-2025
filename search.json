@@ -1775,25 +1775,216 @@
     ]
   },
   {
+    "objectID": "5-prediction/01-method-of-least-squares/slides.html#agenda",
+    "href": "5-prediction/01-method-of-least-squares/slides.html#agenda",
+    "title": "The Method of Least Squares",
+    "section": "Agenda",
+    "text": "Agenda\n\nAnnouncements\nReading Questions\nBreak\nWorksheet: The Method of Least Squares\nBreak\nLab 4: Baseball - Part 1\nAppendix: - more practice!"
+  },
+  {
+    "objectID": "5-prediction/01-method-of-least-squares/slides.html#announcements",
+    "href": "5-prediction/01-method-of-least-squares/slides.html#announcements",
+    "title": "The Method of Least Squares",
+    "section": "Announcements",
+    "text": "Announcements\n\nQuiz 2 grades out. Please submit your regrade requests by Friday.\n\n\n\nPortfolio 7 due on Friday (Mon., Tue., Wed., Thu. worksheets).\n\n\n\n\nLab 4: Baseball released today and due next Tuesday. See Ed for any further updates.\n\n\n\n\nDo not worry about the video in the notes last night. It is an interesting watch, but the summary of the video in the notes is sufficient for this semester."
+  },
+  {
+    "objectID": "5-prediction/01-method-of-least-squares/slides.html#reading-questions",
+    "href": "5-prediction/01-method-of-least-squares/slides.html#reading-questions",
+    "title": "The Method of Least Squares",
+    "section": "Reading Questions",
+    "text": "Reading Questions\n\nPlease put your laptops under your desk and your phones away.\nWrite your name, ID, and bubble in Version “A” on your answer sheet.\nYou may work only with those at your table!"
+  },
+  {
+    "objectID": "5-prediction/01-method-of-least-squares/slides.html#which-quantity-is-minimized-in-order-to-find-the-least-squares-estimates-of-b_0-and-b_1-in-the-equation-haty-b_0-b_1x",
+    "href": "5-prediction/01-method-of-least-squares/slides.html#which-quantity-is-minimized-in-order-to-find-the-least-squares-estimates-of-b_0-and-b_1-in-the-equation-haty-b_0-b_1x",
+    "title": "The Method of Least Squares",
+    "section": "Which quantity is minimized in order to find the least squares estimates of \\(b_0\\) and \\(b_1\\) in the equation \\(\\hat{y} = b_0 + b_1x\\)?",
+    "text": "Which quantity is minimized in order to find the least squares estimates of \\(b_0\\) and \\(b_1\\) in the equation \\(\\hat{y} = b_0 + b_1x\\)?\n\nA: \\(\\sum_{i = 1}^n \\left(y_i - \\hat{y}_i \\right)^2\\)\nB: \\(\\sum_{i = 1}^n \\left(x_i - \\hat{x}_i \\right)^2\\)\nC: \\(\\sum_{i = 1}^n \\left(y_i - \\hat{x}_i \\right)^2\\)\nD: \\(\\sum_{i = 1}^n \\left|y_i - \\hat{y}_i \\right|\\)\nE: \\(\\sum_{i = 1}^n y_i^2 - \\hat{y}_i^2\\)\n\n\n  \n    −\n    +\n \n 00:40"
+  },
+  {
+    "objectID": "5-prediction/01-method-of-least-squares/slides.html#read-this-first.",
+    "href": "5-prediction/01-method-of-least-squares/slides.html#read-this-first.",
+    "title": "The Method of Least Squares",
+    "section": "Read this first.",
+    "text": "Read this first.\n\nAn analyst for the EPA is working to devise a method to determine whether or not a set of water samples are contaminated with PCB (a carcinogenic compound). They measure the levels of four other compounds in each of the samples that are easier to measure and whose presence is highly correlated with PCB. They then separate their water samples into two groups (samples suspected to be contaminated with PCB and samples that are clean) based on the presence/absence of the compounds in each sample."
+  },
+  {
+    "objectID": "5-prediction/01-method-of-least-squares/slides.html#what-type-of-claim-will-this-analyst-be-making",
+    "href": "5-prediction/01-method-of-least-squares/slides.html#what-type-of-claim-will-this-analyst-be-making",
+    "title": "The Method of Least Squares",
+    "section": "What type of claim will this analyst be making?",
+    "text": "What type of claim will this analyst be making?\n\nA: Prediction (Regression)\nB: Summary\nC: Prediction (Classification)\nD: Causal\nE: Generalization\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "5-prediction/01-method-of-least-squares/slides.html#imagine-you-have-a-data-frame-df-containing-two-numerical-variables-x-and-y.-select-the-techniques-which-are-most-appropriate-to-estimate-the-values-of-the-slope-and-intercept-of-the-equation-haty-b_0-b_1x-of-the-data-in-df.",
+    "href": "5-prediction/01-method-of-least-squares/slides.html#imagine-you-have-a-data-frame-df-containing-two-numerical-variables-x-and-y.-select-the-techniques-which-are-most-appropriate-to-estimate-the-values-of-the-slope-and-intercept-of-the-equation-haty-b_0-b_1x-of-the-data-in-df.",
+    "title": "The Method of Least Squares",
+    "section": "Imagine you have a data frame df containing two numerical variables, \\(x\\) and \\(y\\). Select the techniques which are most appropriate to estimate the values of the slope and intercept of the equation \\(\\hat{y} = b_0 + b_1x\\) of the data in df.",
+    "text": "Imagine you have a data frame df containing two numerical variables, \\(x\\) and \\(y\\). Select the techniques which are most appropriate to estimate the values of the slope and intercept of the equation \\(\\hat{y} = b_0 + b_1x\\) of the data in df.\n\nA: A bootstrapped confidence interval for the slope/intercept obtained by least squares regression.\nB: Least squares regression - Numerical optimization\nC: Least squares regression - pen and paper (calculus)\nD: Hypothesis test\n\n\n  \n    −\n    +\n \n 00:45"
+  },
+  {
+    "objectID": "5-prediction/01-method-of-least-squares/slides.html#what-might-be-wrong-with-the-following-r-function-g-which-is-trying-to-emulate-the-function-gx-2x-8-select-all-that-apply.",
+    "href": "5-prediction/01-method-of-least-squares/slides.html#what-might-be-wrong-with-the-following-r-function-g-which-is-trying-to-emulate-the-function-gx-2x-8-select-all-that-apply.",
+    "title": "The Method of Least Squares",
+    "section": "What might be wrong with the following R function g, which is trying to emulate the function \\(g(x) = 2x + 8\\)? Select all that apply.",
+    "text": "What might be wrong with the following R function g, which is trying to emulate the function \\(g(x) = 2x + 8\\)? Select all that apply.\n\ng &lt;- function{x}(\n     2x + 8\n)\n\n\nA: function should be replaced with g.\nB: 2x must be written as 2*x in order for the multiplication to work.\nC: The position of the parentheses and the curly braces should be switched.\n\n\n  \n    −\n    +\n \n 00:50"
+  },
+  {
     "objectID": "5-prediction/01-method-of-least-squares/slides.html#concept-question-1",
     "href": "5-prediction/01-method-of-least-squares/slides.html#concept-question-1",
-    "title": "Method of Least Squares",
+    "title": "The Method of Least Squares",
     "section": "Concept Question 1",
     "text": "Concept Question 1\nAn engineer working for Waymo self-driving cars is working to solve a problem. When it rains, reflections of other cars in puddles can disorient the self-driving car. Their team is working on a model to determine when the self-driving car is seeing a reflection of a car vs a real car.\n\nThink of a potential response and predictor, and about whether this is a regression or classification problem.\n\n\n\n\n−+\n01:00\n\n\n\n\nThis is a serious challenge encountered by self-driving cars at the moment. This is probably best thought of as a classification problem, with the response being either reflection / not or puddle / not. The predictors could be sensor input (cameras, lidar) as well as weather info (to know if it’s been raining)."
   },
   {
     "objectID": "5-prediction/01-method-of-least-squares/slides.html#concept-question-2",
     "href": "5-prediction/01-method-of-least-squares/slides.html#concept-question-2",
-    "title": "Method of Least Squares",
+    "title": "The Method of Least Squares",
     "section": "Concept Question 2",
     "text": "Concept Question 2\nAn analyst working for the UC Berkeley Admissions Office is working to help the university decide how many students to send offer letters to. They have a target class size (that fits within the budget and residence halls), but they’re not sure how many students will accept the offer. How many should they admit?\n\nThink of a potential response and predictor, and about whether this is a regression or classification problem.\n\n\n\n\n−+\n01:00\n\n\n\n\nThis is another very real task. Universities use what’s called a “yield model” to predict whether or not a student will accept the offer. That’s a classification method. Those classifiers aggregated up across all offers lead to a numerical prediction for the total yield, which looks more like a regression problem, so either answer could work. It could also be a direct regression model where they use aggregate stats of the class to predict the total yield.\nResponse is either the decision of a single student or the total number of students that accept. Predictors could be either student level covariates (for classification) or class-level averages (for regression). Those might also include broader economic indicators like unemployment rate."
   },
   {
     "objectID": "5-prediction/01-method-of-least-squares/slides.html#concept-question-3",
     "href": "5-prediction/01-method-of-least-squares/slides.html#concept-question-3",
-    "title": "Method of Least Squares",
+    "title": "The Method of Least Squares",
     "section": "Concept Question 3",
     "text": "Concept Question 3\n\nHere is a function f.\n\n\nf &lt;- function(x, y) {\n  y*(x + 3) \n}\n\n\n\nWhat will the following line of code return?\n\n\n\n\nf(3,5)\n\n\nThis question reminds students that if function arguments are unnamed, they are assumed to have been input in the order they were originally specified as in the function definition. x will be assigned 3, and y will be assigned 5, so the correct answer is 30."
+  },
+  {
+    "objectID": "5-prediction/03-overfitting/notes.html",
+    "href": "5-prediction/03-overfitting/notes.html",
+    "title": "Overfitting",
+    "section": "",
+    "text": "Below is data we collected about the association between number of hours studied and students’ test scores in a math class. Our goal is to predict the exam score from number of hours studied. Both plots below show the same data, but show the predictions from two different predictive models.\nWhich model looks more appropriate: the blue, or the red? More specifically,\nThe blue model seems more reasonable: studying more should steadily increase your score. The predictive model on the right seems like it took the particular data points “too seriously!” This will be an issue if a new set of students from the same class comes along and we want to predict what their exam scores will be based on the amount of hours studied. Let’s use the blue and red models to predict scores from more students from this same class.\nWe see that the blue line is prepared to predict the exam scores well enough for these students–even though the model was not fit using them! The red model, however, does poorly. It is so beholden to the first group of students that it doesn’t know how to manage when the students are even slightly different. In statistics, we say that the red model was overfit.",
+    "crumbs": [
+      "Notes",
+      "Prediction",
+      "Overfitting"
+    ]
+  },
+  {
+    "objectID": "5-prediction/03-overfitting/notes.html#overfitting-with-polynomials",
+    "href": "5-prediction/03-overfitting/notes.html#overfitting-with-polynomials",
+    "title": "Overfitting",
+    "section": "Overfitting with polynomials",
+    "text": "Overfitting with polynomials\nUsually, overfitting occurs as a result of applying a model that is too complex, like the red one we saw for the math class data above. We created that overfitted predictive model on the right by fitting a polynomial with a high degree. Polynomials are quite powerful models and are capable of creating very complex predictive functions. The higher the polynomial degree, the more complex function it can create.\nLet’s illustrate by fitting polynomial models with progressively higher degrees to the data set above.\n\n\n\n\n\n\n\n\n\nThe higher the polynomial degree, the closer the prediction function comes to perfectly fitting the data1. Therefore, when it comes to evaluating which model is the best for prediction, we would say the degree seven polynomial is best. Indeed, based on our knowledge so far, it would have the highest \\(R^2\\). The true test is yet to come, though. Let’s measure these three models on how well they predict to the second group of students that weren’t used to fit the model.\n\n\n\n\n\n\n\n\n\nAs we increase the degree, the polynomial begins to perform worse on this new data as it bends to conform to the original data. For example, we see that for the student having studied around five and a half hours, the fifth degree polynomial does well, but the seven degree polynomial does horribly! To put a cherry on top, the red model we showed you in the beginnng of these notes was a twenty degree polynomial!\nWhat we see is that the higher the degree, the more risk we run of using a model that overfits.",
+    "crumbs": [
+      "Notes",
+      "Prediction",
+      "Overfitting"
+    ]
+  },
+  {
+    "objectID": "5-prediction/03-overfitting/notes.html#training-and-testing-sets-a-workflow-to-curb-overfitting",
+    "href": "5-prediction/03-overfitting/notes.html#training-and-testing-sets-a-workflow-to-curb-overfitting",
+    "title": "Overfitting",
+    "section": "Training and testing sets: a workflow to curb overfitting",
+    "text": "Training and testing sets: a workflow to curb overfitting\nWhat you should have taken away so far is the following: we should not fit the model (set the \\(b_0, b_1\\) coefficients) and evaluate the model (judge its predictive power) with the same data set!\nWe can further back up this idea quantitatively. The plot below shows the \\(R^2\\) value for math class models fit with different polynomial degrees.\n\n\n\n\n\n\n\n\n\nThe \\(R^2\\) value goes steadily upwards as the polynomial degree goes up. In fact this is mathematically guaranteed to happen: for a fixed data set the \\(R^2\\) value for a polynomial model with higher degree will always be higher than a polynomial model with lower degree.\nThis should be disconcerting, especially since we earlier saw that the model with the highest \\(R^2\\) did the worst on our unseen data. What you might also notice is that the \\(R^2\\) isn’t increasing by that much between degrees as the degree gets higher. This suggests that adding that additional degree isn’t improving our general predictive power much; it’s just helping the model tailor itself to the specific data we have.\nDoes that mean \\(R^2\\) is not a good metric to evaluate our model? Not necessarily. We can just change our workflow slightly. Instead of thinking in terms of a single data set, we can partition, or split the observations of the data set into two separate sets. We can use one of these data sets to fit the model, and the other to evaluate it.\n\nTraining Set\n\nThe set of observations used to fit a predictive model; i.e. estimate the model coefficients.\n\nTesting Set\n\nThe set of observations used to assess the accuracy of a predictive model. This set is disjoint from the training set.\n\n\nThe partition of a data frame into training and testing sets is illustrated by the diagram below.\n\n\n\n\n\n\n\n\ny\nx1\nx2\nx3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe original data frame consists of 10 observations. For each observation we have recorded a response variable, \\(y\\), and three predictors, \\(x_1, x_2\\), and \\(x_3\\). If we do an 80-20 split, then 8 of the rows will randomly be assigned to the training set (in blue). The 2 remaining rows (rows 2 and 6) are assigned to the testing set (in gold).\nSo to recap, our new workflow for predictive modeling involves:\n\nSplitting the data into a training and a testing set\nFitting the model to the training set\nEvaluating the model using the testing set\n\n\nMore on splitting the data\nAs in the diagram above, a standard partition is to dedicate 80% of the observations to the training set and the remainder to the testing set (a 80-20 split), though this is not a rule which is set in stone. The other question is how best to assign the observations to the two sets. In general, it is best to do this randomly to avoid one set that is categorically different than the other.\n\n\nMean square error: another metric for evaluation\nWhile \\(R^2\\) is the most immediate metric to evaluate the predictive quality of a linear regression, it is quite specific to linear modeling. Therefore, data scientists have come up with another, more general metric called mean square error (MSE). Let \\(y_i\\) be observations of the response variable in the testing set, and \\(\\hat{y}_i\\) be your model’s predictions for those observations. Then \\(\\text{MSE}\\) is given by\n\\[ \\text{MSE} =  \\frac{1}{n}\\sum_{i=1}^n(y_i-\\hat{y_i})^2\\] You may notice that for a linear regression model, \\(\\text{MSE} = \\displaystyle \\frac{1}{n}\\text{RSS}\\).\nA common offshoot is root mean square error (\\(\\text{RMSE}\\)), which you can obtain by taking the square root of \\(\\text{MSE}\\). Much like what standard deviation does for variance, \\(\\text{RMSE}\\) allows you to think above the average error on a regular scale rather than on a squared scale.",
+    "crumbs": [
+      "Notes",
+      "Prediction",
+      "Overfitting"
+    ]
+  },
+  {
+    "objectID": "5-prediction/03-overfitting/notes.html#the-ideas-in-code",
+    "href": "5-prediction/03-overfitting/notes.html#the-ideas-in-code",
+    "title": "Overfitting",
+    "section": "The Ideas in Code",
+    "text": "The Ideas in Code\nLet’s shift the subject to mathematics to biology, and illustrate the training and testing approaching to evaluating predictions for the exam scores from a biology class with 200 students using as a predictor the number of hours that they have studied. Let’s visualize these data first.\n\n\n\n\n\n\n\n\n\nHere we are going to compare two models: a simple linear model versus a 5th degree polynomial, both fit using the method of least squares.\n\n\\(\\textbf{Model 1:} \\quad \\widehat{score} = b_0 + b_1 \\times hours\\)\n\\(\\textbf{Model 2:} \\quad \\widehat{score} = b_0 + b_1 \\times hours + b_2 \\times hours^2 + b_3 \\times hours^3 + b_4 \\times hours^4 + b_5 \\times hours^5\\)\n\n\nStep 1: Split data\nWe’ll use an 80-20 split of the sample, with each observation assigned to its set randomly. There are many ways to do this via code: here is one using functions we’ve seen.\n\nGenerate a vector of \\(n\\) observations (in this case, our data has 200 observations) in which approximately 80 percent of the observations are \"train\" and 20 percent of the observations are \"test\". To do this, we can make use of the sample() function.\n\n\nset.seed(20)\n\ntrain_or_test &lt;- sample(x = c(\"train\", \"test\"), \n                   size = 200, \n                   replace = TRUE, \n                   prob = c(0.8, 0.2))\n\n\nmutate this vector onto our data frame (our data frame here is called biology). Below, you can see which rows in the data frame have been assigned to \"train\" and which have been assigned to \"test\".\n\n\nbiology &lt;- biology |&gt;\n    mutate(set_type = train_or_test)\n\n\n\n# A tibble: 6 × 3\n  hours score set_type\n  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;   \n1  6.30  74.6 test    \n2  6.30  73.4 train   \n3  7.40  76.6 train   \n4  9.97  95.1 test    \n5  9.58  82.4 train   \n6  8.19  84.0 train   \n\n\n\nsplit the data based on whether the observations are in the \"train\" or \"test\" set.\n\n\nbiology_train &lt;- biology |&gt;\n    filter(set_type == \"train\")\n\nbiology_test &lt;- biology |&gt;\n    filter(set_type == \"test\")\n\n\n\nStep 2: Fit the model to the training set\nNow fit two models on the training data. We will be using lm(), and for both models, the data argument is given by biology_train.\n\nlm_slr &lt;- lm(score ~ hours, data = biology_train)\nlm_poly &lt;- lm(score ~ poly(hours, degree = 20, raw = T),\n              data = biology_train)\n\n\nWe can evaluate the \\(R^2\\)’s for both models’ performance on the training data just like before with glance(). Which model do you expect to have a better training set \\(R^2\\) value?\n\nlibrary(broom)\n\nglance(lm_slr) %&gt;%\n    select(r.squared)\n\n# A tibble: 1 × 1\n  r.squared\n      &lt;dbl&gt;\n1     0.693\n\nglance(lm_poly) %&gt;%\n    select(r.squared)\n\n# A tibble: 1 × 1\n  r.squared\n      &lt;dbl&gt;\n1     0.715\n\n\nJust as we might have guessed from looking at the model fits, the polynomial model has a better \\(R^2\\) value when evaluated on the training set.\n\n\nStep 3: Evaluate the model on the testing set.\nThe real test of predictive power between the two models comes now, when we will make exam score predictions using the testing set: data which the model was not used to fit and hasn’t seen.\nWe will still be using the predict() function for this purpose. Now, we can just plug biology_test into the newdata argument!\n\nscore_pred_linear &lt;- predict(lm_slr, newdata = biology_test)\nscore_pred_poly &lt;- predict(lm_poly, newdata = biology_test)\n\nOnce these predictions \\(\\hat{y}_i\\) are made, we then can use dplyr code to:\n\nmutate on the predictions to our testing data\nset up the \\(R^2\\) formula and calculate2. In the code below, we are using the formula\n\n\\[R^2 = 1-\\frac{\\text{RSS}}{\\text{TSS}} = 1-\\frac{\\sum_{i=1}^n(y_i-\\hat{y_i})^2}{\\sum_{i=1}^n(y_i-\\bar{y})^2}\\]\n\nWe can also calculate \\(\\text{MSE}\\) and \\(\\text{RMSE}\\) as \\(\\frac{1}{n}\\text{RSS}\\) and \\(\\sqrt{\\frac{1}{n}\\text{RSS}}\\), respectively.\n\n\nbiology_test %&gt;%\n    mutate(score_pred_linear = score_pred_linear,\n           score_pred_poly = score_pred_poly,\n           resid_sq_linear = (score - score_pred_linear)^2, # compute the residuals for linear model\n           resid_sq_poly = (score - score_pred_poly)^2) %&gt;% # compute the residuals for poly model\n    summarize(TSS = sum((score - mean(score))^2), # compute TSS\n              RSS_linear = sum(resid_sq_linear),  # compute RSS for the linear model\n              RSS_poly = sum(resid_sq_poly),      # compute RSS for the polynomial model\n              n = n()) %&gt;%\n    mutate(Rsq_linear = 1 - RSS_linear/TSS, # compute Rsq, MSE, RMSE for each model\n           Rsq_poly = 1 - RSS_poly/TSS,\n           MSE_linear = RSS_linear/n,\n           MSE_poly = RSS_poly/n,\n           RMSE_linear = sqrt(MSE_linear),\n           RMSE_poly = sqrt(MSE_poly)) |&gt;\n  select(Rsq_linear, Rsq_poly, MSE_linear, MSE_poly)\n\n# A tibble: 1 × 4\n  Rsq_linear Rsq_poly MSE_linear MSE_poly\n       &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;    &lt;dbl&gt;\n1      0.664    0.629       26.6     29.3\n\n\nVoila! The linear model’s test set \\(R^2\\) is better than the polynomial model’s test \\(R^2\\)! We also see the \\(\\text{MSE}\\) for the linear model is lower than that for the polynomial model.\nSo which is the better predictive model: Model 1 or Model 2? In terms of training, Model 2 came out of top, but Model 1 won out in testing.\nAgain, while training \\(R^2\\) can tell us how well a predictive model explains the structure in the data set upon which it was trained, it is deceptive to use as a metric of true predictive accuracy. The task of prediction is fundamentally one applied to unseen data, so testing \\(R^2\\) is the appropriate metric. Model 1, the simpler model, is the better predictive model. After all, the data we are using looks much better modeled by a line than a five degree polynomial.",
+    "crumbs": [
+      "Notes",
+      "Prediction",
+      "Overfitting"
+    ]
+  },
+  {
+    "objectID": "5-prediction/03-overfitting/notes.html#summary",
+    "href": "5-prediction/03-overfitting/notes.html#summary",
+    "title": "Overfitting",
+    "section": "Summary",
+    "text": "Summary\nThis lecture is about overfitting: what happens when your model takes the particular data set it was built on too seriously. The more complex a model is, the more prone to overfitting it is. Polynomial models are able to create very complex functions thus high-degree polynomial models can easily overfit. Fitting a model and evaluating it on the same data set can be problematic; if the model is overfitted the evaluation metric (e.g. \\(R^2\\)) might be very good, but the model might be lousy on predictions on new data.\nA better way to approach predictive modeling is to fit the model to a training set then evaluate it with a separate testing set.",
+    "crumbs": [
+      "Notes",
+      "Prediction",
+      "Overfitting"
+    ]
+  },
+  {
+    "objectID": "5-prediction/03-overfitting/notes.html#footnotes",
+    "href": "5-prediction/03-overfitting/notes.html#footnotes",
+    "title": "Overfitting",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nWe say a function that perfectly predicts each data point interpolates the data. See the first red curve for the math class exams.↩︎\nBecause \\(\\hat{y}_i\\) involve information from the training data and \\(y_i\\) and \\(\\bar{y}\\) come from the testing data, the decomposition of the sum of squares does not work. So, we cannot interpret testing \\(R^2\\) as we would training \\(R^2\\), and you may have a testing \\(R^2\\) less than 0. However, higher \\(R^2\\) values still signal that the model has good predictive power.↩︎",
+    "crumbs": [
+      "Notes",
+      "Prediction",
+      "Overfitting"
+    ]
+  },
+  {
+    "objectID": "5-prediction/02-improving-predictions/slides.html#agenda",
+    "href": "5-prediction/02-improving-predictions/slides.html#agenda",
+    "title": "Evaluating and Improving Predictions",
+    "section": "Agenda",
+    "text": "Agenda\n\nAnnouncements\nReading Questions\nBreak\nWorksheet"
+  },
+  {
+    "objectID": "5-prediction/02-improving-predictions/slides.html#announcements",
+    "href": "5-prediction/02-improving-predictions/slides.html#announcements",
+    "title": "Evaluating and Improving Predictions",
+    "section": "Announcements",
+    "text": "Announcements\n\nPortfolio (four worksheets) due Friday at 5pm.\n\n\n\nQuiz 4 is next Thursday. Two sided, handwritten cheatsheet is allowed."
+  },
+  {
+    "objectID": "5-prediction/02-improving-predictions/slides.html#compare-r-and-r2-selecting-all-of-the-statements-which-are-true.",
+    "href": "5-prediction/02-improving-predictions/slides.html#compare-r-and-r2-selecting-all-of-the-statements-which-are-true.",
+    "title": "Evaluating and Improving Predictions",
+    "section": "Compare \\(r\\) and \\(R^2\\), selecting all of the statements which are true.",
+    "text": "Compare \\(r\\) and \\(R^2\\), selecting all of the statements which are true.\n\nA: \\(r\\) is a summary statistic between numerical variables that is often computed before a linear model is fit; \\(R^2\\) is fit to assess the performance of the linear model once it is fit.\nB: Both \\(r\\) and \\(R^2\\) can take values between 0 and 1.\nC: When fitting a linear regression model which involves multiple predictor variables, the goal is to fit a model which maximizes \\(r\\).\n\n\n  \n    −\n    +\n \n 00:40"
+  },
+  {
+    "objectID": "5-prediction/02-improving-predictions/slides.html#when-adding-a-new-variable-to-a-linear-regression-model-what-will-happen-to-the-r2-value-as-compared-to-what-it-was-before",
+    "href": "5-prediction/02-improving-predictions/slides.html#when-adding-a-new-variable-to-a-linear-regression-model-what-will-happen-to-the-r2-value-as-compared-to-what-it-was-before",
+    "title": "Evaluating and Improving Predictions",
+    "section": "When adding a new variable to a linear regression model, what will happen to the \\(R^2\\) value as compared to what it was before?",
+    "text": "When adding a new variable to a linear regression model, what will happen to the \\(R^2\\) value as compared to what it was before?\n\nA: The \\(R^2\\) value will either be equal to what is was before, or less.\nB: We cannot determine this information.\nC: The \\(R^2\\) value will either be equal to what it was before, or greater.\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "5-prediction/02-improving-predictions/slides.html#when-applying-a-transformation-to-a-predictor-variable-before-fitting-a-linear-model-for-example-squaring-the-predictor-variable-the-resulting-function-that-describes-the-model-is-a-_____-function-of-the-transformed-variable-and-a-____-function-of-the-original-variable.",
+    "href": "5-prediction/02-improving-predictions/slides.html#when-applying-a-transformation-to-a-predictor-variable-before-fitting-a-linear-model-for-example-squaring-the-predictor-variable-the-resulting-function-that-describes-the-model-is-a-_____-function-of-the-transformed-variable-and-a-____-function-of-the-original-variable.",
+    "title": "Evaluating and Improving Predictions",
+    "section": "When applying a transformation to a predictor variable before fitting a linear model (for example, squaring the predictor variable), the resulting function that describes the model is a _____ function of the transformed variable and a ____ function of the original variable.",
+    "text": "When applying a transformation to a predictor variable before fitting a linear model (for example, squaring the predictor variable), the resulting function that describes the model is a _____ function of the transformed variable and a ____ function of the original variable.\n\nA: non-linear; non-linear\nB: linear; non-linear\nC: linear; linear\nD: non-linear; linear\n\n\n  \n    −\n    +\n \n 00:40"
+  },
+  {
+    "objectID": "5-prediction/02-improving-predictions/slides.html#you-would-like-to-generate-predictions-for-new_x-with-a-linear-model-that-you-built-called-m1.-what-data-typedata-structure-does-the-argument-supplied-to-newdata-new_x-need-to-be",
+    "href": "5-prediction/02-improving-predictions/slides.html#you-would-like-to-generate-predictions-for-new_x-with-a-linear-model-that-you-built-called-m1.-what-data-typedata-structure-does-the-argument-supplied-to-newdata-new_x-need-to-be",
+    "title": "Evaluating and Improving Predictions",
+    "section": "You would like to generate predictions for new_x with a linear model that you built called m1. What data type/data structure does the argument supplied to newdata, new_x, need to be?",
+    "text": "You would like to generate predictions for new_x with a linear model that you built called m1. What data type/data structure does the argument supplied to newdata, new_x, need to be?\n\npredict(object = m1, newdata = new_x)\n\n\nA: vector\nB: logical\nC: integer\nD: data frame\nE: factor\n\n\n  \n    −\n    +\n \n 00:30"
+  },
+  {
+    "objectID": "5-prediction/02-improving-predictions/slides.html#section",
+    "href": "5-prediction/02-improving-predictions/slides.html#section",
+    "title": "Evaluating and Improving Predictions",
+    "section": "",
+    "text": "Which two models will exhibit the highest \\(R^2\\)?\n\n\n\n\n−+\n01:00\n\n\n\n\nThis is a repeat of a previous CQ, but now with a linear model and a different characteristic of interest: R^2. The two highest R^2 values should be clearly B and E. The second two are very difficult to discern based on these plots.\nThis is a good time to mention that for a least squares linear models, R^2 is indeed just the square of the Pearson correlation coefficient. This isn’t true of non-linear models."
+  },
+  {
+    "objectID": "5-prediction/02-improving-predictions/slides.html#section-1",
+    "href": "5-prediction/02-improving-predictions/slides.html#section-1",
+    "title": "Evaluating and Improving Predictions",
+    "section": "",
+    "text": "# A tibble: 4 × 5\n  name    hours cuteness food_eaten is_indoor_cat\n  &lt;chr&gt;   &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt; &lt;lgl&gt;        \n1 castiel    12      9          175 TRUE         \n2 frank      18     10          200 TRUE         \n3 luna       19      9.5        215 FALSE        \n4 luca       10      8          218 FALSE        \n\n\n\nm1 &lt;- lm(formula = hours ~ cuteness + food_eaten + is_indoor_cat, \n         data = cats)\n\n\n\n      (Intercept)          cuteness        food_eaten is_indoor_catTRUE \n    -3.800000e+01      6.000000e+00      2.815002e-16     -4.000000e+00 \n\n\n\nHow many hours does the model predict Frank will sleep each day? Write out the linear equation of the model from the model output to help you.\n\n\n\n\n−+\n03:00"
+  },
+  {
+    "objectID": "5-prediction/02-improving-predictions/slides.html#section-2",
+    "href": "5-prediction/02-improving-predictions/slides.html#section-2",
+    "title": "Evaluating and Improving Predictions",
+    "section": "",
+    "text": "Which is the most appropriate non-linear transformation to apply to time_being_pet?\n\n\n\n\n\n−+\n01:00"
   },
   {
     "objectID": "5-prediction/labs/07-baseball/slides.html#baseball-rules",
@@ -2529,6 +2720,69 @@
     ]
   },
   {
+    "objectID": "5-prediction/labs/07-baseball/part-2.html",
+    "href": "5-prediction/labs/07-baseball/part-2.html",
+    "title": "Baseball",
+    "section": "",
+    "text": "The goal of this lab is to build three different regression models to predict the number of wins of a Major League Baseball team.\nUse the following code to load in the Teams dataset from the Lahman database (library). Recall that you can query the help file for a data set by running ?Teams at the console.\n\n\nSubset the Teams data set to only include years from 2000 to present day (this is the data set that you’ll use for the remainder of this lab. There might be another year post-2000 that you might want to filter out: why?). What are the dimensions of this filtered data set?\n\n\n\nPlot the distribution of wins. Describe the shape of the distribution and compare it to your speculations from part 1 of the lab.\n\n\n\nPlot the relationship between runs and wins. Describe the relationship (form, direction, strength of association, presence of outliers) and compare it to your speculations from part 1 of the lab.\n\n\n\nPlot the relationship between runs allowed and wins. Describe the relationship. How does it compare to the relationship between runs and wins?\n\n\n\nFit a simple linear model to predict wins by runs and call it model_1. Write out the equation for the linear model (using the estimated coefficients) and interpret the \\(R^2\\) in the context of the problem in at least one sentence.\n\n\n\nWhat is the average number of season runs and wins? Based on the previous model, how many games would you predict a team that scored the average number of runs would win?\n\n\n\nWhat about a team that scored 600 runs? What about 850 runs? What about 10,000 runs? Would any of these predictions be inaccurate and why?\n\n\n\nFit a multiple linear regression model to predict wins by runs and runs allowed (RA) and save it as model_2. Write out the equation for the linear model and report the \\(R^2\\). How does this model compare to the simple linear regression from the previous question?\n\n\n\nFit a third, more complex model to predict wins and call it model_3. This model should use\n\nat least three variables from this data set,\nat least one non-linear transformation or polynomial term.\n\nWrite out the equation for the resulting linear model and report the \\(R^2\\).\n\n\n\nRevisit the definition of causation. If your predictive model has a positive coefficient between one of the predictors and the response, is that evidence that if you increase that predictor variable for a given observation, the response variable will increase? That is, can you (or a sports management team) use this model to draw causal conclusions? Why or why not? Answer in at least three sentences.\n\n\n\nWill you ensure that your submission to Gradescope…\n\nis of a pdf generated from a qmd file,\nhas all of your code visible to readers,\nand assigns each of the questions to all pages that show your work for that question?\n\n(This one is easy! Just answer “yes” or “no”)"
+  },
+  {
+    "objectID": "5-prediction/labs/07-baseball/part-2.html#part-ii-computing-on-the-data",
+    "href": "5-prediction/labs/07-baseball/part-2.html#part-ii-computing-on-the-data",
+    "title": "Baseball",
+    "section": "",
+    "text": "The goal of this lab is to build three different regression models to predict the number of wins of a Major League Baseball team.\nUse the following code to load in the Teams dataset from the Lahman database (library). Recall that you can query the help file for a data set by running ?Teams at the console.\n\n\nSubset the Teams data set to only include years from 2000 to present day (this is the data set that you’ll use for the remainder of this lab. There might be another year post-2000 that you might want to filter out: why?). What are the dimensions of this filtered data set?\n\n\n\nPlot the distribution of wins. Describe the shape of the distribution and compare it to your speculations from part 1 of the lab.\n\n\n\nPlot the relationship between runs and wins. Describe the relationship (form, direction, strength of association, presence of outliers) and compare it to your speculations from part 1 of the lab.\n\n\n\nPlot the relationship between runs allowed and wins. Describe the relationship. How does it compare to the relationship between runs and wins?\n\n\n\nFit a simple linear model to predict wins by runs and call it model_1. Write out the equation for the linear model (using the estimated coefficients) and interpret the \\(R^2\\) in the context of the problem in at least one sentence.\n\n\n\nWhat is the average number of season runs and wins? Based on the previous model, how many games would you predict a team that scored the average number of runs would win?\n\n\n\nWhat about a team that scored 600 runs? What about 850 runs? What about 10,000 runs? Would any of these predictions be inaccurate and why?\n\n\n\nFit a multiple linear regression model to predict wins by runs and runs allowed (RA) and save it as model_2. Write out the equation for the linear model and report the \\(R^2\\). How does this model compare to the simple linear regression from the previous question?\n\n\n\nFit a third, more complex model to predict wins and call it model_3. This model should use\n\nat least three variables from this data set,\nat least one non-linear transformation or polynomial term.\n\nWrite out the equation for the resulting linear model and report the \\(R^2\\).\n\n\n\nRevisit the definition of causation. If your predictive model has a positive coefficient between one of the predictors and the response, is that evidence that if you increase that predictor variable for a given observation, the response variable will increase? That is, can you (or a sports management team) use this model to draw causal conclusions? Why or why not? Answer in at least three sentences.\n\n\n\nWill you ensure that your submission to Gradescope…\n\nis of a pdf generated from a qmd file,\nhas all of your code visible to readers,\nand assigns each of the questions to all pages that show your work for that question?\n\n(This one is easy! Just answer “yes” or “no”)"
+  },
+  {
+    "objectID": "5-prediction/labs/08-cancer/slides.html#fine-needle-aspiration-biopsy",
+    "href": "5-prediction/labs/08-cancer/slides.html#fine-needle-aspiration-biopsy",
+    "title": "Diagnosing Cancer",
+    "section": "Fine needle aspiration biopsy",
+    "text": "Fine needle aspiration biopsy\n\n\nOften when someone is suspected to have cancer (e.g. a bump is found) a fine needle aspiration biopsy is taken to determine whether or not the growth is cancerous (malignant – may grow dangerously out of control) or not (benign)."
+  },
+  {
+    "objectID": "5-prediction/labs/08-cancer/slides.html#artificial-intelligence-in-medicine",
+    "href": "5-prediction/labs/08-cancer/slides.html#artificial-intelligence-in-medicine",
+    "title": "Diagnosing Cancer",
+    "section": "Artificial intelligence in medicine",
+    "text": "Artificial intelligence in medicine\n\nAutomating certain diagnostic tasks can increase access to healthcare\nGlobal shortage of pathologists, especially outside of wealthy healthcare systems\n\nExpert pathologists take years to be fully trained (4 year medical school + 4 year residency)\n\n\n\nhttps://www.linkedin.com/pulse/how-ai-can-help-address-global-shortage-pathologists-colangelo/"
+  },
+  {
+    "objectID": "5-prediction/labs/08-cancer/slides.html#lab-6-breast-cancer-diagnosis",
+    "href": "5-prediction/labs/08-cancer/slides.html#lab-6-breast-cancer-diagnosis",
+    "title": "Diagnosing Cancer",
+    "section": "Lab 6: breast cancer diagnosis",
+    "text": "Lab 6: breast cancer diagnosis\n\nSamples are 568 biopsies\n\nEach biopsy has 30 features\n\nGoal: classify biopsy as benign or malignant\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe tissue is purple because it is stained with Hematoxylin and Eosin. These are purple and pink stains that make the tissue structure easier to see under a microscope.\nMost of the visible objects in these images are cell nuclei, not the full cell; the cytoplasm is mostly invisible on these images.\n(From https://stanfordhealthcare.org/medical-conditions/cancer/cancer.html): Tumors can be benign (noncancerous) or malignant (cancerous). Benign tumors tend to grow slowly and do not spread. Malignant tumors can grow rapidly, invade and destroy nearby normal tissues, and spread throughout the body."
+  },
+  {
+    "objectID": "5-prediction/labs/08-cancer/slides.html#nuclear-morphology",
+    "href": "5-prediction/labs/08-cancer/slides.html#nuclear-morphology",
+    "title": "Diagnosing Cancer",
+    "section": "Nuclear morphology",
+    "text": "Nuclear morphology\n\nMorphology = what the cell looks like under a microscope\n\nsize, shape, texture\n\nCells in malignant biopsies tend to\n\nbe larger\nirregularly shaped\nhighly variable\n\nOnly measure morphology of cell nucleus"
+  },
+  {
+    "objectID": "5-prediction/labs/08-cancer/slides.html#nuclear-morphology-features",
+    "href": "5-prediction/labs/08-cancer/slides.html#nuclear-morphology-features",
+    "title": "Diagnosing Cancer",
+    "section": "10 nuclear morphology features",
+    "text": "10 nuclear morphology features\n\n\n\n\n\n\nWe compute 10 morphological features for each cell nucleus in the biopsy image.\nIt may be helpful to first draw one unit (one glass slide, that you would see under the microscope). Then in this slide, you make a data frame with cells, and then group by-summarise. Then the resulting calculations become one row in the final dataset."
+  },
+  {
+    "objectID": "5-prediction/labs/08-cancer/slides.html#biopsy-features",
+    "href": "5-prediction/labs/08-cancer/slides.html#biopsy-features",
+    "title": "Diagnosing Cancer",
+    "section": "30 biopsy features",
+    "text": "30 biopsy features\n\n\n\n\n\n\nEach biopsy has 30 features; these come from computing 3 summary statistics (mean, max, standard deviation) of each of the 10 cell features to summarize the population of cells in the biopsy."
+  },
+  {
+    "objectID": "5-prediction/labs/08-cancer/slides.html#section",
+    "href": "5-prediction/labs/08-cancer/slides.html#section",
+    "title": "Diagnosing Cancer",
+    "section": "",
+    "text": "diagnosis\nradius_mean\narea_mean\nradius_sd\n\n\n\n\nB\n13.700\n571.1\n0.2431\n\n\nB\n12.720\n501.3\n0.2954\n\n\nB\n11.750\n422.9\n0.4384\n\n\nM\n13.440\n563.0\n0.2385\n\n\nM\n12.450\n477.1\n0.3345\n\n\nM\n19.590\n1214.0\n0.7364\n\n\nB\n12.060\n448.6\n0.1822\n\n\nM\n18.050\n1006.0\n0.9806\n\n\nB\n8.734\n234.3\n0.5169\n\n\nB\n13.210\n537.9\n0.2084\n\n\nM\n15.460\n731.3\n0.3331\n\n\nM\n14.220\n609.9\n0.2860\n\n\nB\n11.500\n407.4\n0.3927\n\n\nM\n14.780\n668.3\n0.3577\n\n\nB\n9.676\n272.5\n0.2744\n\n\nB\n12.580\n489.0\n0.2719\n\n\nB\n9.738\n288.5\n0.1988\n\n\nB\n10.750\n355.3\n0.2525\n\n\nB\n11.060\n366.5\n0.1779\n\n\nB\n12.880\n514.3\n0.2116\n\n\nM\n15.660\n773.5\n1.2920\n\n\nM\n23.090\n1682.0\n1.2910\n\n\nM\n19.450\n1169.0\n0.5959\n\n\n\n\n\n\n\n\n−+\n25:00"
+  },
+  {
     "objectID": "5-prediction/02-improving-predictions/notes.html",
     "href": "5-prediction/02-improving-predictions/notes.html",
     "title": "Evaluating and Improving Predictions",
@@ -2599,6 +2853,34 @@
       "Prediction",
       "Evaluating and Improving Predictions"
     ]
+  },
+  {
+    "objectID": "5-prediction/03-overfitting/slides.html#overfitting-or-not-taken-from-the-reading-questions",
+    "href": "5-prediction/03-overfitting/slides.html#overfitting-or-not-taken-from-the-reading-questions",
+    "title": "Overfitting",
+    "section": "Overfitting or not? (Taken from the reading questions)",
+    "text": "Overfitting or not? (Taken from the reading questions)\n\n\n\n−+\n01:00\n\n\n\n\nWhich one of these (open pollev.com) is not an example of overfitting (either in real life or in statistics)?\n\n\nNote that the question is opposite of the reading questions. Options (b) and (d) are NOT examples of overfitting."
+  },
+  {
+    "objectID": "5-prediction/03-overfitting/slides.html#are-rss-and-r-square-related",
+    "href": "5-prediction/03-overfitting/slides.html#are-rss-and-r-square-related",
+    "title": "Overfitting",
+    "section": "Are RSS and R square related?",
+    "text": "Are RSS and R square related?\n\n\n\n−+\n01:00\n\n\n\n\nIf I decrease the RSS (e.g. by fitting a more accurate model) does the \\(R^2\\) value necessarily increase?\n\n\nYes, because \\(R^2 = 1 - \\dfrac{RSS}{TSS}\\)"
+  },
+  {
+    "objectID": "5-prediction/03-overfitting/slides.html#overfit-models",
+    "href": "5-prediction/03-overfitting/slides.html#overfit-models",
+    "title": "Overfitting",
+    "section": "Overfit models",
+    "text": "Overfit models\n\n\n\n−+\n00:30\n\n\n\nFill in the blanks: overfit models tend to\n\nfit the training data (well/poorly)\nfit the testing data (well/poorly)\n\n\nFit the training data well, but testing data not as well. (Can choose option “poorly”)"
+  },
+  {
+    "objectID": "5-prediction/03-overfitting/slides.html#where-is-overfitting-worse",
+    "href": "5-prediction/03-overfitting/slides.html#where-is-overfitting-worse",
+    "title": "Overfitting",
+    "section": "Where is overfitting worse?",
+    "text": "Where is overfitting worse?\n\n\n\n−+\n01:00\n\n\n\n\nSuppose I overfit my model to the training data. In which scenario (for which training data) would I expect the test set performance to be significantly worse? Assume that the testing sets A and B look like their corresponding training sets.\n\n\n\nIf you overfit the data to training set A, you will likely have a complex curve (maybe a polynomial). This curve will fit poorly a testing set that looks similar to A. If you overfit to B, since the data has low variance you will have a positively sloping line. The testing set performance will be very similar to the training set performance (it will not be markedly worse).\nAnswer: Training set A"
   },
   {
     "objectID": "5-prediction/01-method-of-least-squares/notes.html",
@@ -4044,7 +4326,7 @@
     "href": "3-generalization/12-wrong-by-design/slides.html#section-5",
     "title": "Wrong By Design",
     "section": "",
-    "text": "null &lt;- ppk |&gt;\n  specify(response = support_before,\n          success = \"TRUE\") |&gt;\n  hypothesize(null = \"point\", p = .5) |&gt;\n  generate(reps = 500, type = \"draw\") |&gt;\n  calculate(stat = \"prop\")\nnull\n\nResponse: support_before (factor)\nNull Hypothesis: point\n# A tibble: 500 × 2\n   replicate  stat\n   &lt;fct&gt;     &lt;dbl&gt;\n 1 1         0.514\n 2 2         0.482\n 3 3         0.493\n 4 4         0.504\n 5 5         0.496\n 6 6         0.487\n 7 7         0.483\n 8 8         0.494\n 9 9         0.489\n10 10        0.492\n# ℹ 490 more rows"
+    "text": "null &lt;- ppk |&gt;\n  specify(response = support_before,\n          success = \"TRUE\") |&gt;\n  hypothesize(null = \"point\", p = .5) |&gt;\n  generate(reps = 500, type = \"draw\") |&gt;\n  calculate(stat = \"prop\")\nnull\n\nResponse: support_before (factor)\nNull Hypothesis: point\n# A tibble: 500 × 2\n   replicate  stat\n   &lt;fct&gt;     &lt;dbl&gt;\n 1 1         0.494\n 2 2         0.493\n 3 3         0.498\n 4 4         0.499\n 5 5         0.508\n 6 6         0.489\n 7 7         0.493\n 8 8         0.522\n 9 9         0.5  \n10 10        0.494\n# ℹ 490 more rows"
   },
   {
     "objectID": "3-generalization/12-wrong-by-design/slides.html#section-6",
@@ -5085,6 +5367,6 @@
     "href": "assignments.html#worksheets",
     "title": "Assignments",
     "section": "Worksheets",
-    "text": "Worksheets\nWorksheets are pen-and-paper practice problems that we work on in class. The goal of the worksheets is simply practice: they help you drill the techniques needed to complete the labs.\n\n\n\nWS: Taxonomy of Data\n\n\nWS: Summarizing Categorical Data\n\n\nWS: Summarizing Numerical Data\n\n\nWS: A Grammar of Graphics\n\n\nWS: Conditioning\n\n\nWS: Summarizing Numerical Associations\n\n\nWS: Multiple Linear Regression\n\n\nWS: Probability Foundations\n\n\nWS: Probability Foundations II\n\n\nWS: Probability Distributions\n\n\nWS: Random Variables\n\n\nWS: Expected Value and Variance\n\n\nWS: Probability Foundations II\n\n\nWS: Sampling Distributions\n\n\nWS: Bootstrapping\n\n\nWS: Hypothesis Testing\n\n\nWS: Hypothesis Tests II\n\n\nWS: Wrong by Design\n\n\nWS: A Matter of Taste\n\n\nWS: A Matter of Taste\n\n\nWS: The Method of Least Squares\n\n\n\nNo matching items"
+    "text": "Worksheets\nWorksheets are pen-and-paper practice problems that we work on in class. The goal of the worksheets is simply practice: they help you drill the techniques needed to complete the labs.\n\n\n\nWS: Taxonomy of Data\n\n\nWS: Summarizing Categorical Data\n\n\nWS: Summarizing Numerical Data\n\n\nWS: A Grammar of Graphics\n\n\nWS: Conditioning\n\n\nWS: Summarizing Numerical Associations\n\n\nWS: Multiple Linear Regression\n\n\nWS: Probability Foundations\n\n\nWS: Probability Foundations II\n\n\nWS: Probability Distributions\n\n\nWS: Random Variables\n\n\nWS: Expected Value and Variance\n\n\nWS: Probability Foundations II\n\n\nWS: Sampling Distributions\n\n\nWS: Bootstrapping\n\n\nWS: Hypothesis Testing\n\n\nWS: Hypothesis Tests II\n\n\nWS: Wrong by Design\n\n\nWS: A Matter of Taste\n\n\nWS: A Matter of Taste\n\n\nWS: The Method of Least Squares\n\n\nWS: Evaluating and Improving Predictions\n\n\nWS: Diagnosing Cancer\n\n\nWS: Diagnosing Cancer\n\n\nWS: Overfitting\n\n\n\nNo matching items"
   }
 ]

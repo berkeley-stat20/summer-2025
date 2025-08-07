@@ -7,11 +7,13 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-6f7931aacaeb22aa467d6667c6f1725d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-6f7931aacaeb22aa467d6667c6f1725d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/quarto-contrib/countdown-0.5.0/countdown.js"></script>
+<link href="../../site_libs/quarto-contrib/countdown-0.5.0/countdown.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.25">
 
   <meta name="author" content="STAT 20: Introduction to Probability and Statistics">
-  <title>Stat 20 – Method of Least Squares</title>
+  <title>Stat 20 – The Method of Least Squares</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -396,10 +398,10 @@
   </style>
   <link href="../../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
   <script src="../../site_libs/countdown-0.4.0/countdown.js"></script>
-<meta property="og:title" content="Method of Least Squares – Stat 20">
+<meta property="og:title" content="The Method of Least Squares – Stat 20">
 <meta property="og:image" content="https://stat20.berkeley.edu/summer-2025/5-prediction/01-method-of-least-squares/assets/stat20-hex.png">
 <meta property="og:site_name" content="Stat 20">
-<meta name="twitter:title" content="Method of Least Squares – Stat 20">
+<meta name="twitter:title" content="The Method of Least Squares – Stat 20">
 <meta name="twitter:image" content="https://stat20.berkeley.edu/summer-2025/5-prediction/01-method-of-least-squares/assets/stat20-hex.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -408,7 +410,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="../../site_libs/quarto-contrib/quarto-project/stat20/stat20slides/stat20-hex-bg.png" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">Method of Least Squares</h1>
+  <h1 class="title">The Method of Least Squares</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -419,9 +421,170 @@ STAT 20: Introduction to Probability and Statistics
 </div>
 
 </section>
-<section id="linear-models-review" class="title-slide slide level1 center">
-<h1>Linear Models Review</h1>
-<p>Go to <code>pollev.com</code> and get ready for a kahoot-style quiz!</p>
+<section id="agenda" class="slide level2">
+<h2>Agenda</h2>
+<ul>
+<li>Announcements</li>
+<li><em>Reading Questions</em></li>
+<li><em>Break</em></li>
+<li><em>Worksheet</em>: The Method of Least Squares</li>
+<li><em>Break</em></li>
+<li><em>Lab 4</em>: Baseball - Part 1</li>
+<li><em>Appendix:</em> - more practice!</li>
+</ul>
+</section>
+<section id="announcements" class="slide level2">
+<h2>Announcements</h2>
+<ul>
+<li>Quiz 2 grades out. Please submit your regrade requests by Friday.</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Portfolio 7 due on Friday (Mon., Tue., Wed., Thu. worksheets).</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><em>Lab 4:</em> Baseball released today and due next Tuesday. See Ed for any further updates.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Do not worry about the video in the notes last night. It is an interesting watch, but the summary of the video in the notes is sufficient for this semester.</li>
+</ul>
+</div>
+</section>
+<section id="reading-questions" class="slide level2">
+<h2>Reading Questions</h2>
+<ul>
+<li>Please put your laptops under your desk and your phones away.</li>
+<li>Write your name, ID, and bubble in Version “A” on your answer sheet.</li>
+<li>You may work only with those at your table!</li>
+</ul>
+</section>
+<section id="which-quantity-is-minimized-in-order-to-find-the-least-squares-estimates-of-b_0-and-b_1-in-the-equation-haty-b_0-b_1x" class="slide level2">
+<h2>Which quantity is minimized in order to find the least squares estimates of <span class="math inline">\(b_0\)</span> and <span class="math inline">\(b_1\)</span> in the equation <span class="math inline">\(\hat{y} = b_0 + b_1x\)</span>?</h2>
+<ul>
+<li>A: <span class="math inline">\(\sum_{i = 1}^n \left(y_i - \hat{y}_i \right)^2\)</span></li>
+<li>B: <span class="math inline">\(\sum_{i = 1}^n \left(x_i - \hat{x}_i \right)^2\)</span></li>
+<li>C: <span class="math inline">\(\sum_{i = 1}^n \left(y_i - \hat{x}_i \right)^2\)</span></li>
+<li>D: <span class="math inline">\(\sum_{i = 1}^n \left|y_i - \hat{y}_i \right|\)</span></li>
+<li>E: <span class="math inline">\(\sum_{i = 1}^n y_i^2 - \hat{y}_i^2\)</span></li>
+</ul>
+<div id="timer_5a368f639d9eeec6f2144c5b712d573d5d6d7e37" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">40</span></code>
+ </div>
+</section>
+<section id="read-this-first." class="slide level2">
+<h2>Read this first.</h2>
+<blockquote>
+<p>An analyst for the EPA is working to devise a method to determine whether or not a set of water samples are contaminated with PCB (a carcinogenic compound). They measure the levels of four other compounds in each of the samples that are easier to measure and whose presence is highly correlated with PCB. They then separate their water samples into two groups (samples suspected to be contaminated with PCB and samples that are clean) based on the presence/absence of the compounds in each sample.</p>
+</blockquote>
+</section>
+<section id="what-type-of-claim-will-this-analyst-be-making" class="slide level2">
+<h2>What type of claim will this analyst be making?</h2>
+<ul>
+<li>A: Prediction (Regression)</li>
+<li>B: Summary</li>
+<li>C: Prediction (Classification)</li>
+<li>D: Causal</li>
+<li>E: Generalization</li>
+</ul>
+<div id="timer_5a368f639d9eeec6f2144c5b712d573d5d6d7e37" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
+ </div>
+</section>
+<section id="imagine-you-have-a-data-frame-df-containing-two-numerical-variables-x-and-y.-select-the-techniques-which-are-most-appropriate-to-estimate-the-values-of-the-slope-and-intercept-of-the-equation-haty-b_0-b_1x-of-the-data-in-df." class="slide level2">
+<h2>Imagine you have a data frame <code>df</code> containing two numerical variables, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. Select the techniques which are most appropriate to estimate the values of the slope and intercept of the equation <span class="math inline">\(\hat{y} = b_0 + b_1x\)</span> of the data in <code>df</code>.</h2>
+<ul>
+<li>A: A bootstrapped confidence interval for the slope/intercept obtained by least squares regression.</li>
+<li>B: Least squares regression - Numerical optimization</li>
+<li>C: Least squares regression - pen and paper (calculus)</li>
+<li>D: Hypothesis test</li>
+</ul>
+<div id="timer_5a368f639d9eeec6f2144c5b712d573d5d6d7e37" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">45</span></code>
+ </div>
+</section>
+<section id="what-might-be-wrong-with-the-following-r-function-g-which-is-trying-to-emulate-the-function-gx-2x-8-select-all-that-apply." class="slide level2">
+<h2>What might be wrong with the following R function <code>g</code>, which is trying to emulate the function <span class="math inline">\(g(x) = 2x + 8\)</span>? <em>Select all that apply.</em></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>g <span class="ot">&lt;-</span> <span class="cf">function</span>{x}(</span>
+<span id="cb1-2"><a></a>     <span class="dv">2</span>x <span class="sc">+</span> <span class="dv">8</span></span>
+<span id="cb1-3"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>A: <code>function</code> should be replaced with <code>g</code>.</li>
+<li>B: <code>2x</code> must be written as <code>2*x</code> in order for the multiplication to work.</li>
+<li>C: The position of the parentheses and the curly braces should be switched.</li>
+</ul>
+<div id="timer_5a368f639d9eeec6f2144c5b712d573d5d6d7e37" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">50</span></code>
+ </div>
+</section>
+<section id="break" class="title-slide slide level1 center">
+<h1><em>Break</em></h1>
+<div id="timer_5a368f639d9eeec6f2144c5b712d573d5d6d7e37" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section>
+
+<section id="worksheet-the-method-of-least-squares" class="title-slide slide level1 center">
+<h1>Worksheet: <em>The Method of Least Squares</em></h1>
+<div id="timer_5a368f639d9eeec6f2144c5b712d573d5d6d7e37" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">30</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section>
+
+<section id="break-1" class="title-slide slide level1 center">
+<h1><em>Break</em></h1>
+<div id="timer_5a368f639d9eeec6f2144c5b712d573d5d6d7e37" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section>
+
+<section id="lab-4-baseball" class="title-slide slide level1 center">
+<h1>Lab 4: Baseball</h1>
+<div id="timer_5a368f639d9eeec6f2144c5b712d573d5d6d7e37" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">30</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section>
+
+<section id="appendix" class="title-slide slide level1 center">
+<h1>Appendix</h1>
+
 </section>
 
 <section>
@@ -437,7 +600,7 @@ STAT 20: Introduction to Probability and Statistics
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_8db4c2a8" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_415e2982" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -465,7 +628,7 @@ STAT 20: Introduction to Probability and Statistics
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_10b2613c" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_d8274a85" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -492,9 +655,9 @@ STAT 20: Introduction to Probability and Statistics
 <li>Here is a function <code>f</code>.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>f <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) {</span>
-<span id="cb1-2"><a></a>  y<span class="sc">*</span>(x <span class="sc">+</span> <span class="dv">3</span>) </span>
-<span id="cb1-3"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>f <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) {</span>
+<span id="cb2-2"><a></a>  y<span class="sc">*</span>(x <span class="sc">+</span> <span class="dv">3</span>) </span>
+<span id="cb2-3"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment">
 <div class="poll">
@@ -503,7 +666,7 @@ STAT 20: Introduction to Probability and Statistics
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">f</span>(<span class="dv">3</span>,<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">f</span>(<span class="dv">3</span>,<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <aside class="notes">
 <p>This question reminds students that if function arguments are unnamed, they are assumed to have been input in the order they were originally specified as in the function definition. <code>x</code> will be assigned <code>3</code>, and <code>y</code> will be assigned <code>5</code>, so the correct answer is 30.</p>
@@ -535,7 +698,7 @@ C. whether it is regression or classification (poll only has C.)
 
 
 ```{=html}
-<div class="countdown" id="timer_7ddbdbde" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_cf2ed2ba" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -564,7 +727,7 @@ Response is either the decision of a single student or the total number of stude
 
 
 ```{=html}
-<div class="countdown" id="timer_b910b138" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_dc0f9746" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">25</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -588,7 +751,7 @@ Response is either the decision of a single student or the total number of stude
 
 
 ```{=html}
-<div class="countdown" id="timer_9e945d89" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_408a9d53" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">25</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
