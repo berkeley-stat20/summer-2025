@@ -7,7 +7,9 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-6f7931aacaeb22aa467d6667c6f1725d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-6f7931aacaeb22aa467d6667c6f1725d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/quarto-contrib/countdown-0.5.0/countdown.js"></script>
+<link href="../../site_libs/quarto-contrib/countdown-0.5.0/countdown.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.25">
 
   <meta name="author" content="STAT 20: Introduction to Probability and Statistics">
@@ -354,6 +356,172 @@ STAT 20: Introduction to Probability and Statistics
 </div>
 
 </section>
+<section id="agenda" class="slide level2">
+<h2>Agenda</h2>
+<ul>
+<li>Announcements</li>
+<li><em>Reading Questions</em></li>
+<li><em>Break</em></li>
+<li><em>Worksheet</em></li>
+<li><em>Break</em></li>
+<li>Lab: Part 2</li>
+<li>Appendix</li>
+</ul>
+</section>
+<section id="announcements" class="slide level2">
+<h2>Announcements</h2>
+<ul>
+<li>Portfolio 7 (<strong>five</strong> worksheets) due <strong>Monday</strong> at 5pm.</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Final is next Thursday, in-class. A two sided, handwritten cheatsheet is allowed.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Quiz 3 grades will be out early next week.</li>
+</ul>
+</div>
+</section>
+<section>
+<section id="reading-questions" class="title-slide slide level1 center">
+<h1>Reading Questions</h1>
+<ul>
+<li>Please put your laptops under your desk and your phones away.</li>
+<li>Write your name, ID, and bubble in Version “A” on your answer sheet.</li>
+<li>You may work only with those at your table!</li>
+</ul>
+</section>
+<section id="i-have-a-data-frame-with-100-observations-and-10-variables.-using-an-8020-traintest-set-split-what-will-be-the-dimensions-rows-x-columns-of-my-training-data-frame" class="slide level2">
+<h2>I have a data frame with 100 observations and 10 variables. Using an 80/20 train/test set split, what will be the dimensions (rows x columns) of my training data frame?</h2>
+<ul>
+<li>A: 80 * 100</li>
+<li>B: 80 * 10</li>
+<li>C: 10 * 80</li>
+<li>D: 100 * 80</li>
+<li>E: The correct answer is not here.</li>
+</ul>
+<div id="timer_ab632ee3b710d5b1d24ffe6240ddedf052acd648" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">40</span></code>
+ </div>
+</section>
+<section id="how-should-the-data-frame-be-split-assuming-the-8020-split" class="slide level2">
+<h2>How should the data frame be split, assuming the 80/20 split?</h2>
+<ul>
+<li><p>A: The first 80 rows of the data are assigned to training; the last 20 are assigned to testing.</p></li>
+<li><p>B: The first 20 rows of the data are assigned to training; the last 80 are assigned to testing.</p></li>
+<li><p>C: Sample 100 rows from the table with replacement. The first 80 rows are assigned to training; the last 20 are assigned to testing.</p></li>
+<li><p>D. Sample 100 rows from the table without replacement. The first 80 rows are assigned to training; the last 20 are assigned to testing.</p></li>
+</ul>
+<div id="timer_ab632ee3b710d5b1d24ffe6240ddedf052acd648" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">45</span></code>
+ </div>
+</section>
+<section id="which-of-the-following-are-examples-of-overfitting-select-all-that-apply." class="slide level2">
+<h2>Which of the following are examples of overfitting? <em>Select all that apply</em>.</h2>
+<ul>
+<li><p>A: A student fails a final exam because they did not go over the practice final exam, which would have given them practice with important concepts.</p></li>
+<li><p>B: A student fails a final exam because they memorized the answers to the practice final exam without understanding the important concepts.</p></li>
+<li><p>C: Fitting a model that crosses through all points in the training set.</p></li>
+<li><p>D: Fitting a model function that more or less follows the points in the training set.</p></li>
+<li><p>E: A student fails a final exam in spite of healthy studying habits because the professor gives out an exam containing topics which were not taught in the course.</p></li>
+</ul>
+<div id="timer_ab632ee3b710d5b1d24ffe6240ddedf052acd648" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section>
+<section id="suppose-i-fit-a-model-with-a-high-amount-of-overfitting.-which-of-the-following-scenarios-is-most-likely" class="slide level2">
+<h2>Suppose I fit a model with a high amount of overfitting. Which of the following scenarios is most likely?</h2>
+<ul>
+<li>A: Training <span class="math inline">\(R^2\)</span> is high, testing <span class="math inline">\(R^2\)</span> is lower.</li>
+<li>B: Training and testing <span class="math inline">\(R^2\)</span> are both high.</li>
+<li>C: Testing <span class="math inline">\(R^2\)</span> is high, training <span class="math inline">\(R^2\)</span> is lower.</li>
+<li>D: Training and testing <span class="math inline">\(R^2\)</span> are both low.</li>
+</ul>
+<div id="timer_ab632ee3b710d5b1d24ffe6240ddedf052acd648" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
+ </div>
+</section>
+<section id="true-or-false-a-lower-degree-polynomial-model-is-more-likely-to-overfit-than-a-higher-degree-polynomial-model." class="slide level2">
+<h2><em>True or False:</em> A lower degree polynomial model is more likely to overfit than a higher degree polynomial model.</h2>
+<ul>
+<li><p>A: True</p></li>
+<li><p>B: False</p></li>
+</ul>
+<div id="timer_ab632ee3b710d5b1d24ffe6240ddedf052acd648" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
+ </div>
+</section></section>
+<section id="break" class="title-slide slide level1 center">
+<h1><em>Break</em></h1>
+<div id="timer_ab632ee3b710d5b1d24ffe6240ddedf052acd648" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section>
+
+<section id="worksheet-overfitting" class="title-slide slide level1 center">
+<h1>Worksheet: <em>Overfitting</em></h1>
+<div id="timer_ab632ee3b710d5b1d24ffe6240ddedf052acd648" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">35</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section>
+
+<section id="break-1" class="title-slide slide level1 center">
+<h1><em>Break</em></h1>
+<div id="timer_ab632ee3b710d5b1d24ffe6240ddedf052acd648" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section>
+
+<section id="lab-part-2" class="title-slide slide level1 center">
+<h1>Lab: Part 2</h1>
+<div id="timer_ab632ee3b710d5b1d24ffe6240ddedf052acd648" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">35</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
+</section>
+
+<section id="appendix" class="title-slide slide level1 center">
+<h1>Appendix</h1>
+
+</section>
+
 <section>
 <section id="concept-questions" class="title-slide slide level1 center">
 <h1>Concept Questions</h1>
@@ -363,7 +531,7 @@ STAT 20: Introduction to Probability and Statistics
 <h2>Overfitting or not? (Taken from the reading questions)</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_b5780172" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_d830695b" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -390,7 +558,7 @@ STAT 20: Introduction to Probability and Statistics
 <h2>Are RSS and R square related?</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_b4fb2904" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_7db4cb96" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -417,7 +585,7 @@ STAT 20: Introduction to Probability and Statistics
 <h2>Overfit models</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_3c74b7f6" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_1d060b72" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">00</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">30</span></code>
 </div>
@@ -446,7 +614,7 @@ STAT 20: Introduction to Probability and Statistics
 <h2>Where is overfitting worse?</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_5d832347" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_e6ef1cde" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">01</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -480,7 +648,7 @@ STAT 20: Introduction to Probability and Statistics
 
 
 ```{=html}
-<div class="countdown" id="timer_af95da67" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_7b3fc51e" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">25</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -501,7 +669,7 @@ STAT 20: Introduction to Probability and Statistics
 
 
 ```{=html}
-<div class="countdown" id="timer_d2715616" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_8409bef4" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -522,7 +690,7 @@ STAT 20: Introduction to Probability and Statistics
 
 
 ```{=html}
-<div class="countdown" id="timer_1d33341f" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_4ad87ea2" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">&minus;</button><button class="countdown-bump-up">&plus;</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">25</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
