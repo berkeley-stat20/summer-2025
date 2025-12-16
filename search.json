@@ -2219,7 +2219,7 @@
     "href": "5-prediction/02-improving-predictions/slides.html#section-1",
     "title": "Evaluating and Improving Predictions",
     "section": "",
-    "text": "# A tibble: 4 × 5\n  name    hours cuteness food_eaten is_indoor_cat\n  &lt;chr&gt;   &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt; &lt;lgl&gt;        \n1 castiel    12      9          175 TRUE         \n2 frank      18     10          200 TRUE         \n3 luna       19      9.5        215 FALSE        \n4 luca       10      8          218 FALSE        \n\n\n\nm1 &lt;- lm(formula = hours ~ cuteness + food_eaten + is_indoor_cat, \n         data = cats)\n\n\n\n      (Intercept)          cuteness        food_eaten is_indoor_catTRUE \n    -3.800000e+01      6.000000e+00      2.815002e-16     -4.000000e+00 \n\n\n\nHow many hours does the model predict Frank will sleep each day? Write out the linear equation of the model from the model output to help you.\n\n\n\n\n−+\n03:00"
+    "text": "# A tibble: 4 × 5\n  name    hours cuteness food_eaten is_indoor_cat\n  &lt;chr&gt;   &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt; &lt;lgl&gt;        \n1 castiel    12      9          175 TRUE         \n2 frank      18     10          200 TRUE         \n3 luna       19      9.5        215 FALSE        \n4 luca       10      8          218 FALSE        \n\n\n\nm1 &lt;- lm(formula = hours ~ cuteness + food_eaten + is_indoor_cat, \n         data = cats)\n\n\n\n      (Intercept)          cuteness        food_eaten is_indoor_catTRUE \n    -3.800000e+01      6.000000e+00      2.455729e-16     -4.000000e+00 \n\n\n\nHow many hours does the model predict Frank will sleep each day? Write out the linear equation of the model from the model output to help you.\n\n\n\n\n−+\n03:00"
   },
   {
     "objectID": "5-prediction/02-improving-predictions/slides.html#section-2",
@@ -5359,7 +5359,7 @@
     "href": "3-generalization/12-wrong-by-design/slides.html#section-5",
     "title": "Wrong By Design",
     "section": "",
-    "text": "null &lt;- ppk |&gt;\n  specify(response = support_before,\n          success = \"TRUE\") |&gt;\n  hypothesize(null = \"point\", p = .5) |&gt;\n  generate(reps = 500, type = \"draw\") |&gt;\n  calculate(stat = \"prop\")\nnull\n\nResponse: support_before (factor)\nNull Hypothesis: point\n# A tibble: 500 × 2\n   replicate  stat\n   &lt;fct&gt;     &lt;dbl&gt;\n 1 1         0.533\n 2 2         0.495\n 3 3         0.498\n 4 4         0.501\n 5 5         0.506\n 6 6         0.5  \n 7 7         0.483\n 8 8         0.493\n 9 9         0.495\n10 10        0.515\n# ℹ 490 more rows"
+    "text": "null &lt;- ppk |&gt;\n  specify(response = support_before,\n          success = \"TRUE\") |&gt;\n  hypothesize(null = \"point\", p = .5) |&gt;\n  generate(reps = 500, type = \"draw\") |&gt;\n  calculate(stat = \"prop\")\nnull\n\nResponse: support_before (factor)\nNull Hypothesis: point\n# A tibble: 500 × 2\n   replicate  stat\n   &lt;fct&gt;     &lt;dbl&gt;\n 1 1         0.513\n 2 2         0.490\n 3 3         0.529\n 4 4         0.523\n 5 5         0.512\n 6 6         0.498\n 7 7         0.504\n 8 8         0.512\n 9 9         0.508\n10 10        0.508\n# ℹ 490 more rows"
   },
   {
     "objectID": "3-generalization/12-wrong-by-design/slides.html#section-6",
