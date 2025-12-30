@@ -5359,7 +5359,7 @@
     "href": "3-generalization/12-wrong-by-design/slides.html#section-5",
     "title": "Wrong By Design",
     "section": "",
-    "text": "null &lt;- ppk |&gt;\n  specify(response = support_before,\n          success = \"TRUE\") |&gt;\n  hypothesize(null = \"point\", p = .5) |&gt;\n  generate(reps = 500, type = \"draw\") |&gt;\n  calculate(stat = \"prop\")\nnull\n\nResponse: support_before (factor)\nNull Hypothesis: point\n# A tibble: 500 × 2\n   replicate  stat\n   &lt;fct&gt;     &lt;dbl&gt;\n 1 1         0.503\n 2 2         0.481\n 3 3         0.493\n 4 4         0.498\n 5 5         0.505\n 6 6         0.518\n 7 7         0.498\n 8 8         0.496\n 9 9         0.516\n10 10        0.487\n# ℹ 490 more rows"
+    "text": "null &lt;- ppk |&gt;\n  specify(response = support_before,\n          success = \"TRUE\") |&gt;\n  hypothesize(null = \"point\", p = .5) |&gt;\n  generate(reps = 500, type = \"draw\") |&gt;\n  calculate(stat = \"prop\")\nnull\n\nResponse: support_before (factor)\nNull Hypothesis: point\n# A tibble: 500 × 2\n   replicate  stat\n   &lt;fct&gt;     &lt;dbl&gt;\n 1 1         0.490\n 2 2         0.492\n 3 3         0.515\n 4 4         0.495\n 5 5         0.478\n 6 6         0.487\n 7 7         0.520\n 8 8         0.505\n 9 9         0.504\n10 10        0.488\n# ℹ 490 more rows"
   },
   {
     "objectID": "3-generalization/12-wrong-by-design/slides.html#section-6",
